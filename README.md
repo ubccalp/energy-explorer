@@ -1,21 +1,20 @@
 # Community Energy Explorer #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Community Energy Explorer - http://energyexplorer.ca/
 
-### What is this repository for? ###
+### Technologies Used: ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Node JS
+* HTML
+* CSS - SASS/COMPASS - http://sass-lang.com/ and http://compass-style.org/
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Install NodeJS - https://nodejs.org/en/
+* Install Ruby - http://www.ruby-lang.org/en/documentation/installation/
+* Install Compass - http://compass-style.org/install/
+* To make changes to styles, open command window in the root folder of styles, run the following command: compass watch
+* To run the web application, open command window in the root folder of the website and execute the following command: node app.js
 
 ### Contribution guidelines ###
 
@@ -25,5 +24,5 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Jon Salter
+* Utkarsh Saxena
