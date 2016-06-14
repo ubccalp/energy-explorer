@@ -1,0 +1,16 @@
+{
+  "name": "cee_website",
+  "version": "1.0.0",
+  "description": "Energy Explorer website by UBC CALP Department",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ubccalp@bitbucket.org/ubccalp/energy-explorer.git"
+  },
+  "author": "utkarsh saxena",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ubccalp/energy-explorer#readme"
+}
