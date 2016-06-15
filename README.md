@@ -22,28 +22,28 @@ Community Energy Explorer - http://energyexplorer.ca/
 
 ### File Structure ###
 
-*.vscode (not required unless running node via Visual Studio Code)
-*--/ launch.json
-*assets        # JavaScript/CSS/Images
-*--/ bootstrap (twitter bootstrap files)
-*--/ images
-*--/ js (all other javasript files)
-*--/ styles (all other stylesheets)
-*    --/ .sass-cache (used by Compass framework)
-*	--/ cee (folder initialized by compass to store all stylesheets)
-*	--/--/ sass (this is where you write your styles. Compass converts it to css)
-*	--/--/ css (all the converted css files. This is what you add to the <link> tag in HTML
-*    --/--/ compass-watch.bat (run this file before making changes to styles. This watches the changes in scss folder and converts it to css.)
-*    --/--/ config.rb (configuration file for compass. Do not make changes without understanding the docmentation on Compass website)
-*node_modules (Folder where all node modules are installed.)
-*routes       (Contains routing files)
-*    --/ main.js (Contains all primary routes for the website)
-*views (Contains all html files - coded using swig templating - http://paularmstrong.github.io/swig/ )
-*    --/ Components (also contains html file but only resuable components such as navbars, footers, etc)
-*.gitignore (list of folders to ignore when pushing changes to repositories using GIT
-*app.js (Main entry file to start a node server)
-*package.json (Created by node to save configurations and list of packages installed)
-*README.md (Documentation for the project)
+* .vscode (not required unless running node via Visual Studio Code)
+* --/ launch.json
+* assets        (JavaScript/CSS/Images)
+* --/ bootstrap (twitter bootstrap files)
+* --/ images
+* --/ js (all other javasript files)
+* --/ styles (all other stylesheets)
+*     --/ .sass-cache (used by Compass framework)
+* 	--/ cee (folder initialized by compass to store all stylesheets)
+* 	--/--/ sass (this is where you write your styles. Compass converts it to css)
+* 	--/--/ css (all the converted css files. This is what you add to the <link> tag in HTML
+*     --/--/ compass-watch.bat (run this file before making changes to styles. This watches the changes in scss folder and converts it to css.)
+*     --/--/ config.rb (configuration file for compass. Do not make changes without understanding the docmentation on Compass website)
+* node_modules (Folder where all node modules are installed.)
+* routes       (Contains routing files)
+*     --/ main.js (Contains all primary routes for the website)
+* views (Contains all html files - coded using swig templating - http://paularmstrong.github.io/swig/ )
+*     --/ Components (also contains html file but only resuable components such as navbars, footers, etc)
+* .gitignore (list of folders to ignore when pushing changes to repositories using GIT
+* app.js (Main entry file to start a node server)
+* package.json (Created by node to save configurations and list of packages installed)
+* README.md (Documentation for the project)
 
 ### Who do I talk to? ###
 
