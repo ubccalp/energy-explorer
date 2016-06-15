@@ -12,5 +12,10 @@
   },
   "author": "utkarsh saxena",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ubccalp/energy-explorer#readme"
+  "homepage": "https://bitbucket.org/ubccalp/energy-explorer#readme",
+  "dependencies": {
+    "consolidate": "^0.14.1",
+    "express": "^4.13.4",
+    "swig": "^1.4.2"
+  }
 }

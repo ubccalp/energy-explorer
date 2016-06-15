@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% parent %} - Home Page{% endblock %}
+
+{% block head %}
+    {% parent %}
+{% endblock head %}
+
+{% block content %}
+{% parent %}
+<h1>This is the {{ pageName }}. All the content goes here!</h1>
+{% endblock content %}
+
+{% block scripts %}
+    {% parent %}
+{% endblock scripts %}

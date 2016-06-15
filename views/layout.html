@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html html lang="en-us">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Community Energy Explorer website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>{% block title %}Community Energy Explorer{% endblock %}</title>
+
+        {% block head %}
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
+        {% endblock head %}
+    </head>
+ 
+    <body>
+        {% block content %}
+        {% include "./components/navbar.html" %}                        
+        {% endblock content %}
+
+        {% block scripts %}
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        {% endblock scripts %}
+    </body>
+</html>
