@@ -7,5 +7,16 @@ body {
 /* line 6, ../sass/myStyles.scss */
 .navbar-inverse {
   border-radius: 0px;
-  padding: 5px 0;
+  padding: 10px 0;
+  -webkit-transition: padding 0.5s;
+  /* Safari */
+  transition: padding 0.5s;
+}
+
+/* line 13, ../sass/myStyles.scss */
+.navbar-small {
+  padding: 0;
+  -webkit-transition: padding 0.5s;
+  /* Safari */
+  transition: padding 0.5s;
 }
