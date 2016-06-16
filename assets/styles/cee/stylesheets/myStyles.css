@@ -1,5 +1,11 @@
 /* This file contains site wide styles */
 /* line 2, ../sass/myStyles.scss */
 body {
-  color: red;
+  padding-top: 90px;
+}
+
+/* line 6, ../sass/myStyles.scss */
+.navbar-inverse {
+  border-radius: 0px;
+  padding: 5px 0;
 }
