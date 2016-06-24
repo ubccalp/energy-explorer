@@ -1,17 +1,53 @@
-/* This file contains site wide styles */
-/* line 2, ../sass/myStyles.scss */
-.navbar-inverse {
-  border-radius: 0px;
-  padding: 10px 0;
-  -webkit-transition: padding 0.5s;
-  /* Safari */
-  transition: padding 0.5s;
+/** Variable for colors **/
+/** Sidebar Styles **/
+/* line 2, ../sass/_sidebar.scss */
+#sidebar-wrapper {
+  background: #ffffff;
 }
 
-/* line 9, ../sass/myStyles.scss */
-.navbar-small {
-  padding: 0;
-  -webkit-transition: padding 0.5s;
-  /* Safari */
-  transition: padding 0.5s;
+/* line 6, ../sass/_sidebar.scss */
+.sidebar-nav {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+/* line 10, ../sass/_sidebar.scss */
+.sidebar-nav li {
+  margin-bottom: 40px;
+  width: 150px;
+  text-indent: 0;
+}
+/* line 15, ../sass/_sidebar.scss */
+.sidebar-nav li a:hover {
+  color: #4f4f4f;
+}
+/* line 20, ../sass/_sidebar.scss */
+.sidebar-nav .sidebar-brand {
+  margin-bottom: 80px;
+}
+
+/* line 25, ../sass/_sidebar.scss */
+#logo {
+  width: 150px;
+}
+
+/** General Styles **/
+/* line 7, ../sass/myStyles.scss */
+body {
+  background: #4f4f4f;
+}
+
+/* line 12, ../sass/myStyles.scss */
+#page-content-wrapper {
+  background: #e1e9d0;
+}
+
+/* line 16, ../sass/myStyles.scss */
+.toggle-menu-btn {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  /* line 16, ../sass/myStyles.scss */
+  .toggle-menu-btn {
+    display: inline-block;
+  }
 }

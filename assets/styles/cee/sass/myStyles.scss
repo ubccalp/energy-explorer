@@ -1,13 +1,21 @@
-/* This file contains site wide styles */
-.navbar-inverse {
-    border-radius: 0px;
-    padding: 10px 0;
-    -webkit-transition: padding 0.5s; /* Safari */
-    transition: padding 0.5s;
+@import "variables";
+@import "sidebar";
+
+/** General Styles **/
+
+// Remove later
+body {
+    background: $slate-black;
+}
+// end
+
+#page-content-wrapper {
+    background: $creme-color;
 }
 
-.navbar-small {
-    padding: 0;
-    -webkit-transition: padding 0.5s; /* Safari */
-    transition: padding 0.5s;
+.toggle-menu-btn {
+    display: none;
+    @media screen and (max-width: 760px) {
+        display: inline-block;       
+    }
 }
