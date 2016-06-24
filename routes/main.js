@@ -11,9 +11,56 @@ module.exports = function(express, app) {
 		});
 	});
 
-	// HOMEPAGE with side menu bar
-	router.get('/sidebar', function(req, res){
-		res.render('index-two', {
+	// =====================================
+    // Community Energy Explained Page
+    // =====================================
+	router.get('/community-energy-explained', function(req, res){
+		res.render('communityEnergyExplained', {
+			pageName: "Homepage"
+		});
+	});
+
+	// =====================================
+    // Renewable Energy Supply Page
+    // =====================================
+	router.get('/renewable-energy-supply', function(req, res){
+		res.render('renewableEnergySupply', {
+			pageName: "Homepage"
+		});
+	});
+
+	// =====================================
+    // Energy Demand and Efficiency Page
+    // =====================================
+	router.get('/energy-demand-and-efficiency', function(req, res){
+		res.render('energyDemandEfficiency', {
+			pageName: "Homepage"
+		});
+	});
+
+	// =====================================
+    // Case Studies and Resources Page
+    // =====================================
+	router.get('/case-studies-and-resources', function(req, res){
+		res.render('caseStudiesAndResources', {
+			pageName: "Homepage"
+		});
+	});
+
+	// =====================================
+    // Energy Maps Page
+    // =====================================
+	router.get('/energy-maps', function(req, res){
+		res.render('energyMaps', {
+			pageName: "Homepage"
+		});
+	});
+
+	// =====================================
+    // About Page
+    // =====================================
+	router.get('/about', function(req, res){
+		res.render('about', {
 			pageName: "Homepage"
 		});
 	});
