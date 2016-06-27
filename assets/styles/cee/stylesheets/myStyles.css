@@ -8,7 +8,7 @@
 /* line 6, ../sass/_sidebar.scss */
 .sidebar-nav {
   padding-top: 50px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 /* line 10, ../sass/_sidebar.scss */
 .sidebar-nav li {
@@ -39,14 +39,15 @@ body {
 /* line 12, ../sass/myStyles.scss */
 #page-content-wrapper {
   background: #e1e9d0;
+  padding: 0px;
 }
 
-/* line 16, ../sass/myStyles.scss */
+/* line 17, ../sass/myStyles.scss */
 .toggle-menu-btn {
   display: none;
 }
 @media screen and (max-width: 760px) {
-  /* line 16, ../sass/myStyles.scss */
+  /* line 17, ../sass/myStyles.scss */
   .toggle-menu-btn {
     display: inline-block;
   }

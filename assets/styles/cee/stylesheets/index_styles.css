@@ -1,0 +1,9 @@
+/* line 2, ../sass/index_styles.scss */
+.header-image-container {
+  background: url(/images/homepage/bg_1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
