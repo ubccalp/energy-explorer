@@ -1,3 +1,4 @@
+@import "variables";
 // All styles specific to the homepage/index page.
 .header-image-container {
     background: url(/images/homepage/bg_1.png) no-repeat center center; 
@@ -6,4 +7,33 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+}
+
+.header-text {
+    background: $creme-color;
+    position: absolute;
+    top: 10%;
+    @media screen and (max-width: 520px) {
+        top: 5%; 
+    }
+
+    h1 {
+        font-family: sans-serif;
+        color: #515151;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        margin: 20px 0 20px 5px;
+    }
+
+    p {
+        line-height: 30px;
+        margin-left: 5px;
+    }
+}
+
+.sponsor-image {
+    img {
+        margin: 0 20px 20px 20px;
+    }   
 }

@@ -1,4 +1,5 @@
-/* line 2, ../sass/index_styles.scss */
+/** Variable for colors **/
+/* line 3, ../sass/index_styles.scss */
 .header-image-container {
   background: url(/images/homepage/bg_1.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -6,4 +7,36 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+}
+
+/* line 12, ../sass/index_styles.scss */
+.header-text {
+  background: #e1e9d0;
+  position: absolute;
+  top: 10%;
+}
+@media screen and (max-width: 520px) {
+  /* line 12, ../sass/index_styles.scss */
+  .header-text {
+    top: 5%;
+  }
+}
+/* line 20, ../sass/index_styles.scss */
+.header-text h1 {
+  font-family: sans-serif;
+  color: #515151;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin: 20px 0 20px 5px;
+}
+/* line 29, ../sass/index_styles.scss */
+.header-text p {
+  line-height: 30px;
+  margin-left: 5px;
+}
+
+/* line 36, ../sass/index_styles.scss */
+.sponsor-image img {
+  margin: 0 20px 20px 20px;
 }

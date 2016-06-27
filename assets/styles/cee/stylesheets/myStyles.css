@@ -33,21 +33,20 @@
 /** General Styles **/
 /* line 7, ../sass/myStyles.scss */
 body {
-  background: #4f4f4f;
+  background: #e1e9d0;
 }
 
 /* line 12, ../sass/myStyles.scss */
 #page-content-wrapper {
-  background: #e1e9d0;
   padding: 0px;
 }
 
-/* line 17, ../sass/myStyles.scss */
+/* line 16, ../sass/myStyles.scss */
 .toggle-menu-btn {
   display: none;
 }
 @media screen and (max-width: 760px) {
-  /* line 17, ../sass/myStyles.scss */
+  /* line 16, ../sass/myStyles.scss */
   .toggle-menu-btn {
     display: inline-block;
   }
