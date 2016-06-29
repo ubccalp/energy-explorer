@@ -1,6 +1,7 @@
 # Community Energy Explorer #
 
-Community Energy Explorer - http://energyexplorer.ca/
+Community Energy Explorer (old website) - http://energyexplorer.ca/
+Community Energy Explorer (new temp. website) - https://communityenergyexplorer.herokuapp.com/
 
 ### Technologies Used: ###
 
