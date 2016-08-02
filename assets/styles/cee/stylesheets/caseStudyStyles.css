@@ -1,0 +1,72 @@
+/* line 3, ../sass/caseStudyStyles.scss */
+.casestudy-container {
+  margin: 20px 8%;
+}
+
+/* line 7, ../sass/caseStudyStyles.scss */
+.casestudy-image-container {
+  position: relative;
+  margin: 0;
+  max-width: 550px;
+  width: inherit;
+  overflow: hidden;
+}
+
+/* line 15, ../sass/caseStudyStyles.scss */
+.casestudy-image {
+  width: 100%;
+}
+
+/* line 19, ../sass/caseStudyStyles.scss */
+.casestudy-container:hover .casestudy-text {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  /* Safari */
+  transition: opacity 0.2s;
+}
+
+/* line 25, ../sass/caseStudyStyles.scss */
+.casestudy-text {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 37, ../sass/caseStudyStyles.scss */
+.casestudy-text p {
+  display: block;
+  padding: 20% 50px;
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (max-width: 550px) {
+  /* line 37, ../sass/caseStudyStyles.scss */
+  .casestudy-text p {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+/* line 48, ../sass/caseStudyStyles.scss */
+.casestudy-image-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(47, 147, 196, 0.8);
+  text-align: center;
+  padding: 22px 0;
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (max-width: 550px) {
+  /* line 48, ../sass/caseStudyStyles.scss */
+  .casestudy-image-caption {
+    font-size: 14px;
+  }
+}

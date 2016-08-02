@@ -1,0 +1,62 @@
+// Styles specific to case study page
+
+.casestudy-container {
+  margin: 20px 8%;
+}
+
+.casestudy-image-container {
+  position: relative;
+  margin: 0;
+  max-width: 550px;
+  width: inherit;
+  overflow: hidden;
+}
+
+.casestudy-image {
+  width: 100%;
+}
+
+.casestudy-container:hover .casestudy-text {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s; /* Safari */
+   transition: opacity 0.2s;
+}
+
+.casestudy-text {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.casestudy-text p {
+  display: block;
+  padding: 20% 50px;
+  color: #fff;
+  font-size: 18px;
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+.casestudy-image-caption {
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background: rgba(47, 147, 196, 0.8);
+ text-align: center;
+ padding: 22px 0;
+ color: #fff;
+ font-size: 18px;
+
+ @media screen and (max-width: 550px) {
+   font-size: 14px;
+ }
+}
