@@ -17,5 +17,8 @@
     "consolidate": "^0.14.1",
     "express": "^4.13.4",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }

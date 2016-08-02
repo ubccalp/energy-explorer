@@ -17,6 +17,7 @@ app.use(express.static(__dirname + '/assets'));
 
 // Import the routes file
 require('./routes/main.js')(express, app);
+require('./routes/caseStudiesChildPages.js')(express, app);
 
 // Listen to the port
 app.listen(port, function() {
