@@ -2,6 +2,15 @@
 module.exports = function(express, app) {
 	var router = express.Router();
 
+  // =====================================
+    // Case Studies and Resources Page
+    // =====================================
+	router.get('/', function(req, res){
+		res.render('caseStudiesAndResources', {
+			pageName: "Homepage"
+		});
+	});
+
   router.get('/case-study-one', function(req, res){
 		res.render('./caseStudies/casestudyone', {
 			pageName: "Homepage"

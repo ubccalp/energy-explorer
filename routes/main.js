@@ -37,16 +37,7 @@ module.exports = function(express, app) {
 			pageName: "Homepage"
 		});
 	});
-
-	// =====================================
-    // Case Studies and Resources Page
-    // =====================================
-	router.get('/case-studies-and-resources', function(req, res){
-		res.render('caseStudiesAndResources', {
-			pageName: "Homepage"
-		});
-	});
-
+	
 	// =====================================
     // Energy Maps Page
     // =====================================
