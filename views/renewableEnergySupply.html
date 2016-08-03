@@ -4,6 +4,7 @@
 
 {% block head %}
     {% parent %}
+    <link rel="stylesheet" href="/styles/cee/stylesheets/renewableEnergySupplyStyles.css">
 {% endblock head %}
 
 {% block content %}
@@ -14,7 +15,58 @@
             <h1>Renewable Energy Supply</h1>
         </div>
     </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-warning btn-lg" data-toggle="modal" data-target="#solarModal">Solar</button>
+          <button type="button" class="list-group-item list-group-item-default btn-lg" data-toggle="modal" data-target="#windModal">Wind</button>
+          <button type="button" class="list-group-item list-group-item-info btn-lg" data-toggle="modal" data-target="#hydroModal">Hydropower</button>
+          <button type="button" class="list-group-item list-group-item-danger btn-lg" data-toggle="modal" data-target="#heatModal">Heat Recovery</button>
+          <button type="button" class="list-group-item list-group-item-success btn-lg" data-toggle="modal" data-target="#bioModal">Bio Energy</button>
+        </div>
+      </div>
+    </div>
 </div>
+
+<!-- Solar Modal -->
+<div class="modal fade" id="solarModal" tabindex="-1" role="dialog" aria-labelledby="solarModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Solar Modal</h4>
+      </div>
+      <div class="modal-body">
+        Display Information on solar energy.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Solar Modal End-->
+
+<!-- Wind Modal -->
+<div class="modal fade" id="windModal" tabindex="-1" role="dialog" aria-labelledby="solarModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Wind Modal</h4>
+      </div>
+      <div class="modal-body">
+        Display information on wind energy.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Wind Modal End-->
 {% endblock content %}
 
 {% block scripts %}
