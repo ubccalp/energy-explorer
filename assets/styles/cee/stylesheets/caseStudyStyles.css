@@ -21,7 +21,7 @@
 .casestudy-container:hover .casestudy-text {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
-  /* Safari */
+  /* For Safari browser */
   transition: opacity 0.2s;
 }
 
@@ -58,7 +58,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(47, 147, 196, 0.8);
   text-align: center;
   padding: 22px 0;
   color: #fff;
@@ -68,5 +67,36 @@
   /* line 48, ../sass/caseStudyStyles.scss */
   .casestudy-image-caption {
     font-size: 14px;
+  }
+}
+
+/* line 63, ../sass/caseStudyStyles.scss */
+.caption-background-red {
+  background: rgba(192, 57, 43, 0.8);
+}
+
+/* line 67, ../sass/caseStudyStyles.scss */
+.caption-background-green {
+  background: rgba(22, 160, 133, 0.8);
+}
+
+/* line 71, ../sass/caseStudyStyles.scss */
+.caption-background-blue {
+  background: rgba(47, 147, 196, 0.8);
+}
+
+/* line 75, ../sass/caseStudyStyles.scss */
+.caption-background-orange {
+  background: rgba(229, 126, 37, 0.8);
+}
+
+/* line 79, ../sass/caseStudyStyles.scss */
+.left-margin-5percent {
+  margin-left: 5%;
+}
+@media screen and (max-width: 650px) {
+  /* line 79, ../sass/caseStudyStyles.scss */
+  .left-margin-5percent {
+    margin-left: inherit;
   }
 }
