@@ -7,13 +7,31 @@ module.exports = function(express, app) {
     // =====================================
 	router.get('/', function(req, res){
 		res.render('caseStudiesAndResources', {
-			pageName: "Homepage"
+			pageName: "Case Study One Page"
 		});
 	});
 
   router.get('/case-study-one', function(req, res){
 		res.render('./caseStudies/casestudyone', {
-			pageName: "Homepage"
+			pageName: "Case Study One Page"
+		});
+	});
+
+	router.get('/case-study-two', function(req, res){
+		res.render('./caseStudies/casestudytwo', {
+			pageName: "Case Study Two Page"
+		});
+	});
+
+	router.get('/case-study-three', function(req, res){
+		res.render('./caseStudies/casestudythree', {
+			pageName: "Case Study Three Page"
+		});
+	});
+
+	router.get('/case-study-four', function(req, res){
+		res.render('./caseStudies/casestudyfour', {
+			pageName: "Case Study Four Page"
 		});
 	});
 
