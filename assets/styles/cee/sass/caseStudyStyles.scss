@@ -1,7 +1,10 @@
 // Styles specific to case study page
 
 .casestudy-container {
-  margin: 20px 8%;
+  margin: 30px 25% 30px 6%;
+  @media screen and (max-width: 850px) {
+    margin: 35px 7%;
+  }
 }
 
 .casestudy-image-container {
