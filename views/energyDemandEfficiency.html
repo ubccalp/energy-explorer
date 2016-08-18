@@ -4,6 +4,7 @@
 
 {% block head %}
     {% parent %}
+    <link rel="stylesheet" href="/styles/cee/stylesheets/energyDemandEfficiencyStyles.css">
 {% endblock head %}
 
 {% block content %}
@@ -14,7 +15,25 @@
             <h1>Energy Demand and Efficiency</h1>
         </div>
     </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-warning btn-lg" data-toggle="modal" data-target="#firstModal">First</button>
+          <button type="button" class="list-group-item list-group-item-default btn-lg" data-toggle="modal" data-target="#secondModal">Second</button>
+          <button type="button" class="list-group-item list-group-item-info btn-lg" data-toggle="modal" data-target="#thirdModal">Third</button>
+          <button type="button" class="list-group-item list-group-item-danger btn-lg" data-toggle="modal" data-target="#fourthModal">Fourth</button>
+          <button type="button" class="list-group-item list-group-item-success btn-lg" data-toggle="modal" data-target="#fifthModal">Fifth</button>
+        </div>
+      </div>
+    </div>
 </div>
+
+{% include './energyDemandModals/first.html' %}
+{% include './energyDemandModals/second.html' %}
+{% include './energyDemandModals/third.html' %}
+{% include './energyDemandModals/fourth.html' %}
+{% include './energyDemandModals/fifth.html' %}
+
 {% endblock content %}
 
 {% block scripts %}
