@@ -33,8 +33,8 @@ Community Energy Explorer (new temp. website) - https://communityenergyexplorer.
 *     --/ .sass-cache (used by Compass framework)
 * 	--/ cee (folder initialized by compass to store all stylesheets)
 * 	--/--/ sass (this is where you write your styles. Compass converts it to css)
-* 	--/--/ css (all the converted css files. This is what you add to the <link> tag in HTML
-*     --/--/ compass-watch.bat (run this file before making changes to styles. This watches the changes in scss folder and converts it to css.)
+* 	--/--/ css (all the converted css files. This is what you add to the <link> tag in HTML)
+*     --/--/ compass-watch.bat (run this file before making changes to styles. This watches the changes in scss folder and converts it to css)
 *     --/--/ config.rb (configuration file for compass. Do not make changes without understanding the docmentation on Compass website)
 * node_modules (Folder where all node modules are installed. Run npm install in the command prompt if you don't see this folder.)
 * routes       (Contains routing files. Learn more here: https://expressjs.com/en/guide/routing.html)
