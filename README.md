@@ -39,7 +39,7 @@ Community Energy Explorer (new temp. website) - https://communityenergyexplorer.
 * node_modules (Folder where all node modules are installed. Run npm install in the command prompt if you don't see this folder.)
 * routes       (Contains routing files. Learn more here: https://expressjs.com/en/guide/routing.html)
 *     --/ main.js (Contains all primary routes/urls for the website)
-* views (Contains all html files - coded using swig templating - http://paularmstrong.github.io/swig/ )
+* views (Contains all html files - coded using swig templating - https://github.com/paularmstrong/swig )
 *     --/ Components (also contains html file but only resuable components such as navbars, footers, etc)
 *     --/ caseStudies (Contains all HTML pages for each case study.)
 *     --/ renewableEnergySupplyModals (Contains all HTML partials for Bootstrap modals (View Bootstrap website to know how modals work). Used in renewableEnergySupply.html)
