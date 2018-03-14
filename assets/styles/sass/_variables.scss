@@ -1,0 +1,38 @@
+/** Variable for colors **/
+$creme: #e1e9d0;
+$red: #f04941;
+$orange: #e57e25;
+$turquoise: #1da388;
+$blue: #3b97d3;
+$purple: #9778b5;
+$white: #ffffff;
+$black: #000;
+$dark-grey: #4f4f4f;
+$light-grey: #c3c3c3;
+$green: #26b99a;
+$lighter-grey: #f1f1f1;
+$mid-grey: #515151;
+$yellow: #e6e600;
+$top-padding: 25px;
+$top-padding-small: 10px;
+$bottom-padding:20x;
+$all-padding: 20px;
+$left-padding: 20px;
+$right-padding: 20px;
+$full-width: 800px;
+$full-height: 600px;
+$medium-width: 600px;
+$medium-height: 400px;
+$small-width: 200px;
+$small-height: 100px;
+
+@font-face {
+    font-family: 'Ebrima'; 
+    src: url('../../fonts/arial.ttf');
+}
+
+@font-face {
+    font-family: 'Ebrima Bold'; 
+    src: url('../../fonts/arialbd.ttf');
+}
+

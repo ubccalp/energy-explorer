@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>pagePiling.js plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="demo.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		css3:true,
+	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+
+
+			$('#destroyAll').click(function(){
+				$.fn.pagepiling.destroy('all');
+			});
+
+			$('#destroyEvents').click(function(){
+				$.fn.pagepiling.destroy();
+			});
+	    });
+    </script>
+    <style>
+    #destroyAll,
+    #destroyEvents{
+    	position: fixed;
+    	top: 60px;
+    	z-index: 999;
+    	left: 20px;
+    }
+    #destroyAll{
+    	left: 150px;
+    }
+    </style>
+
+</head>
+<body>
+<button id="destroyAll">Destroy ALL</button>
+<button id="destroyEvents">Destroy events</button>
+
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+		<li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
+	</ul>
+
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<h1>pagePiling.js</h1>
+			<p>Create an original scrolling site</p>
+			<img src="imgs/pagePiling-plugin.gif" alt="pagePiling" />
+			<br />
+
+			<div id="download"><a href="https://github.com/alvarotrigo/pagePiling.js/archive/master.zip">Download</a></div><br />
+
+			<p id="donations"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=atrigol%40gmail%2ecom&lc=ES&item_name=pagePiling%2ejs&item_number=pagePiling&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Donations will be appreciated!</a></p>
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+	    		<div id="colors"></div>
+	    		<h1>jQuery plugin</h1>
+	    		<p>Pile your sections one over another and access them scrolling or by URL!</p>
+	    		<div id="markup">
+	    			<script src="https://gist.github.com/alvarotrigo/4a87a4b8757d87df8a72.js"></script>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Configurable</h1>
+	    		<p>Plenty of options, methods and callbacks to use.</p>
+	    		<div id="colors2"></div>
+	    		<div id="colors3"></div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section4">
+	    	<div class="intro">
+	    		<h1>Compatible</h1>
+	    		<p>Designed to work on tablet and mobile devices.</p>
+	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+	    	</div>
+	    </div>
+	</div>
+
+
+
+	<div id="infoMenu">
+		<ul>
+			<li><a href="https://github.com/alvarotrigo/pagePiling.js/archive/master.zip">Download</a></li>
+			<li>
+				<a href="#" id="showExamples">Examples</a>
+				<div id="examplesList">
+					<div class="column">
+						<h3>Navigation</h3>
+						<ul>
+							<li><a href="http://alvarotrigo.com/pagePiling/examples/noAnchor.html">Without anchor links (same URL)</a></li>
+							<li><a href="http://alvarotrigo.com/pagePiling/examples/looping.html">Looping</a></li>
+						</ul>
+					</div>
+
+					<div class="column">
+						<h3>Design</h3>
+						<ul>
+							<li><a href="http://alvarotrigo.com/pagePiling/examples/backgrounds.html">Full backgrounds</a></li>
+							<li><a href="http://alvarotrigo.com/pagePiling/examples/videoBackground.html">Full background videos</a></li>
+						</ul>
+					</div>
+
+					<div class="column">
+						<h3>Callbacks</h3>
+						<ul>
+							<li><a href="http://alvarotrigo.com/pagePiling/examples/callbacks.html">Callbacks</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</li>
+			<li><a href="https://github.com/alvarotrigo/pagePiling.js#pagepilingjs">Documentation</a></li>
+			<li><a href="http://alvarotrigo.com/#contact-page">Contact</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

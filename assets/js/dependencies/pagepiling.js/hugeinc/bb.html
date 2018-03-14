@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>bbbb</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="hugeinc making-of, how to create hugeinc website,pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,hugeinc,make,of,making,create,how-to" />
+	<meta name="Resource-type" content="Document" />
+
+		<script type="text/javascript" src="iscroll.js"></script>
+
+
+	<style>
+	@CHARSET "ISO-8859-1";
+	/* Reset CSS
+	 * --------------------------------------- */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+	form,fieldset,input,textarea,p,blockquote,th,td {
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration:none;
+	}
+	table {
+		border-spacing: 0;
+	}
+	fieldset,img {
+		border: 0;
+	}
+	address,caption,cite,code,dfn,em,strong,th,var {
+		font-weight: normal;
+		font-style: normal;
+	}
+	strong{
+		font-weight: bold;
+	}
+	ol,ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+	caption,th {
+		text-align: left;
+
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: normal;
+		font-size: 100%;
+		margin:0;
+		padding:0;
+		color:#444;
+	}
+	q:before,q:after {
+		content:'';
+	}
+	abbr,acronym { border: 0;
+}
+
+#demo{
+	overflow-x:scroll;
+	width: 800px;
+	height: 800px;
+	background: #ccc;
+}
+.box{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background:red;
+	margin:20px;
+	padding-bottom: 10px;
+}
+#container{
+	width: 2000px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+	<div id="demo">
+		<div id="container">
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			<div class="box">aaa</div>
+			</div>
+	</div>
+
+
+		<script type="text/javascript">
+			var myScroll = new IScroll('#demo',  {scrollX: true, scrollY: false, mouseWheel: true, 		scrollbars: true});
+		</script>
+</body>
+</html>

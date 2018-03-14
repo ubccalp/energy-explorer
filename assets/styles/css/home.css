@@ -1,0 +1,113 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/* line 3, ../sass/home.scss */
+html, body {
+  padding-top: 25px;
+  height: 100%;
+  width: 100%;
+  background: url(../../img/homepage/bg_1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 14, ../sass/home.scss */
+.fg8 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 18, ../sass/home.scss */
+h2, h3, h4, h5, h6, p {
+  color: #e1e9d0 !important;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 0 0 40px;
+  text-align: left;
+}
+
+/* line 26, ../sass/home.scss */
+p {
+  font-size: 30px;
+}
+
+/* line 30, ../sass/home.scss */
+h1 {
+  color: #e1e9d0;
+  text-align: left;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+/* line 38, ../sass/home.scss */
+h1 a {
+  color: #000 !important;
+}
+/* line 40, ../sass/home.scss */
+h1 a:hover {
+  color: #515151 !important;
+  text-decoration: none;
+}
+
+/* line 49, ../sass/home.scss */
+.header-image-container {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 56, ../sass/home.scss */
+#container-fluid {
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 61, ../sass/home.scss */
+#bg-image {
+  width: 99%;
+  height: 80%;
+  background-repeat: no-repeat;
+}
+
+/* line 67, ../sass/home.scss */
+.header-text {
+  background: #ffffff;
+  position: absolute;
+  top: 10%;
+}
+@media screen and (max-width: 520px) {
+  /* line 67, ../sass/home.scss */
+  .header-text {
+    top: 5%;
+  }
+}
+/* line 75, ../sass/home.scss */
+.header-text h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin: 20px 0 20px 5px;
+}
+/* line 83, ../sass/home.scss */
+.header-text p {
+  line-height: 30px;
+  margin-left: 5px;
+}
+
+/* line 90, ../sass/home.scss */
+.sponsor-image img {
+  margin: 0 20px 20px 20px;
+  border: solid 1px #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}

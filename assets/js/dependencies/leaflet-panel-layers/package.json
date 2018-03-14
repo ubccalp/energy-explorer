@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "leaflet-panel-layers",
+        "scope": null,
+        "escapedName": "leaflet-panel-layers",
+        "name": "leaflet-panel-layers",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer"
+    ]
+  ],
+  "_from": "leaflet-panel-layers@latest",
+  "_id": "leaflet-panel-layers@0.9.5",
+  "_inCache": true,
+  "_location": "/leaflet-panel-layers",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/leaflet-panel-layers-0.9.5.tgz_1481214184432_0.4540252883452922"
+  },
+  "_npmUser": {
+    "name": "stefcud",
+    "email": "stefano.cudini@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "leaflet-panel-layers",
+    "scope": null,
+    "escapedName": "leaflet-panel-layers",
+    "name": "leaflet-panel-layers",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet-panel-layers/-/leaflet-panel-layers-0.9.5.tgz",
+  "_shasum": "638e7816b248fdfca2d8d433b6d02eb66ebb7dbd",
+  "_shrinkwrap": null,
+  "_spec": "leaflet-panel-layers",
+  "_where": "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer",
+  "author": {
+    "name": "Stefano Cudini",
+    "email": "stefano.cudini@gmail.com",
+    "url": "http://labs.easyblog.it/"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanocudini/leaflet-panel-layers/issues"
+  },
+  "dependencies": {
+    "leaflet": "~0.7.7"
+  },
+  "description": "Leaflet Control Layers extended for group of layers and icons legend",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "638e7816b248fdfca2d8d433b6d02eb66ebb7dbd",
+    "tarball": "https://registry.npmjs.org/leaflet-panel-layers/-/leaflet-panel-layers-0.9.5.tgz"
+  },
+  "gitHead": "e7268d4a07b527915489a602352232bfa56e5b20",
+  "homepage": "http://labs.easyblog.it/maps/leaflet-panel-layers/",
+  "keywords": [
+    "gis",
+    "map",
+    "panel",
+    "leaflet"
+  ],
+  "license": "MIT",
+  "main": "dist/leaflet-panel-layers.src.js",
+  "maintainers": [
+    {
+      "name": "stefcud",
+      "email": "stefano.cudini@gmail.com"
+    }
+  ],
+  "name": "leaflet-panel-layers",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stefanocudini/leaflet-panel-layers.git"
+  },
+  "scripts": {},
+  "version": "0.9.5"
+}

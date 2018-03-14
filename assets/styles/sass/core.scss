@@ -1,0 +1,78 @@
+@import "variables";
+/*
+	.fitgrd - responsive grid system
+	open http://www.fitgrd.com for more information
+	download at https://github.com/jayalai/fitgrd
+	Licensed under GPL and MIT.
+*/
+/*
+body{
+	font: 300 1em/1.5em 'Helvetica', Arial, sans-serif;
+}
+*/
+
+
+/* just for demonstration - remove this */
+
+header{
+	background: $white;
+	margin: 0;
+	padding: 0;
+}
+.slide{
+	padding: 2em 0;
+}
+.first-content{
+	background: $white;
+}
+.second-content{
+	background: $white;
+	padding: 5em 0;
+}
+.third-content{
+	padding: 4em 0;
+}
+.fourth-content{
+	background: $white;
+}
+footer{
+	background: $white;
+}
+.fg1,.fg2,.fg3,.fg4,.fg5,.fg6,.fg7,.fg8,.fg9,.fg10,.fg11,.fg12 {
+	padding: 2em 0;
+	background: $white;
+	font-size: .9em;
+	margin-bottom: 2%;
+	font-weight: bold;
+	text-align: center;
+	color: $black;
+}
+.fg-no-gutter > [class*="fg"] {
+	height: auto;
+	background: none;
+}
+.headline{
+	font-size: 2em;
+	background: none;
+	color: #333;
+	padding: 1em 0;
+}
+
+/* ======================================= 
+   media queries
+   ======================================= */
+
+
+/* tablet size */   
+@media screen and (max-width: 48em ) {
+	
+	/* css */
+	
+}   
+    
+/* smartphone size */
+@media screen and (max-width: 36.5em ) {
+	
+	/* css */
+
+}

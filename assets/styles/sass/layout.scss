@@ -1,0 +1,25 @@
+@import "variables";
+@import "sidebar";
+
+/** General Styles **/
+
+html,body {
+    margin:0; 
+    padding:0; 
+    height:100%;
+    width:100%;
+    background: $white;
+    font-family: 'Ebrima' !important;
+}
+
+
+#page-content-wrapper {
+    padding: 0px;
+}
+
+.toggle-menu-btn {
+    display: none;
+    @media screen and (max-width: 760px) {
+        display: inline-block;
+    }
+}

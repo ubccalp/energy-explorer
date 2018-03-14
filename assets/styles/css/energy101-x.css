@@ -1,0 +1,238 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/* line 3, ../sass/energy101-x.scss */
+html, body {
+  margin: 0;
+  padding-top: 25px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+/* line 13, ../sass/energy101-x.scss */
+.page-container {
+  margin: 20px 5% 30px 10%;
+  margin-top: 0px;
+}
+@media screen and (max-width: 100%) {
+  /* line 13, ../sass/energy101-x.scss */
+  .page-container {
+    margin: 35px 7%;
+  }
+}
+
+/* line 21, ../sass/energy101-x.scss */
+.fg1, .fg2, .fg3, .fg4, .fg5, .fg6, .fg7, .fg8, .fg9, .fg10, .fg11, .fg12 {
+  margin: 5px !important;
+  padding: 5px !important;
+}
+
+/* line 26, ../sass/energy101-x.scss */
+h2, h3, h4, h5, h6, p {
+  color: #000 !important;
+  background: #ffffff !important;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin: 1px !important;
+  padding: 1px !important;
+}
+
+/* line 37, ../sass/energy101-x.scss */
+h1 {
+  color: #f04941;
+  background: #ffffff;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+/* line 46, ../sass/energy101-x.scss */
+h1 a {
+  color: #f04941 !important;
+}
+/* line 48, ../sass/energy101-x.scss */
+h1 a:hover {
+  color: #515151 !important;
+  text-decoration: none;
+}
+
+/* line 56, ../sass/energy101-x.scss */
+h2 {
+  font-size: 20px;
+}
+
+/* line 60, ../sass/energy101-x.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 64, ../sass/energy101-x.scss */
+h4 {
+  font-size: 16px;
+}
+
+/* line 68, ../sass/energy101-x.scss */
+p {
+  display: block;
+  padding: 10% 10px;
+  color: #4f4f4f;
+  font-size: 16px;
+}
+@media screen and (max-width: 550px) {
+  /* line 68, ../sass/energy101-x.scss */
+  p {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+/* line 81, ../sass/energy101-x.scss */
+#pp-nav.custom .pp-tooltip {
+  color: #AAA;
+}
+
+/* line 84, ../sass/energy101-x.scss */
+#markup {
+  display: block;
+  width: 450px;
+  margin: 16px auto;
+  text-align: left;
+}
+
+/* Menu
+ * --------------------------------------- */
+/* line 93, ../sass/energy101-x.scss */
+#menu li {
+  padding-top: 2px;
+  font-size: 16px;
+  height: 100%;
+  display: inline-block;
+  margin: 2px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 105, ../sass/energy101-x.scss */
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* line 110, ../sass/energy101-x.scss */
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 114, ../sass/energy101-x.scss */
+#menu li.active a:hover {
+  color: #000;
+}
+
+/* line 117, ../sass/energy101-x.scss */
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 120, ../sass/energy101-x.scss */
+#menu li a,
+#menu li.active a {
+  padding: 4px 8px;
+  display: block;
+}
+
+/* line 125, ../sass/energy101-x.scss */
+#menu li.active a {
+  color: #fff;
+}
+
+/* line 128, ../sass/energy101-x.scss */
+#menu {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  height: 30px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 141, ../sass/energy101-x.scss */
+.image-container {
+  position: relative;
+  width: 100%;
+}
+/* line 145, ../sass/energy101-x.scss */
+.image-container a:hover {
+  color: #515151 !important;
+  text-decoration: none !important;
+}
+
+/* line 153, ../sass/energy101-x.scss */
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 164, ../sass/energy101-x.scss */
+.middle {
+  transition: .5s ease;
+  opacity: 0.5;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+}
+
+/* line 177, ../sass/energy101-x.scss */
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+/* line 181, ../sass/energy101-x.scss */
+.image-container:hover .middle {
+  opacity: 1;
+}
+
+/* line 185, ../sass/energy101-x.scss */
+.caption {
+  background-color: #f04941;
+  color: white;
+  font-size: 12px;
+  padding: 8px 28px;
+}
+
+/* line 193, ../sass/energy101-x.scss */
+.spinner {
+  width: 230px;
+  height: 230px;
+  border: 10px solid #f04941 !important;
+  border-right-color: #e1e9d0 !important;
+  border-bottom-color: #e1e9d0 !important;
+}

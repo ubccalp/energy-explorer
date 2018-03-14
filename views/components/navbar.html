@@ -1,29 +1,97 @@
-<!-- Sidebar -->
-<div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a href="/">
-            	<svg id="logo"><desc>Created with Snap</desc><defs></defs><rect x="37.5" y="18.75" width="18.75" height="18.75" fill="#c5ccb8" stroke="#c5ccb8" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="56.25" y="18.75" width="18.75" height="18.75" fill="#e1e9d1" stroke="#e1e9d1" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="37.5" y="37.5" width="18.75" height="18.75" fill="#e1e9d1" stroke="#e1e9d1" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="56.25" y="37.5" width="18.75" height="18.75" fill="#eff5dc" stroke="#eff5dc" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="0" y="0" width="18.75" height="18.75" fill="#000000" stroke="#000000" style="stroke-width: 1; fill-opacity: 0; stroke-opacity: 0;"></rect><rect x="18.75" y="0" width="18.75" height="18.75" fill="#d25627" stroke="#d25627" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="37.5" y="0" width="18.75" height="18.75" fill="#f04941" stroke="#f04941" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="56.25" y="0" width="18.75" height="18.75" fill="#ca3732" stroke="#ca3732" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="0" y="18.75" width="18.75" height="18.75" fill="#14a085" stroke="#14a085" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="18.75" y="18.75" width="18.75" height="18.75" fill="#e57e25" stroke="#e57e25" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="0" y="37.5" width="18.75" height="18.75" fill="#26b99a" stroke="#26b99a" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="18.75" y="37.5" width="18.75" height="18.75" fill="#3b97d3" stroke="#3b97d3" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="0" y="56.25" width="18.75" height="18.75" fill="#000000" stroke="#000000" style="stroke-width: 1; fill-opacity: 0; stroke-opacity: 0;"></rect><rect x="18.75" y="56.25" width="18.75" height="18.75" fill="#2980ba" stroke="#2980ba" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="37.5" y="56.25" width="18.75" height="18.75" fill="#9778b5" stroke="#9778b5" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect><rect x="56.25" y="56.25" width="18.75" height="18.75" fill="#894b9d" stroke="#894b9d" style="stroke-width: 1; fill-opacity: 1; stroke-opacity: 1;"></rect></svg>
+<script src="/js/navbar.js">
+
+</script>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#index">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/img/cee_logo.ico" />
             </a>
-        </li>
-        <li>
-            <a href="/community-energy-explained">Community Energy Explained</a>
-        </li>
-        <li>
-            <a href="/renewable-energy-supply">Renewable Energy Supply</a>
-        </li>
-        <li>
-            <a href="/energy-demand-and-efficiency">Energy Demand and Efficiency</a>
-        </li>
-        <li>
-            <a href="/case-studies-and-resources">Case Studies and Resources</a>
-        </li>
-        <li>
-            <a href="/energy-maps">Energy Maps</a>
-        </li>
-        <li>
-            <a href="/about">About</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="index">
+            <ul class="nav navbar-nav">
+                <li id="energy101">
+                    <div class="dropdown">
+                        <a href="/energy101">
+                            <button class="dropbtn">Energy 101</button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/energy101/energy101-2">5 Reasons to Care</a>
+                            <a href="/energy101/energy101-3">How Do We Use Energy?</a>
+                            <a href="/energy101/energy101-4">How Do We Get Energy?</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="topics">
+                    <div class="dropdown">
+                        <a href="/topics">
+                            <button class="dropbtn">Hot Topics</button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/topics/topic1">Large Scale Redevelopment</a>
+                            <a href="/topics/topic2">Community-Wide Retrofit</a>
+                            <a href="/topics/topic3">Renewable Energy Policy</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="maps">
+                    <div class="dropdown">
+                        <a href="/maps">
+                            <button class="dropbtn">Maps</button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/maps/map-methods">Map Methodologies</a>
+                            <a href="/maps/demand-maps">Where Is Energy Used?</a>
+                            <a href="/maps/energy-maps">Where Can We Get Energy?</a>
+                            <a href="/maps/geoexchange">Geoexchange</a>
+                            <a href="/maps/sewage-heat">Sewage Heat Recovery</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="scenarios">
+                    <div class="dropdown">
+                        <a href="/scenarios">
+                            <button class="dropbtn">Scenarios</button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/scenarios/scenario1">Redeveloping a Mall</a>
+                            <a href="/scenarios/scenario2">Re-imagining Suburbia</a>
+                            <a href="/scenarios/scenario3">Retrofitting Suburbia</a>
+                            <a href="/scenarios/scenario4">Climate and Community</a>
+                            <a href="/scenarios/scenario5">Revelstoke Workshops</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="resources">
+                    <div class="dropdown">
+                        <a href="/resources">
+                            <button class="dropbtn">Tools and Resources</button>
+                        </a>
+                        <div class="dropdown-content">
+                        </div>
+                    </div>
+                </li>
+                <li id="about">
+                    <div class="dropdown">
+                        <a href="/about">
+                            <button class="dropbtn">About Us</button>
+                        </a>
+                        <div class="dropdown-content">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

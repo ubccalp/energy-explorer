@@ -1,0 +1,846 @@
+/********************
+ * HTML CSS
+ */
+/* line 7, ../sass/nv.d3.scss */
+.chartWrap {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/********************
+  Box shadow and border radius styling
+*/
+/* line 16, ../sass/nv.d3.scss */
+.nvtooltip.with-3d-shadow, .with-3d-shadow .nvtooltip {
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/********************
+ * TOOLTIP CSS
+ */
+/* line 30, ../sass/nv.d3.scss */
+.nvtooltip {
+  position: absolute;
+  background-color: white;
+  padding: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*Give tooltips that old fade in transition by
+    putting a "with-transitions" class on the container div.
+*/
+/* line 55, ../sass/nv.d3.scss */
+.nvtooltip.with-transitions, .with-transitions .nvtooltip {
+  transition: opacity 250ms linear;
+  -moz-transition: opacity 250ms linear;
+  -webkit-transition: opacity 250ms linear;
+  transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+}
+
+/* line 65, ../sass/nv.d3.scss */
+.nvtooltip.x-nvtooltip,
+.nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+
+/* line 70, ../sass/nv.d3.scss */
+.nvtooltip h3 {
+  margin: 0;
+  padding: 4px 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: rgba(247, 247, 247, 0.75);
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 85, ../sass/nv.d3.scss */
+.nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+}
+
+/* line 91, ../sass/nv.d3.scss */
+.nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+
+/* line 96, ../sass/nv.d3.scss */
+.nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+
+/* line 102, ../sass/nv.d3.scss */
+.nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+
+/* line 107, ../sass/nv.d3.scss */
+.nvtooltip table td.key {
+  font-weight: normal;
+}
+
+/* line 110, ../sass/nv.d3.scss */
+.nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 115, ../sass/nv.d3.scss */
+.nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+/* line 123, ../sass/nv.d3.scss */
+.nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+
+/* line 129, ../sass/nv.d3.scss */
+.nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+
+/* line 135, ../sass/nv.d3.scss */
+.nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+
+/********************
+ * SVG CSS
+ */
+/* line 146, ../sass/nv.d3.scss */
+svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Trying to get SVG to act like a greedy block in all browsers */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 160, ../sass/nv.d3.scss */
+svg text {
+  font: normal 12px Arial;
+}
+
+/* line 164, ../sass/nv.d3.scss */
+svg .title {
+  font: bold 14px Arial;
+}
+
+/* line 168, ../sass/nv.d3.scss */
+.nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+  /*
+  pointer-events: none;
+  */
+}
+
+/* line 176, ../sass/nv.d3.scss */
+.nvd3.nv-noData {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/**********
+*  Brush
+*/
+/* line 186, ../sass/nv.d3.scss */
+.nv-brush .extent {
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+/**********
+*  Legend
+*/
+/* line 197, ../sass/nv.d3.scss */
+.nvd3 .nv-legend .nv-series {
+  cursor: pointer;
+}
+
+/* line 201, ../sass/nv.d3.scss */
+.nvd3 .nv-legend .disabled circle {
+  fill-opacity: 0;
+}
+
+/**********
+*  Axes
+*/
+/* line 210, ../sass/nv.d3.scss */
+.nvd3 .nv-axis {
+  pointer-events: none;
+}
+
+/* line 214, ../sass/nv.d3.scss */
+.nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .75;
+  shape-rendering: crispEdges;
+}
+
+/* line 221, ../sass/nv.d3.scss */
+.nvd3 .nv-axis path.domain {
+  stroke-opacity: .75;
+}
+
+/* line 225, ../sass/nv.d3.scss */
+.nvd3 .nv-axis.nv-x path.domain {
+  stroke-opacity: 0;
+}
+
+/* line 229, ../sass/nv.d3.scss */
+.nvd3 .nv-axis line {
+  fill: none;
+  stroke: #e5e5e5;
+  shape-rendering: crispEdges;
+}
+
+/* line 235, ../sass/nv.d3.scss */
+.nvd3 .nv-axis .zero line,
+.nvd3 .nv-axis line.zero {
+  stroke-opacity: .75;
+}
+
+/* line 240, ../sass/nv.d3.scss */
+.nvd3 .nv-axis .nv-axisMaxMin text {
+  font-weight: bold;
+}
+
+/* line 244, ../sass/nv.d3.scss */
+.nvd3 .x .nv-axis .nv-axisMaxMin text,
+.nvd3 .x2 .nv-axis .nv-axisMaxMin text,
+.nvd3 .x3 .nv-axis .nv-axisMaxMin text {
+  text-anchor: middle;
+}
+
+/**********
+*  Brush
+*/
+/* line 256, ../sass/nv.d3.scss */
+.nv-brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+
+/**********
+*  Bars
+*/
+/* line 267, ../sass/nv.d3.scss */
+.nvd3 .nv-bars .negative rect {
+  zfill: brown;
+}
+
+/* line 271, ../sass/nv.d3.scss */
+.nvd3 .nv-bars rect {
+  zfill: steelblue;
+  fill-opacity: .75;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+/* line 280, ../sass/nv.d3.scss */
+.nvd3 .nv-bars rect.hover {
+  fill-opacity: 1;
+}
+
+/* line 284, ../sass/nv.d3.scss */
+.nvd3 .nv-bars .hover rect {
+  fill: lightblue;
+}
+
+/* line 288, ../sass/nv.d3.scss */
+.nvd3 .nv-bars text {
+  fill: transparent;
+}
+
+/* line 292, ../sass/nv.d3.scss */
+.nvd3 .nv-bars .hover text {
+  fill: black;
+}
+
+/**********
+*  Bars
+*/
+/* line 301, ../sass/nv.d3.scss */
+.nvd3 .nv-multibar .nv-groups rect,
+.nvd3 .nv-multibarHorizontal .nv-groups rect,
+.nvd3 .nv-discretebar .nv-groups rect {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+/* line 311, ../sass/nv.d3.scss */
+.nvd3 .nv-multibar .nv-groups rect:hover,
+.nvd3 .nv-multibarHorizontal .nv-groups rect:hover,
+.nvd3 .nv-discretebar .nv-groups rect:hover {
+  fill-opacity: 1;
+}
+
+/* line 317, ../sass/nv.d3.scss */
+.nvd3 .nv-discretebar .nv-groups text,
+.nvd3 .nv-multibarHorizontal .nv-groups text {
+  font-weight: bold;
+  fill: black;
+  stroke: transparent;
+}
+
+/***********
+*  Pie Chart
+*/
+/* line 328, ../sass/nv.d3.scss */
+.nvd3.nv-pie path {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+
+/* line 336, ../sass/nv.d3.scss */
+.nvd3.nv-pie .nv-slice text {
+  stroke: #000;
+  stroke-width: 0;
+}
+
+/* line 341, ../sass/nv.d3.scss */
+.nvd3.nv-pie path {
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+}
+
+/* line 347, ../sass/nv.d3.scss */
+.nvd3.nv-pie .hover path {
+  fill-opacity: .7;
+}
+
+/* line 350, ../sass/nv.d3.scss */
+.nvd3.nv-pie .nv-label {
+  pointer-events: none;
+}
+
+/* line 353, ../sass/nv.d3.scss */
+.nvd3.nv-pie .nv-label rect {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+/**********
+* Lines
+*/
+/* line 362, ../sass/nv.d3.scss */
+.nvd3 .nv-groups path.nv-line {
+  fill: none;
+  stroke-width: 1.5px;
+  /*
+  stroke-linecap: round;
+  shape-rendering: geometricPrecision;
+
+  transition: stroke-width 250ms linear;
+  -moz-transition: stroke-width 250ms linear;
+  -webkit-transition: stroke-width 250ms linear;
+
+  transition-delay: 250ms
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  */
+}
+
+/* line 379, ../sass/nv.d3.scss */
+.nvd3 .nv-groups path.nv-line.nv-thin-line {
+  stroke-width: 1px;
+}
+
+/* line 384, ../sass/nv.d3.scss */
+.nvd3 .nv-groups path.nv-area {
+  stroke: none;
+  /*
+  stroke-linecap: round;
+  shape-rendering: geometricPrecision;
+
+  stroke-width: 2.5px;
+  transition: stroke-width 250ms linear;
+  -moz-transition: stroke-width 250ms linear;
+  -webkit-transition: stroke-width 250ms linear;
+
+  transition-delay: 250ms
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  */
+}
+
+/* line 401, ../sass/nv.d3.scss */
+.nvd3 .nv-line.hover path {
+  stroke-width: 6px;
+}
+
+/*
+.nvd3.scatter .groups .point {
+  fill-opacity: 0.1;
+  stroke-opacity: 0.1;
+}
+  */
+/* line 412, ../sass/nv.d3.scss */
+.nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+/* line 417, ../sass/nv.d3.scss */
+.nvd3.nv-scatter.nv-single-point .nv-groups .nv-point {
+  fill-opacity: .5 !important;
+  stroke-opacity: .5 !important;
+}
+
+/* line 423, ../sass/nv.d3.scss */
+.with-transitions .nvd3 .nv-groups .nv-point {
+  transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+
+/* line 430, ../sass/nv.d3.scss */
+.nvd3.nv-scatter .nv-groups .nv-point.hover,
+.nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 7px;
+  fill-opacity: .95 !important;
+  stroke-opacity: .95 !important;
+}
+
+/* line 438, ../sass/nv.d3.scss */
+.nvd3 .nv-point-paths path {
+  stroke: #aaa;
+  stroke-opacity: 0;
+  fill: #eee;
+  fill-opacity: 0;
+}
+
+/* line 447, ../sass/nv.d3.scss */
+.nvd3 .nv-indexLine {
+  cursor: ew-resize;
+}
+
+/**********
+* Distribution
+*/
+/* line 456, ../sass/nv.d3.scss */
+.nvd3 .nv-distribution {
+  pointer-events: none;
+}
+
+/**********
+*  Scatter
+*/
+/* **Attempting to remove this for useVoronoi(false), need to see if it's required anywhere
+.nvd3 .nv-groups .nv-point {
+  pointer-events: none;
+}
+*/
+/* line 472, ../sass/nv.d3.scss */
+.nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 20px;
+  stroke-opacity: .5;
+}
+
+/* line 477, ../sass/nv.d3.scss */
+.nvd3 .nv-scatter .nv-point.hover {
+  fill-opacity: 1;
+}
+
+/*
+.nv-group.hover .nv-point {
+  fill-opacity: 1;
+}
+*/
+/**********
+*  Stacked Area
+*/
+/* line 492, ../sass/nv.d3.scss */
+.nvd3.nv-stackedarea path.nv-area {
+  fill-opacity: .7;
+  /*
+  stroke-opacity: .65;
+  fill-opacity: 1;
+  */
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  /*
+  transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  */
+}
+
+/* line 512, ../sass/nv.d3.scss */
+.nvd3.nv-stackedarea path.nv-area.hover {
+  fill-opacity: .9;
+  /*
+  stroke-opacity: .85;
+  */
+}
+
+/*
+.d3stackedarea .groups path {
+  stroke-opacity: 0;
+}
+  */
+/* line 526, ../sass/nv.d3.scss */
+.nvd3.nv-stackedarea .nv-groups .nv-point {
+  stroke-opacity: 0;
+  fill-opacity: 0;
+}
+
+/*
+.nvd3.nv-stackedarea .nv-groups .nv-point.hover {
+  stroke-width: 20px;
+  stroke-opacity: .75;
+  fill-opacity: 1;
+}*/
+/**********
+*  Line Plus Bar
+*/
+/* line 544, ../sass/nv.d3.scss */
+.nvd3.nv-linePlusBar .nv-bar rect {
+  fill-opacity: .75;
+}
+
+/* line 548, ../sass/nv.d3.scss */
+.nvd3.nv-linePlusBar .nv-bar rect:hover {
+  fill-opacity: 1;
+}
+
+/**********
+*  Bullet
+*/
+/* line 557, ../sass/nv.d3.scss */
+.nvd3.nv-bullet {
+  font: 10px sans-serif;
+}
+
+/* line 558, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-measure {
+  fill-opacity: .8;
+}
+
+/* line 559, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-measure:hover {
+  fill-opacity: 1;
+}
+
+/* line 560, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-marker {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+/* line 561, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-markerTriangle {
+  stroke: #000;
+  fill: #fff;
+  stroke-width: 1.5px;
+}
+
+/* line 562, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-tick line {
+  stroke: #666;
+  stroke-width: .5px;
+}
+
+/* line 563, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-range.nv-s0 {
+  fill: #eee;
+}
+
+/* line 564, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-range.nv-s1 {
+  fill: #ddd;
+}
+
+/* line 565, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-range.nv-s2 {
+  fill: #ccc;
+}
+
+/* line 566, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 567, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-subtitle {
+  fill: #999;
+}
+
+/* line 570, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-range {
+  fill: #bababa;
+  fill-opacity: .4;
+}
+
+/* line 574, ../sass/nv.d3.scss */
+.nvd3.nv-bullet .nv-range:hover {
+  fill-opacity: .7;
+}
+
+/**********
+* Sparkline
+*/
+/* line 584, ../sass/nv.d3.scss */
+.nvd3.nv-sparkline path {
+  fill: none;
+}
+
+/* line 588, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus g.nv-hoverValue {
+  pointer-events: none;
+}
+
+/* line 592, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-hoverValue line {
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+/* line 597, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus,
+.nvd3.nv-sparklineplus g {
+  pointer-events: all;
+}
+
+/* line 602, ../sass/nv.d3.scss */
+.nvd3 .nv-hoverArea {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+/* line 607, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-xValue,
+.nvd3.nv-sparklineplus .nv-yValue {
+  /*
+  stroke: #666;
+  */
+  stroke-width: 0;
+  font-size: .9em;
+  font-weight: normal;
+}
+
+/* line 617, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-yValue {
+  stroke: #f66;
+}
+
+/* line 621, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-maxValue {
+  stroke: #2ca02c;
+  fill: #2ca02c;
+}
+
+/* line 626, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-minValue {
+  stroke: #d62728;
+  fill: #d62728;
+}
+
+/* line 631, ../sass/nv.d3.scss */
+.nvd3.nv-sparklineplus .nv-currentValue {
+  /*
+  stroke: #444;
+  fill: #000;
+  */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/**********
+* historical stock
+*/
+/* line 644, ../sass/nv.d3.scss */
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick {
+  stroke-width: 2px;
+}
+
+/* line 648, ../sass/nv.d3.scss */
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.hover {
+  stroke-width: 4px;
+}
+
+/* line 652, ../sass/nv.d3.scss */
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.positive {
+  stroke: #2ca02c;
+}
+
+/* line 656, ../sass/nv.d3.scss */
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.negative {
+  stroke: #d62728;
+}
+
+/* line 660, ../sass/nv.d3.scss */
+.nvd3.nv-historicalStockChart .nv-axis .nv-axislabel {
+  font-weight: bold;
+}
+
+/* line 664, ../sass/nv.d3.scss */
+.nvd3.nv-historicalStockChart .nv-dragTarget {
+  fill-opacity: 0;
+  stroke: none;
+  cursor: move;
+}
+
+/* line 670, ../sass/nv.d3.scss */
+.nvd3 .nv-brush .extent {
+  /*
+  cursor: ew-resize !important;
+  */
+  fill-opacity: 0 !important;
+}
+
+/* line 677, ../sass/nv.d3.scss */
+.nvd3 .nv-brushBackground rect {
+  stroke: #000;
+  stroke-width: .4;
+  fill: #fff;
+  fill-opacity: .7;
+}
+
+/**********
+* Indented Tree
+*/
+/**
+ * TODO: the following 3 selectors are based on classes used in the example.  I should either make them standard and leave them here, or move to a CSS file not included in the library
+ */
+/* line 694, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree .name {
+  margin-left: 5px;
+}
+
+/* line 698, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree .clickable {
+  color: #08C;
+  cursor: pointer;
+}
+
+/* line 703, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree span.clickable:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+/* line 709, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree .nv-childrenCount {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 714, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree .nv-treeicon {
+  cursor: pointer;
+  /*
+  cursor: n-resize;
+  */
+}
+
+/* line 721, ../sass/nv.d3.scss */
+.nvd3.nv-indentedtree .nv-treeicon.nv-folded {
+  cursor: pointer;
+  /*
+  cursor: s-resize;
+  */
+}
+
+/**********
+* Parallel Coordinates
+*/
+/* line 732, ../sass/nv.d3.scss */
+.nvd3 .background path {
+  fill: none;
+  stroke: #ccc;
+  stroke-opacity: .4;
+  shape-rendering: crispEdges;
+}
+
+/* line 739, ../sass/nv.d3.scss */
+.nvd3 .foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-opacity: .7;
+}
+
+/* line 745, ../sass/nv.d3.scss */
+.nvd3 .brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+/* line 751, ../sass/nv.d3.scss */
+.nvd3 .axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* line 757, ../sass/nv.d3.scss */
+.nvd3 .axis text {
+  text-shadow: 0 1px 0 #fff;
+}
+
+/****
+Interactive Layer
+*/
+/* line 764, ../sass/nv.d3.scss */
+.nvd3 .nv-interactiveGuideLine {
+  pointer-events: none;
+}
+
+/* line 767, ../sass/nv.d3.scss */
+.nvd3 line.nv-guideline {
+  stroke: #ccc;
+}

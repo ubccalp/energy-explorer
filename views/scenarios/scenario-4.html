@@ -1,0 +1,38 @@
+{% extends '../layout.html' %} {% block title %}{% parent %} {% endblock %} {% block head %}
+{% parent %}
+<link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css">
+<link rel="stylesheet" href="../styles/css/scenario.css">
+<script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script>
+<script type="text/javascript" src="../js/scenario.js"></script>
+{% endblock head %} {% block content %} {% parent %}
+
+<ul id="menu">
+  <!-- <li class="active"><a href="/">Home</a></li> -->
+  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Introduction</a></li>
+  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Suburban Single Family Neighbourhood</a></li>
+  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Neighbourhood Centre</a></li>
+  <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Downtown Core</a></li>
+</ul>
+
+
+<div id="pagepiling">
+
+  <div class="section" id="section1">
+    {% include 'scenario-4.1.html' %}
+  </div>
+
+  <div class="section" id="section2">
+    {% include 'scenario-4.2.html' %}
+  </div>
+
+  <div class="section" id="section3">
+    {% include 'scenario-4.3.html' %}
+  </div>
+
+  <div class="section" id="section4">
+    {% include 'scenario-4.4.html' %}
+  </div>
+
+</div>
+
+{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

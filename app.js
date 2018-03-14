@@ -14,13 +14,27 @@ app.set('views', __dirname + '/views');
 
 // Express middleware to serve static files
 app.use(express.static(__dirname + '/assets'));
+//app.use(express.static(path.join(__dirname, '/')))
 
 // Import the routes file
 require('./routes/main.js')(express, app);
-require('./routes/caseStudies.js')(express, app);
+require('./routes/scenarios.js')(express, app);
+require('./routes/topics.js')(express, app);
+require('./routes/maps.js')(express, app);
+require('./routes/energy101.js')(express, app);
 
 // Listen to the port
 app.listen(port, function() {
     console.log('Node app is running on port',
     port);
 });
+
+/*
+var fs = require('fs'),
+https = require('https');
+
+https.createServer({
+  key: fs.readFileSync('./ssl/privatekey.pem'),
+  cert: fs.readFileSync('./ssl/certificate.pem')
+}, app).listen(55555);
+*/

@@ -1,0 +1,154 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/* line 3, ../sass/sewageheat.scss */
+html, body {
+  margin: 0;
+  padding-top: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, ../sass/sewageheat.scss */
+.page-container {
+  margin: 20px 5% 30px 5%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 950px) {
+  /* line 12, ../sass/sewageheat.scss */
+  .page-container {
+    margin: 35px 7%;
+  }
+}
+
+/* line 20, ../sass/sewageheat.scss */
+.row {
+  border-bottom: 1px solid #26b99a;
+}
+
+/* line 24, ../sass/sewageheat.scss */
+h2, h3, h4, h5, h6, p {
+  color: #000 !important;
+  background: #ffffff !important;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  padding: 0 0 40px;
+  text-align: left;
+}
+
+/* line 33, ../sass/sewageheat.scss */
+h1 {
+  color: #26b99a;
+  background: #ffffff;
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+/* line 42, ../sass/sewageheat.scss */
+h1 a {
+  color: #26b99a !important;
+}
+/* line 44, ../sass/sewageheat.scss */
+h1 a:hover {
+  color: #515151 !important;
+  text-decoration: none;
+}
+
+/* line 52, ../sass/sewageheat.scss */
+.page-text {
+  opacity: 0;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 64, ../sass/sewageheat.scss */
+p {
+  display: block;
+  padding: 20% 50px;
+  color: #4f4f4f;
+  font-size: 18px;
+}
+@media screen and (max-width: 550px) {
+  /* line 64, ../sass/sewageheat.scss */
+  p {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+/* line 75, ../sass/sewageheat.scss */
+h2 {
+  font-size: 25px;
+  padding-top: 5px;
+  padding: 0;
+  color: #4f4f4f;
+  text-align: left;
+}
+
+/* line 84, ../sass/sewageheat.scss */
+.image-container {
+  position: relative;
+  width: 100%;
+}
+/* line 88, ../sass/sewageheat.scss */
+.image-container a:hover {
+  color: #515151 !important;
+  text-decoration: none !important;
+}
+
+/* line 96, ../sass/sewageheat.scss */
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 106, ../sass/sewageheat.scss */
+.middle {
+  transition: .5s ease;
+  opacity: 0.5;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+}
+
+/* line 119, ../sass/sewageheat.scss */
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+/* line 123, ../sass/sewageheat.scss */
+.image-container:hover .middle {
+  opacity: 1;
+}
+
+/* line 127, ../sass/sewageheat.scss */
+.caption {
+  background-color: #26b99a;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+}

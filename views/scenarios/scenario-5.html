@@ -1,0 +1,34 @@
+{% extends '../layout.html' %} {% block title %}{% parent %} {% endblock %} {% block head %}
+{% parent %}
+<link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css">
+<link rel="stylesheet" href="../styles/css/scenario.css">
+<script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script>
+<script type="text/javascript" src="../js/scenario.js"></script>
+{% endblock head %} {% block content %} {% parent %}
+
+<ul id="menu">
+  <!-- <li class="active"><a href="/">Home</a></li> -->
+  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Introduction</a></li>
+  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">The interactive workshop process</a></li>
+  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Examples of citizen-developed scenarios</a></li>
+</ul>
+
+
+<div id="pagepiling">
+
+  <div class="section" id="section1">
+    {% include 'scenario-5.1.html' %}
+  </div>
+
+  <div class="section" id="section2">
+    {% include 'scenario-5.2.html' %}
+  </div>
+
+  <div class="section" id="section3">
+    {% include 'scenario-5.3.html' %}
+  </div>
+
+
+</div>
+
+{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

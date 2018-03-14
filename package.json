@@ -1,24 +1,27 @@
 {
-  "name": "cee_website",
-  "version": "1.0.0",
-  "description": "Energy Explorer website by UBC CALP Department",
-  "main": "app.js",
+  "name": "calp-cee",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "dependencies": {
+    "consolidate": "^0.14.1",
+    "express": "*",
+    "swig": "*"
+  },
   "scripts": {
+    "debug": "node debug app.js",
     "start": "node app.js"
   },
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://ubccalp@bitbucket.org/ubccalp/energy-explorer.git"
   },
-  "author": "utkarsh saxena",
+  "author": "Dawood Al-Masslawi",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ubccalp/energy-explorer#readme",
-  "dependencies": {
-    "consolidate": "^0.14.1",
-    "express": "^4.13.4",
-    "swig": "^1.4.2"
-  },
   "devDependencies": {
     "nodemon": "^1.10.0"
-  }
+  },
+  "homepage": "https://bitbucket.org/ubccalp/energy-explorer#readme"
 }

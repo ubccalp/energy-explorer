@@ -9,17 +9,19 @@
         <title>{% block title %}Community Energy Explorer{% endblock %}</title>
 
         {% block head %}
-        <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css' />
-        <!-- End Google Fonts -->
-        <link rel="icon" type="image/x-icon" href="/images/cee_logo.ico">
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="/styles/cee/stylesheets/vendor_sidebar.css">
-        <link rel="stylesheet" href="/styles/cee/stylesheets/myStyles.css">
+        <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/styles/css/fitgrd.pack.css">
+        <link rel="stylesheet" href="/styles/css/core.css">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="/js/dependencies/jquery-1.12.4.min.js"></script>
+        <script src="/js/dependencies/bootstrap.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/layout.js" defer></script>
+        
+        <link rel="icon" type="image/x-icon" href="/img/cee_logo.ico">        
+        <link rel="stylesheet" href="/styles/css/layout.css">
         {% endblock head %}
     </head>
 
@@ -27,19 +29,14 @@
         <div id="wrapper">
             {% include "./components/navbar.html" %}
             <div id="page-content-wrapper">
-                <a href="#menu-toggle" class="btn btn-xs toggle-menu-btn" id="menu-toggle" data-toggle="tooltip" data-placement="bottom" title="Toggle Menu">
-                    <img src="/images/sidebar/hamburger-icon-1.svg" width="25">
-                </a>
+                
             {% block content %}
             {% endblock content %}
             </div>
         </div>
 
         {% block scripts %}
-        <script src="/js/jquery-1.12.4.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-
-        <script src="/js/myScript.js"></script>
+        
         {% endblock scripts %}
     </body>
 </html>

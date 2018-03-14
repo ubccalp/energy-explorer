@@ -1,0 +1,288 @@
+@import "variables";
+
+html,body {
+    margin:0; 
+    padding-top: $top-padding; 
+    height:100%;
+    width:100%;
+}
+
+#map { 
+    position:absolute;
+    top:5; 
+    bottom:0; 
+    height:100%;
+    width:100%;
+}
+
+.leaflet-panel-layers {
+    padding-top: 54px;
+    font-size: 16px;
+}
+
+.container-fluid{
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top: 10px;
+} 
+
+#homelogo{
+    width:100px;
+    height:100px;
+    top: 20px;
+    z-index: 10;
+}
+
+
+.nopadding {
+    padding: 0 !important;
+    margin-left: 0 !important;
+}
+
+.padding20 {
+    padding: 20px !important;
+    margin: 20px !important;
+}
+
+.temp{
+    background:#fff;
+}
+
+#toplogo {
+    //font-family: 'Oswald';
+    color: #000;
+    //text-transform: uppercase;
+}
+#toplogo h1{
+    //font-family: 'Oswald';
+    font-size:42px;
+}
+#toplogo h3{
+    font-size:18px;
+    margin-top: 10px;
+}
+
+#infoside {
+    display: block;
+    padding-top: 0px;
+}
+#infoside > .row {
+    top: 0px;
+    background-color: rgba(255,255,255, 0.99);
+    color:#000;
+    margin-bottom: 40px;
+}
+#infoside h1{
+    font-size: 20px;
+    //font-family: 'Helvetica';
+    font-weight: normal;
+    text-align: center;
+    //text-transform: uppercase;
+}
+#infoside p{
+    font-size:12px;
+    //font-family: 'Helvetica';
+    text-align: center;
+}
+#infoside h2{
+    font-size:12px;
+    //font-family: 'Helvetica';
+    font-weight: 10;
+    text-align: left;
+}
+
+#infoside .legend{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#infoside .legend table {
+    width: 100%;
+    font-size: 11px;
+}
+#infoside .legend table:not(:last-child) {
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+#infoside .legend table td img {
+    margin-top: 10px;
+}
+
+#infosidelegend {
+    position: relative;
+}
+
+#infosideheader {
+    position: relative;
+}
+
+#infosideheader h1{
+    font-size:14px;
+   // font-family: 'Oswald';
+    text-align: center;
+    display: none;
+    border-top: 1px solid #c5cbb7 !important;
+	padding-top: 20px;
+}
+
+/*#infosideheader h2{
+  font-size:18px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+}*/
+
+
+#instruction{
+    /*text-align: center;*/
+    opacity:0.5;
+}
+
+
+#infoside img{
+    width:100%;
+    text-align: center;
+}
+
+#pietemp{
+    /*z-index: 10;*/
+    display: none;
+    margin:0 auto;
+    padding:0;
+}
+
+
+#dataselector{
+    left: -50px;
+    top: 150px;
+}
+.dataselectoritem{
+    background: #fff; /*#fff*/
+    color:#000;
+    opacity:0.85;
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-size:16px;
+    //font-family: 'Oswald';
+    font-weight: 600;
+    text-align: left;
+}
+.dataselectoritem:hover{
+    cursor:pointer;
+    cursor:hand;
+    color: #26b99a; 
+}
+
+/*https://github.com/novus/nvd3/issues/365*/
+.leaflet-overlay-pane svg {
+    width: auto;
+    height: auto;
+}
+
+/* --- info hover */
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+#map .leaflet-control-layers {
+    display: block;
+}
+.map-go-back {
+    position: absolute;
+    border: 3px solid #3B3D3E;
+    height: 81px;
+    width: 240px;
+    right: 10px;
+    text-align: center;
+    padding: 5px;
+    bottom: 25px;
+    background-color: #fff;
+    color : #292b2c;
+    color : rgb(41, 43, 44);
+}
+.map-go-back:hover {
+    background-color: #c2c7b4;
+}
+
+.hoverinfo{
+      //text-transform: uppercase;
+    text-align: center !important;
+     display: block;
+    font-size: 22px;
+    margin-bottom: 5px;
+
+}
+
+#hover {
+    //text-transform: uppercase;
+    text-align: center !important;
+}
+#hover .title {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#hover .value, #hover .measurement {
+    font-size: 20px;
+    font-weight: normal;
+}
+.solarlegend {
+    background-color: white;
+}
+.labele {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    background-color: rgba(255,255,255, 0.95);
+    line-height: 25px;
+    text-align: right;
+    color : #707073;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.labele::after {
+
+    right: 100%;
+    top: 0;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255,255,255, 0.85);
+    border-width: 25px 25px 0 0;
+}
+
+.titlelegend{font-size:14px;}
+
+
+
+#logo_home{text-aling: center; line-height: 35px; color:#FFFFFF; width:80px; height: 35px; background: #292b2c; position:relative; margin-top:-35px; left: -2px;  border-radius:5px; webkit-border-radius:5px; moz-border-radius:5px; o-border-radius:5px;  }
+#logo_home:before {content:""; position: absolute; top: 35px; right:33px; width: 0; height: 0; border-left: 7px solid transparent; border-top: 14px solid #292b2c; border-right: 7px solid transparent;}
+
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	}
+
+/* 
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 80%;
+	}
+ */

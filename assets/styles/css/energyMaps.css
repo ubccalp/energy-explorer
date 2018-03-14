@@ -1,0 +1,368 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/* line 3, ../sass/energyMaps.scss */
+html, body {
+  margin: 0;
+  padding-top: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 10, ../sass/energyMaps.scss */
+#map {
+  position: absolute;
+  top: 5;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 18, ../sass/energyMaps.scss */
+.leaflet-panel-layers {
+  padding-top: 54px;
+  font-size: 16px;
+}
+
+/* line 23, ../sass/energyMaps.scss */
+.container-fluid {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* line 29, ../sass/energyMaps.scss */
+#homelogo {
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  z-index: 10;
+}
+
+/* line 37, ../sass/energyMaps.scss */
+.nopadding {
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* line 42, ../sass/energyMaps.scss */
+.padding20 {
+  padding: 20px !important;
+  margin: 20px !important;
+}
+
+/* line 47, ../sass/energyMaps.scss */
+.temp {
+  background: #fff;
+}
+
+/* line 51, ../sass/energyMaps.scss */
+#toplogo {
+  color: #000;
+}
+
+/* line 56, ../sass/energyMaps.scss */
+#toplogo h1 {
+  font-size: 42px;
+}
+
+/* line 60, ../sass/energyMaps.scss */
+#toplogo h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* line 65, ../sass/energyMaps.scss */
+#infoside {
+  display: block;
+  padding-top: 0px;
+}
+
+/* line 69, ../sass/energyMaps.scss */
+#infoside > .row {
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.99);
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* line 75, ../sass/energyMaps.scss */
+#infoside h1 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 82, ../sass/energyMaps.scss */
+#infoside p {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 87, ../sass/energyMaps.scss */
+#infoside h2 {
+  font-size: 12px;
+  font-weight: 10;
+  text-align: left;
+}
+
+/* line 94, ../sass/energyMaps.scss */
+#infoside .legend {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 99, ../sass/energyMaps.scss */
+#infoside .legend table {
+  width: 100%;
+  font-size: 11px;
+}
+
+/* line 103, ../sass/energyMaps.scss */
+#infoside .legend table:not(:last-child) {
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+/* line 107, ../sass/energyMaps.scss */
+#infoside .legend table td img {
+  margin-top: 10px;
+}
+
+/* line 111, ../sass/energyMaps.scss */
+#infosidelegend {
+  position: relative;
+}
+
+/* line 115, ../sass/energyMaps.scss */
+#infosideheader {
+  position: relative;
+}
+
+/* line 119, ../sass/energyMaps.scss */
+#infosideheader h1 {
+  font-size: 14px;
+  text-align: center;
+  display: none;
+  border-top: 1px solid #c5cbb7 !important;
+  padding-top: 20px;
+}
+
+/*#infosideheader h2{
+  font-size:18px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+}*/
+/* line 137, ../sass/energyMaps.scss */
+#instruction {
+  /*text-align: center;*/
+  opacity: 0.5;
+}
+
+/* line 143, ../sass/energyMaps.scss */
+#infoside img {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 148, ../sass/energyMaps.scss */
+#pietemp {
+  /*z-index: 10;*/
+  display: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 156, ../sass/energyMaps.scss */
+#dataselector {
+  left: -50px;
+  top: 150px;
+}
+
+/* line 160, ../sass/energyMaps.scss */
+.dataselectoritem {
+  background: #fff;
+  /*#fff*/
+  color: #000;
+  opacity: 0.85;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* line 171, ../sass/energyMaps.scss */
+.dataselectoritem:hover {
+  cursor: pointer;
+  cursor: hand;
+  color: #26b99a;
+}
+
+/*https://github.com/novus/nvd3/issues/365*/
+/* line 178, ../sass/energyMaps.scss */
+.leaflet-overlay-pane svg {
+  width: auto;
+  height: auto;
+}
+
+/* --- info hover */
+/* line 184, ../sass/energyMaps.scss */
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* line 192, ../sass/energyMaps.scss */
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+/* line 196, ../sass/energyMaps.scss */
+#map .leaflet-control-layers {
+  display: block;
+}
+
+/* line 199, ../sass/energyMaps.scss */
+.map-go-back {
+  position: absolute;
+  border: 3px solid #3B3D3E;
+  height: 81px;
+  width: 240px;
+  right: 10px;
+  text-align: center;
+  padding: 5px;
+  bottom: 25px;
+  background-color: #fff;
+  color: #292b2c;
+  color: #292b2c;
+}
+
+/* line 212, ../sass/energyMaps.scss */
+.map-go-back:hover {
+  background-color: #c2c7b4;
+}
+
+/* line 216, ../sass/energyMaps.scss */
+.hoverinfo {
+  text-align: center !important;
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+/* line 225, ../sass/energyMaps.scss */
+#hover {
+  text-align: center !important;
+}
+
+/* line 229, ../sass/energyMaps.scss */
+#hover .title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* line 234, ../sass/energyMaps.scss */
+#hover .value, #hover .measurement {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 238, ../sass/energyMaps.scss */
+.solarlegend {
+  background-color: white;
+}
+
+/* line 241, ../sass/energyMaps.scss */
+.labele {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  background-color: rgba(255, 255, 255, 0.95);
+  line-height: 25px;
+  text-align: right;
+  color: #707073;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+/* line 252, ../sass/energyMaps.scss */
+.labele::after {
+  right: 100%;
+  top: 0;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: rgba(255, 255, 255, 0.85);
+  border-width: 25px 25px 0 0;
+}
+
+/* line 265, ../sass/energyMaps.scss */
+.titlelegend {
+  font-size: 14px;
+}
+
+/* line 269, ../sass/energyMaps.scss */
+#logo_home {
+  text-aling: center;
+  line-height: 35px;
+  color: #FFFFFF;
+  width: 80px;
+  height: 35px;
+  background: #292b2c;
+  position: relative;
+  margin-top: -35px;
+  left: -2px;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  moz-border-radius: 5px;
+  o-border-radius: 5px;
+}
+
+/* line 270, ../sass/energyMaps.scss */
+#logo_home:before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 33px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-top: 14px solid #292b2c;
+  border-right: 7px solid transparent;
+}
+
+/* line 273, ../sass/energyMaps.scss */
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 80%;
+	}
+ */

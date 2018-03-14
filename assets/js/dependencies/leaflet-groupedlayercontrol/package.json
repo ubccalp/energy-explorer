@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "leaflet-groupedlayercontrol@*",
+        "scope": null,
+        "escapedName": "leaflet-groupedlayercontrol",
+        "name": "leaflet-groupedlayercontrol",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer"
+    ]
+  ],
+  "_from": "leaflet-groupedlayercontrol@*",
+  "_id": "leaflet-groupedlayercontrol@0.6.0",
+  "_inCache": true,
+  "_location": "/leaflet-groupedlayercontrol",
+  "_nodeVersion": "6.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/leaflet-groupedlayercontrol-0.6.0.tgz_1487630745225_0.7980594648979604"
+  },
+  "_npmUser": {
+    "name": "ismyrnow",
+    "email": "ismyrnow@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "leaflet-groupedlayercontrol@*",
+    "scope": null,
+    "escapedName": "leaflet-groupedlayercontrol",
+    "name": "leaflet-groupedlayercontrol",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet-groupedlayercontrol/-/leaflet-groupedlayercontrol-0.6.0.tgz",
+  "_shasum": "249e84a53ab1049fd6b504bf7a3aac72348c5656",
+  "_shrinkwrap": null,
+  "_spec": "leaflet-groupedlayercontrol@*",
+  "_where": "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer",
+  "author": {
+    "name": "Ishmael Smyrnow"
+  },
+  "bugs": {
+    "url": "https://github.com/ismyrnow/Leaflet.groupedlayercontrol/issues"
+  },
+  "dependencies": {
+    "leaflet": "^1.0.1"
+  },
+  "description": "A Leaflet layer control with support for grouping overlays together",
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-uglify": "^0.8.0",
+    "load-grunt-tasks": "^3.1.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "249e84a53ab1049fd6b504bf7a3aac72348c5656",
+    "tarball": "https://registry.npmjs.org/leaflet-groupedlayercontrol/-/leaflet-groupedlayercontrol-0.6.0.tgz"
+  },
+  "gitHead": "a7ddf8f14f30e8e2482aa78048769c0c23c1bb31",
+  "homepage": "https://github.com/ismyrnow/Leaflet.groupedlayercontrol",
+  "jspm": {
+    "registry": "jspm",
+    "shim": {
+      "dist/leaflet.groupedlayercontrol.min": [
+        "leaflet"
+      ]
+    }
+  },
+  "keywords": [
+    "leaflet",
+    "overlay",
+    "groups",
+    "grouped",
+    "control",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/leaflet.groupedlayercontrol.min.js",
+  "maintainers": [
+    {
+      "name": "ismyrnow",
+      "email": "ismyrnow@gmail.com"
+    }
+  ],
+  "name": "leaflet-groupedlayercontrol",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ismyrnow/Leaflet.groupedlayercontrol.git"
+  },
+  "scripts": {
+    "build": "grunt",
+    "test": "eslint src"
+  },
+  "version": "0.6.0"
+}

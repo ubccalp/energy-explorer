@@ -1,0 +1,95 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/*
+	.fitgrd - responsive grid system
+	open http://www.fitgrd.com for more information
+	download at https://github.com/jayalai/fitgrd
+	Licensed under GPL and MIT.
+*/
+/*
+body{
+	font: 300 1em/1.5em 'Helvetica', Arial, sans-serif;
+}
+*/
+/* just for demonstration - remove this */
+/* line 17, ../sass/core.scss */
+header {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 22, ../sass/core.scss */
+.slide {
+  padding: 2em 0;
+}
+
+/* line 25, ../sass/core.scss */
+.first-content {
+  background: #ffffff;
+}
+
+/* line 28, ../sass/core.scss */
+.second-content {
+  background: #ffffff;
+  padding: 5em 0;
+}
+
+/* line 32, ../sass/core.scss */
+.third-content {
+  padding: 4em 0;
+}
+
+/* line 35, ../sass/core.scss */
+.fourth-content {
+  background: #ffffff;
+}
+
+/* line 38, ../sass/core.scss */
+footer {
+  background: #ffffff;
+}
+
+/* line 41, ../sass/core.scss */
+.fg1, .fg2, .fg3, .fg4, .fg5, .fg6, .fg7, .fg8, .fg9, .fg10, .fg11, .fg12 {
+  padding: 2em 0;
+  background: #ffffff;
+  font-size: .9em;
+  margin-bottom: 2%;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+/* line 50, ../sass/core.scss */
+.fg-no-gutter > [class*="fg"] {
+  height: auto;
+  background: none;
+}
+
+/* line 54, ../sass/core.scss */
+.headline {
+  font-size: 2em;
+  background: none;
+  color: #333;
+  padding: 1em 0;
+}
+
+/* ======================================= 
+   media queries
+   ======================================= */
+/* tablet size */
+@media screen and (max-width: 48em) {
+  /* css */
+}
+/* smartphone size */
+@media screen and (max-width: 36.5em) {
+  /* css */
+}

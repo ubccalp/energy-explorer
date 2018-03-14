@@ -1,0 +1,376 @@
+/*
+	.fitgrd - responsive grid system
+	open http://www.fitgrd.com for more information
+	download at https://github.com/jayalai/fitgrd
+	Licensed under GPL and MIT.
+*/
+/* line 9, ../sass/fitgrid.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* remember: box-sizing is not supported by IE7 :( */
+  outline: none;
+  vertical-align: top;
+}
+
+/* line 18, ../sass/fitgrid.scss */
+.center {
+  max-width: 80em;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 24, ../sass/fitgrid.scss */
+.row {
+  margin: 0 .5em;
+  padding: 2% 1em 0;
+  overflow: hidden;
+  height: 1%;
+  *zoom: 1;
+  min-height: 1%;
+}
+
+/* line 33, ../sass/fitgrid.scss */
+.clearfix {
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* ======================================= 
+   columns w/ margin
+   ======================================= */
+/* line 46, ../sass/fitgrid.scss */
+.fg1, .fg2, .fg3, .fg4, .fg5, .fg6, .fg7, .fg8, .fg9, .fg10, .fg11, .fg12 {
+  margin: 0 2% 0;
+  padding: 0;
+  /* in case of IE7 it's better not to use a padding because of the box-model issue */
+  float: left;
+  position: relative;
+}
+
+/* line 54, ../sass/fitgrid.scss */
+.fg12 {
+  width: 96%;
+}
+
+/* line 58, ../sass/fitgrid.scss */
+.fg11 {
+  width: 87.66%;
+}
+
+/* line 62, ../sass/fitgrid.scss */
+.fg10 {
+  width: 79.33%;
+}
+
+/* line 66, ../sass/fitgrid.scss */
+.fg9 {
+  width: 71%;
+}
+
+/* line 70, ../sass/fitgrid.scss */
+.fg8 {
+  width: 62.66%;
+}
+
+/* line 74, ../sass/fitgrid.scss */
+.fg7 {
+  width: 54.33%;
+}
+
+/* line 78, ../sass/fitgrid.scss */
+.fg6 {
+  width: 46%;
+}
+
+/* line 82, ../sass/fitgrid.scss */
+.fg5 {
+  width: 37.66%;
+}
+
+/* line 86, ../sass/fitgrid.scss */
+.fg4 {
+  width: 29.33%;
+}
+
+/* line 90, ../sass/fitgrid.scss */
+.fg3 {
+  width: 21%;
+}
+
+/* line 94, ../sass/fitgrid.scss */
+.fg2 {
+  width: 12.66%;
+}
+
+/* line 98, ../sass/fitgrid.scss */
+.fg1 {
+  width: 4.33%;
+}
+
+/* ======================================= 
+   push w/ columns
+   ======================================= */
+/* line 106, ../sass/fitgrid.scss */
+.push12 {
+  margin-left: 100%;
+}
+
+/* line 110, ../sass/fitgrid.scss */
+.push11 {
+  margin-left: 93.66%;
+}
+
+/* line 114, ../sass/fitgrid.scss */
+.push10 {
+  margin-left: 85.33%;
+}
+
+/* line 118, ../sass/fitgrid.scss */
+.push9 {
+  margin-left: 77%;
+}
+
+/* line 122, ../sass/fitgrid.scss */
+.push8 {
+  margin-left: 68.66%;
+}
+
+/* line 126, ../sass/fitgrid.scss */
+.push7 {
+  margin-left: 60.33%;
+}
+
+/* line 130, ../sass/fitgrid.scss */
+.push6 {
+  margin-left: 52%;
+}
+
+/* line 134, ../sass/fitgrid.scss */
+.push5 {
+  margin-left: 43.66%;
+}
+
+/* line 138, ../sass/fitgrid.scss */
+.push4 {
+  margin-left: 35.33%;
+}
+
+/* line 142, ../sass/fitgrid.scss */
+.push3 {
+  margin-left: 27%;
+}
+
+/* line 146, ../sass/fitgrid.scss */
+.push2 {
+  margin-left: 18.66%;
+}
+
+/* line 150, ../sass/fitgrid.scss */
+.push1 {
+  margin-left: 10.33%;
+}
+
+/* ======================================= 
+   columns w/o margin
+   ======================================= */
+/* line 158, ../sass/fitgrid.scss */
+.fg-no-gutter {
+  padding: 0 3.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 164, ../sass/fitgrid.scss */
+.fg-no-gutter > [class*="fg"] {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+/* line 171, ../sass/fitgrid.scss */
+.fg-no-gutter img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 176, ../sass/fitgrid.scss */
+.fg-no-gutter .fg12 {
+  width: 100%;
+}
+
+/* line 180, ../sass/fitgrid.scss */
+.fg-no-gutter .fg11 {
+  width: 91.66%;
+}
+
+/* line 184, ../sass/fitgrid.scss */
+.fg-no-gutter .fg10 {
+  width: 83.33%;
+}
+
+/* line 188, ../sass/fitgrid.scss */
+.fg-no-gutter .fg9 {
+  width: 75%;
+}
+
+/* line 192, ../sass/fitgrid.scss */
+.fg-no-gutter .fg8 {
+  width: 66.66%;
+}
+
+/* line 196, ../sass/fitgrid.scss */
+.fg-no-gutter .fg7 {
+  width: 58.33%;
+}
+
+/* line 200, ../sass/fitgrid.scss */
+.fg-no-gutter .fg6 {
+  width: 50%;
+}
+
+/* line 204, ../sass/fitgrid.scss */
+.fg-no-gutter .fg5 {
+  width: 41.66%;
+}
+
+/* line 208, ../sass/fitgrid.scss */
+.fg-no-gutter .fg4 {
+  width: 33.33%;
+}
+
+/* line 212, ../sass/fitgrid.scss */
+.fg-no-gutter .fg3 {
+  width: 25%;
+}
+
+/* line 216, ../sass/fitgrid.scss */
+.fg-no-gutter .fg2 {
+  width: 16.66%;
+}
+
+/* line 220, ../sass/fitgrid.scss */
+.fg-no-gutter .fg1 {
+  width: 8.33%;
+}
+
+/* ======================================= 
+   push columns w/o margin
+   ======================================= */
+/* line 228, ../sass/fitgrid.scss */
+.fg-no-gutter .push12 {
+  margin-left: 100%;
+}
+
+/* line 232, ../sass/fitgrid.scss */
+.fg-no-gutter .push11 {
+  margin-left: 91.66%;
+}
+
+/* line 236, ../sass/fitgrid.scss */
+.fg-no-gutter .push10 {
+  margin-left: 83.33%;
+}
+
+/* line 240, ../sass/fitgrid.scss */
+.fg-no-gutter .push9 {
+  margin-left: 75%;
+}
+
+/* line 244, ../sass/fitgrid.scss */
+.fg-no-gutter .push8 {
+  margin-left: 66.66%;
+}
+
+/* line 248, ../sass/fitgrid.scss */
+.fg-no-gutter .push7 {
+  margin-left: 58.33%;
+}
+
+/* line 252, ../sass/fitgrid.scss */
+.fg-no-gutter .push6 {
+  margin-left: 50%;
+}
+
+/* line 256, ../sass/fitgrid.scss */
+.fg12 .push5 {
+  margin-left: 41.66%;
+}
+
+/* line 260, ../sass/fitgrid.scss */
+.fg-no-gutter .push4 {
+  margin-left: 33.33%;
+}
+
+/* line 264, ../sass/fitgrid.scss */
+.fg-no-gutter .push3 {
+  margin-left: 25%;
+}
+
+/* line 268, ../sass/fitgrid.scss */
+.fg-no-gutter .push2 {
+  margin-left: 16.66%;
+}
+
+/* line 272, ../sass/fitgrid.scss */
+.fg-no-gutter .push1 {
+  margin-left: 8.33%;
+}
+
+/* line 276, ../sass/fitgrid.scss */
+.fg-no-mobile {
+  display: block !important;
+}
+
+/* line 280, ../sass/fitgrid.scss */
+.fg-no-desktop {
+  display: none !important;
+}
+
+/* ======================================= 
+   media queries
+   ======================================= */
+/* tablet size */
+/* smartphone size */
+@media screen and (max-width: 36.5em) {
+  /* line 296, ../sass/fitgrid.scss */
+  .row {
+    padding: 0 1em;
+    margin: 0;
+  }
+
+  /* line 301, ../sass/fitgrid.scss */
+  .fg1, .fg2 {
+    width: 46%;
+    margin-bottom: 1em;
+  }
+
+  /* line 306, ../sass/fitgrid.scss */
+  .fg3, .fg4, .fg5, .fg6, .fg7, .fg8, .fg9, .fg10, .fg11, .fg12 {
+    margin: 0 2% 1em;
+    padding: 0;
+    width: 96%;
+  }
+
+  /* line 312, ../sass/fitgrid.scss */
+  .fg-no-gutter > [class*="fg"] {
+    width: 50%;
+  }
+
+  /* line 316, ../sass/fitgrid.scss */
+  .fg-no-mobile {
+    display: none !important;
+  }
+
+  /* line 320, ../sass/fitgrid.scss */
+  .fg-no-desktop {
+    display: block !important;
+  }
+}

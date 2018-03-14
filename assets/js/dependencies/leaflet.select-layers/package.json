@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "leaflet.select-layers",
+        "scope": null,
+        "escapedName": "leaflet.select-layers",
+        "name": "leaflet.select-layers",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer"
+    ]
+  ],
+  "_from": "leaflet.select-layers@latest",
+  "_id": "leaflet.select-layers@0.3.0",
+  "_inCache": true,
+  "_location": "/leaflet.select-layers",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "vogdb",
+    "email": "vozhdb@gmail.com"
+  },
+  "_npmVersion": "2.12.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "leaflet.select-layers",
+    "scope": null,
+    "escapedName": "leaflet.select-layers",
+    "name": "leaflet.select-layers",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet.select-layers/-/leaflet.select-layers-0.3.0.tgz",
+  "_shasum": "17678f932c2daea334ad4ae7cba7ed4ad587f5f7",
+  "_shrinkwrap": null,
+  "_spec": "leaflet.select-layers",
+  "_where": "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer",
+  "author": {
+    "name": "Sanin Aleksey aka vogdb"
+  },
+  "bugs": {
+    "url": "https://github.com/vogdb/SelectLayersControl/issues"
+  },
+  "dependencies": {
+    "leaflet": "~0.7",
+    "leaflet.active-layers": "~0.2"
+  },
+  "description": "a Leaflet plugin which adds new control to switch between different layers on the map. New control extends L.Control.ActiveLayers and replaces radio button panel with select tag.",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "17678f932c2daea334ad4ae7cba7ed4ad587f5f7",
+    "tarball": "https://registry.npmjs.org/leaflet.select-layers/-/leaflet.select-layers-0.3.0.tgz"
+  },
+  "homepage": "https://github.com/vogdb/SelectLayersControl#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/vogdb/SelectLayersControl/blob/master/MIT-LICENSE.txt"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "vogdb",
+      "email": "vozhdb@gmail.com"
+    }
+  ],
+  "name": "leaflet.select-layers",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogdb/SelectLayersControl.git"
+  },
+  "scripts": {},
+  "version": "0.3.0"
+}

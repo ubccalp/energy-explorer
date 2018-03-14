@@ -1,0 +1,86 @@
+{% extends '../layout.html' %}
+
+{% block title %}{% parent %} {% endblock %}
+
+{% block head %}
+    {% parent %}
+	<meta charset=utf-8 />
+	<title>Home Energy Map | University of British Columbia</title>
+	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="../js/demandmaps.js" ></script>
+    <link rel="stylesheet" href="../styles/css/demandMaps.css">	
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://address to image">
+    <meta property="og:title" content="Home Energy Map">
+    <meta property="og:description" content="University of British Columbia Home Energy Map">
+	<meta property="og:url" content="http://www.tbd">
+	<meta name="twitter:card" content="tbd">
+	<meta name="twitter:site" content="@ubc">
+	<meta name="twitter:description" content="tbd">
+</head>
+{% endblock head %}
+{% block scripts %}
+	{% parent %}
+	
+	<!-- currently this style does not work -->
+	<!--
+<script type="infowindow/html" id="infowindow_template">
+      <div class="cartodb-popup">
+        <a href="#close" class="cartodb-popup-close-button close">x</a>
+         <div class="cartodb-popup-content-wrapper">
+           <div class="cartodb-popup-header"></div>
+           <div class="cartodb-popup-content">
+		   -->
+			 <!-- content.data contains the field info -->
+			 <!--
+             <h3>{{content.data.address}}</h3>
+             <p><h4>Property ID: <b>{{content.data.pid}}</b> </h4>
+             <p><h4>Year Built: <b>{{content.data.yr_built}}</b> </h4>
+             <p><h4>EUI: <b>{{content.data.eui}}</b> kWh/m<sup>2</sup></h4>
+             <p><h4>GHGi: <b>{{content.data.ghgi}}</b> kg CO2e/m<sup>2</sup></h4>
+             <p><h4>GHG: <b>{{content.data.ghg}}</b> T CO2<sub>e</sub></h4>
+           </div>
+         </div>
+         <div class="cartodb-popup-tip-container"></div>
+      </div>
+</script>
+-->
+
+{% endblock scripts %}
+{% block content %}
+{% parent %}
+<body onload='init()'>
+
+	<section id="section03">
+		<div class="mapleft">
+			<div id="leftbox">
+				<a href="#eui" id="eui" class="button eui selectedButton">EUI</a>
+				<a href="#ghgi" id="ghgi" class="button eui">GHGi</a>
+				<a href="#ghg" id="ghg" class="button eui">GHG</a>
+				<a href="#real" id="real" class="button eui"><i>Real EUI</i></a>
+			</div>
+		</div>
+		<div class="mapright">
+			<div id="Lcontrols">
+			</div>
+		</div>
+		<div class="mapbottom">
+			<div class="legend">
+				<img id="leg" src="../img/legEUI.svg" width="200"></img>
+			</div>
+			<div class="maptitle">
+				<font size="5">Energy Use Intensity: Energy measurement by energy use and relative building size (kWh/m<sup>2</sup>). <a href="./map-methods">Map methodology<a></a></font>
+			</div>
+		</div>
+		<div class="map">
+			<div id="map">
+			</div>
+		</div>
+	</section>
+	
+
+</body>
+{% endblock content %}
+

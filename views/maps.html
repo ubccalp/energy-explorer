@@ -1,0 +1,138 @@
+{% extends 'layout.html' %} {% block title %}{% parent %} - Maps{% endblock %} {% block head %} {% parent %}
+<link rel="stylesheet" href="styles/css/maps.css">
+<script type="text/javascript" src="js/maps.js" defer></script> {% endblock head %} {% block content %} {% parent %}
+
+<div class="page-container">
+
+  <div class="row">
+    <h2>
+      <b>Welcome to Interactive maps, where we explore how to look at energy in different ways. Let’s understand the importance
+        of how energy is currently being used, what potential local energy solutions cities have, and what policies and actions
+        drive these cities to become more resilient and renewable.</b>
+    </h2>
+    <h1> </h1>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="maps/map-methods">
+            <div class="caption">Start</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="fg6">
+      <h1>
+        <a href="maps/map-methods">Map Methodologies</a>
+      </h1>
+      <h2>
+        Learn about how the Community Energy Explorer maps are made and what they mean.
+      </h2>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <h1>
+        <a href="maps/demand-maps">Where Is Energy Used?</a>
+      </h1>
+      <h2>
+        Communities across the region use different total amounts of energy for electricity, heating, and transportation. We also
+        consume different amount of energy per person across the region, depending on which municipality we live in (due
+        to their housing types, land uses, transport options, and energy/climate change policies). Understanding how much
+        communities rely on energy use is refers to energy demand. There are many ways to see energy, including the energy
+        use (intensity and cost) and GHG (emission and intensity).
+      </h2>
+    </section>
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/map_red.png" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="maps/demand-maps">
+            <div class="caption">Explore</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/mall.png" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="maps/energy-maps">
+            <div class="caption">Learn</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="fg6">
+      <h1>
+        <a href="maps/energy-maps">Where Can We Get Energy?</a>
+      </h1>
+      <h2>
+        This section provides an inventory of the potential capacity of select renewable energy resources across the Metro Vancouver
+        region, and describes issues arising from the associated technologies. However it does not reflect constraints of
+        economic viability, social acceptability or current regulations. Existing data from various sources are analyzed
+        and mapped using new techniques suitable to communicating energy resources at a regional scale.
+      </h2>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <h1>
+        <a href="maps/geoexchange">Geoexchange</a>
+      </h1>
+      <h2>
+        It uses the earth as a heat source (in the winter) or a heat sink (in the summer). This design takes advantage of the moderate
+        temperatures in the ground to boost efficiency and reduce the operational costs of heating and cooling systems, and
+        may be combined with solar heating to form a geosolar system with even greater efficiency. They are also known by
+        other names, including geoexchange, earth-coupled, earth energy systems.
+      </h2>
+      <h3 style="text-align:right">- Wikipedia</h3>
+    </section>
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/geoexchange.jpg" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="maps/geoexchange">
+            <div class="caption">Inspire</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/pipes_2.jpg" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="maps/sewage-heat">
+            <div class="caption">Grow</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="fg6">
+      <h1>
+        <a href="maps/sewage-heat">Sewage Heat</a>
+      </h1>
+      <h2>
+        Water heat recycling (also known as sewage heat recovery, drain water heat recovery, wastewater heat recovery, greywater
+        heat recovery, or sometimes shower water heat recovery) is the use of a heat exchanger to recover energy and reuse
+        heat from wastewater. This can be done at large scale (as in sewage heat systems) down to household systems for heat
+        recovery from activities such as dish-washing, clothes washing and especially showers. The technology is used to
+        reduce primary energy consumption for water heating.
+      </h2>
+      <h3 style="text-align:right">- Adapted from Wikipedia</h3>
+    </section>
+  </div>
+
+</div>
+{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

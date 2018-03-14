@@ -1,0 +1,81 @@
+﻿{% extends 'layout.html' %} {% block title %}{% parent %} - Hot Topics{% endblock %} {% block head %} {% parent %}
+<link rel="stylesheet" href="styles/css/topics.css">
+<script type="text/javascript" src="js/topics.js" defer></script>
+{% endblock head %} {% block content %} {% parent %}
+
+<div class="page-container">
+  <div class="row">
+
+    <h2>
+      <b>Want to bring local, renewable energy to your community? Here are three ways to get you started</b>
+    </h2>
+
+    <section class="fg6">
+      <h1>
+        <a href="topics/topic1">Large Scale Redevelopment</a>
+      </h1>
+      <h2>
+        Communities are looking at under-utilized sites - such as shopping malls - to build new homes and businesses. These large
+        urban redevelopment sites have huge potential for local and lowcarbon energy choices.
+      </h2>
+    </section>
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/city_1.jpg" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="topics/topic1">
+            <div class="caption">You'll enjoy this one</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <div class="image-container">
+        <img src="../img/neighborhood_2.jpg" alt="cee-thumbnail" class="image" style="width:100%">
+        <div class="middle">
+          <a href="topics/topic2">
+            <div class="caption">So much to learn here</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="fg6">
+      <h1>
+        <a href="topics/topic2">Community-Wide Retrofit</a>
+      </h1>
+      <h2>
+        Communities across Metro Vancouver are looking for strategies to “scale-up” energy efficiency upgrades for homes and other
+        building energy retrofits. When a community retrofits together, it can have a big positive impact on carbon emissions
+        and energy bills.
+      </h2>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="fg6">
+      <h1>
+        <a href="topics/topic3">Renewable Energy Policy</a>
+      </h1>
+      <h2>
+        Many cities in BC and around the world are constructing specific policies and programs to reach ambitious renewable energy
+        targets, as part of the transition to the low-carbon economy. All BC communities have GHG reduction targets to meet
+        - how do we develop renewable energy supply in municipalities, while creating a healthier and livable city?
+      </h2>
+    </section>
+    <section class="fg6">
+        <div class="image-container">
+            <img src="../img/house_1.jpg" alt="cee-thumbnail" class="image" style="width:100%">
+            <div class="middle">
+              <a href="topics/topic3">
+                <div class="caption">This one rules</div>
+              </a>
+            </div>
+          </div>
+    </section>
+  </div>
+
+</div>
+{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

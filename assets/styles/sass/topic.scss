@@ -1,0 +1,218 @@
+@import "variables";
+
+html,body {
+    margin:0; 
+    padding-top: $top-padding; 
+    height:100%;
+	width:100%;
+	overflow: auto;
+}
+  
+// Styles specific to case study page
+
+.page-container {
+  margin: 20px 5% 30px 10%;
+	margin-top: 0px;
+  @media screen and (max-width: 100%) {
+	margin: 35px 7%;
+  }
+}
+
+.fg1,.fg2,.fg3,.fg4,.fg5,.fg6,.fg7,.fg8,.fg9,.fg10,.fg11,.fg12 {
+	margin:5px !important;
+	padding:5px !important;
+}
+
+h2,h3,h4,h5,h6,p{
+	color: $black !important;
+  background: $white !important;
+  line-height: 1.5; 
+  letter-spacing: 0.01em; 
+	text-align: left;
+	margin:1px !important;
+	padding:1px !important;
+}
+
+
+h1{
+	color: $orange;
+  background: $white;
+  text-align: left;
+  font-size: 40px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+	text-align: center;
+  a{
+    color:$orange !important;
+    &:hover{ 
+      color:$mid-grey !important;
+      text-decoration:none;
+      
+    }
+  }
+}
+
+h2{
+	font-size: 20px;
+}
+
+h3{
+	font-size: 18px;
+}
+
+h4{
+	font-size: 16px;
+}
+
+p {
+  display: block;
+  padding: 10% 10px;
+  color: $dark-grey;
+  font-size: 16px;
+  @media screen and (max-width: 550px) {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	#pp-nav.custom .pp-tooltip{
+		color: #AAA;
+	}
+	#markup{
+		display: block;
+		width: 450px;
+		margin: 16px auto;
+		text-align: left;
+	}
+
+/* Menu
+ * --------------------------------------- */
+ #menu li {
+	padding-top: 2px;
+	font-size: 16px;
+	height: 100%;
+	display:inline-block;
+	margin: 2px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 4px 8px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:45px;
+	left:0;
+	height: 30px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  a{
+    &:hover{ 
+      color:$mid-grey !important;
+      text-decoration:none !important;
+      
+    }
+  }
+}
+
+.image {
+opacity: 1;
+transition: .5s ease;
+backface-visibility: hidden;
+position: relative;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+
+.middle {
+transition: .5s ease;
+opacity: 0.5;
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+width: 100%;
+text-align: center;
+padding: 22px 0;
+}
+
+.image-container:hover .image {
+opacity: 0.3;
+}
+
+.image-container:hover .middle {
+opacity: 1;
+}
+
+.caption {
+background-color: $orange;
+color: white;
+font-size: 14px;
+padding: 16px 32px;
+text-align: center;
+}
+
+.spinner {
+	width: 120px !important;
+	height: 120px !important;
+	border: 10px solid $orange !important;
+	border-right-color: $creme !important;
+	border-bottom-color: $creme !important;
+}
+
+.info .caption{
+	font-size: 12px !important;
+	text-align: center !important;
+}
+
+.info .middle{
+	top:50% !important;
+}
+
+.img{
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.circle{
+	width: 110px !important;
+	height: 110px !important;
+}

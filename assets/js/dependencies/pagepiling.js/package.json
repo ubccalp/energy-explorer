@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "pagepiling.js",
+        "scope": null,
+        "escapedName": "pagepiling.js",
+        "name": "pagepiling.js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer"
+    ]
+  ],
+  "_from": "pagepiling.js@latest",
+  "_id": "pagepiling.js@1.5.4",
+  "_inCache": true,
+  "_location": "/pagepiling.js",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/pagepiling.js-1.5.4.tgz_1484742777614_0.3729107587132603"
+  },
+  "_npmUser": {
+    "name": "alvarotrigo",
+    "email": "alvaro@alvarotrigo.com"
+  },
+  "_npmVersion": "2.8.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "pagepiling.js",
+    "scope": null,
+    "escapedName": "pagepiling.js",
+    "name": "pagepiling.js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pagepiling.js/-/pagepiling.js-1.5.4.tgz",
+  "_shasum": "dc16fde18c01f0b58b937b10ec40cd26f95bfe85",
+  "_shrinkwrap": null,
+  "_spec": "pagepiling.js",
+  "_where": "C:\\Users\\masslawi\\Syncbox\\CALP\\Dev\\Community-Energy-Explorer",
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "bugs": {
+    "url": "https://github.com/alvarotrigo/pagePiling.js/issues"
+  },
+  "dependencies": {},
+  "description": "Create a scrolling pile of sections",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "dc16fde18c01f0b58b937b10ec40cd26f95bfe85",
+    "tarball": "https://registry.npmjs.org/pagepiling.js/-/pagepiling.js-1.5.4.tgz"
+  },
+  "homepage": "https://github.com/alvarotrigo/pagePiling.js#readme",
+  "keywords": [
+    "jquery",
+    "scrolling",
+    "pile",
+    "sections",
+    "slides"
+  ],
+  "license": "MIT",
+  "main": "jquery.pagepiling.js",
+  "maintainers": [
+    {
+      "name": "alvarotrigo",
+      "email": "atrigol@gmail.com"
+    }
+  ],
+  "name": "pagepiling.js",
+  "namespace": "$.fn.pagepiling",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alvarotrigo/pagePiling.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.4"
+}

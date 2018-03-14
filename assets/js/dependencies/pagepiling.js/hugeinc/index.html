@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>How to create hugeinc website with pagePiling.js plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="hugeinc making-of, how to create hugeinc website,pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,hugeinc,make,of,making,create,how-to" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.pagepiling.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+			$('#pagepiling').pagepiling({
+				verticalCentered:false,
+				css3:false,
+				sectionsColor: ['white', '#E8E8E8', '#f2f2f2', '#EC008C'],
+				onLeave: function(index, nextIndex, direction){
+
+					//fading out the txt of the leaving section
+					$('.section').eq(index -1).find('h1, p').fadeOut(700, 'easeInQuart');
+
+					//fading in the text of the destination (in case it was fadedOut)
+					$('.section').eq(nextIndex -1).find('h1, p').fadeIn(700, 'easeInQuart');
+
+
+					//reaching our last section? The one with our normal site?
+					if(nextIndex == 4){
+						$('#arrow').hide();
+
+						//fading out navigation bullets
+						$('#pp-nav').fadeOut();
+
+						$('#section4').find('.content').animate({
+							top: '0%'
+						}, 700, 'easeInQuart');
+					}
+
+					//leaving our last section? The one with our normal site?
+					if(index == 4){
+						$('#arrow').show();
+
+						//fadding in navigation bullets
+						$('#pp-nav').fadeIn();
+
+						$('#section4 .content').animate({
+							top: '100%'
+						}, 700, 'easeInQuart');
+					}
+				},
+			});
+
+			$('#arrow').click(function(){
+				$.fn.pagepiling.moveSectionDown();
+			});
+		});
+	</script>
+
+
+	<style>
+	@CHARSET "ISO-8859-1";
+	/* Reset CSS
+	 * --------------------------------------- */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+	form,fieldset,input,textarea,p,blockquote,th,td {
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration:none;
+	}
+	table {
+		border-spacing: 0;
+	}
+	fieldset,img {
+		border: 0;
+	}
+	address,caption,cite,code,dfn,em,strong,th,var {
+		font-weight: normal;
+		font-style: normal;
+	}
+	strong{
+		font-weight: bold;
+	}
+	ol,ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+	caption,th {
+		text-align: left;
+
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: normal;
+		font-size: 100%;
+		margin:0;
+		padding:0;
+		color:#444;
+	}
+	q:before,q:after {
+		content:'';
+	}
+	abbr,acronym { border: 0;
+}
+
+
+	#pp-nav li .active span, .pp-slidesNav .active span{
+		background:  #bbb;
+
+	}
+
+	#pp-nav span, .pp-slidesNav span{
+		border-color: #bbb !important;
+	}
+
+	body{
+		font-family: sans-serif, arial, helvetica;
+	}
+
+
+	/* Sections
+	 * --------------------------------------- */
+	.section{
+		background-attachment: fixed;
+		background-size: auto 80%;
+		background-position: 50% 0%;
+		background-repeat: 	no-repeat;
+	}
+	#section1{
+		background-image: url(imgs/h2.gif);
+	}
+	#section2{
+		background-image: url(imgs/h3.jpg);
+	}
+	#section3{
+		background-image: url(imgs/h1.jpg);
+	}
+
+	#arrow{
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		cursor: pointer;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		border: 0;
+		outline: 0;
+		z-index: 100;
+		color: #BBB;
+		background: transparent;
+		-moz-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+		-o-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+		-webkit-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+		transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+		font: 36px Heiti, 'Lucida Grande', Arial;
+		font-weight: bold;
+	}
+	#arrow span{
+		display: inline-block;
+		position: relative;
+		top: -18px;
+		-moz-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+		-o-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+		-webkit-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+		transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+	}
+	#arrow:hover{
+		background: #EC008C;
+	}
+	#arrow:hover span{
+		top: 0;
+		color: #FFF;
+	}
+
+
+	#section4 .content{
+		top: 100%;
+		position: absolute;
+		left: 0;
+	}
+
+	.intro{
+		position: absolute;
+		bottom: 100px;
+		text-align: center;
+		width: 100%;
+	}
+	.intro h1{
+		font-size: 5em;
+		font-weight: bold;
+		color: #000;
+	}
+	#section4 .intro{
+		color: #000;
+	}
+
+	.header{
+		padding-top: 80px;
+		text-align: center;
+	}
+	.header h1{
+		font-size: 5em;
+		font-weight: bold;
+		color: #fff;
+	}
+	.header p{
+		color: #f2f2f2;
+		font-size: 1.7em;
+	}
+	.page{
+		width: 80%;
+		margin: 60px auto;
+		background:white;
+		padding: 60px;
+		-webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+		-moz-box-sizing: border-box; /* <=28 */
+		box-sizing: border-box;
+	}
+	.page p{
+		font-style: 12px;
+		margin: 20px 0 0 0;
+		line-height: 1.35em;
+		color: #333;
+	}
+
+</style>
+
+</head>
+<body>
+	<button id="arrow">
+		<span>↓</span>
+	</button>
+	<div id="pagepiling">
+		<div class="section" id="section1">
+			<div class="intro">
+				<h1>All business.</h1>
+				<p>A new home for the word's most influencial management magazine.</p>
+			 </div>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Nike Making.</h1>
+				<p>Inspiring the creative community to make sustainable design choices.</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			 <div class="intro">
+				 <h1>Floored.</h1>
+				<p>Clean, modern, and fast. Introducing the new Lexus.com.</p>
+			 </div>
+		</div>
+		<div class="section pp-scrollable" id="section4">
+			<div class="content ">
+				<div class="header">
+					<h1>pagePiling.js</h1>
+					<p>Pile your sections one over another and access them scrolling or by URL!</p>
+				</div>
+
+				<div class="page">
+					<p>
+						Eos ex tale consul phaedrum. Ex mel enim delectus. An stet vide copiosae mei. Ne ferri oportere accusamus sit, eum an stet solet. Ex maiestatis dissentiet eum.
+
+						An pro recteque intellegam, eum convenire contentiones te. Cum id nobis mediocritatem. Brute dicta putent no vel. Pro ad verear eripuit vituperatoribus. Vim ad utamur accusata recteque, an cum iriure scriptorem.
+
+						Ei suas democritum sed, ceteros omittam eos et. Case eius ne vix, duo ne autem saperet insolens, mel posse aperiam labores no. Alienum accusamus an est. Qui iudicabit intellegat percipitur in, est in agam fugit assueverit. Pro cu mazim oporteat, soluta vituperata instructior mei ea, an vix sonet vocent laboramus.
+
+						Vis vocent ocurreret ad. Congue causae iisque no mei, vim fastidii platonem iracundia ei, detraxit sadipscing usu eu. Est ei sonet tempor dicunt. In tota regione blandit sea, at nec numquam dissentias, eu sit sapientem evertitur. Suas mediocrem incorrupte vel ei, intellegebat reprehendunt eum ad.
+					</p>
+					<p>
+						Probo latine iudicabit ad quo, nec adhuc nonumy adipiscing ea. Pro labore recusabo at. Tamquam electram constituam ut vel, assum omnes te ius. An mea illum petentium salutatus, vix et erat sapientem comprehensam. Movet tacimates ut mei, id sea minim graeco antiopam, te solet melius tibique his. Dicam graecis volumus has te. Amet affert menandri ex has.
+
+						Per ei malis legendos principes, et duo movet deterruisset. Et cum possim vivendo, no mea animal saperet disputando. Ex legere facilisis mei. Quo primis everti disputando at, nam ut quis copiosae. Salutatus forensibus in qui.
+
+						Ut usu zril referrentur, consequat vulputate intellegat sed cu. Est at imperdiet reprehendunt. Singulis mnesarchum contentiones eos an, ex mea stet vocibus. Recteque inciderint nec et. Eam at putent disputando, ad summo aperiri philosophia quo, natum mundi malorum te cum. Id modus aliquid definitiones est.
+					</p>
+					<p>
+						Ex sint percipitur pro, dolor mentitum sea an. Vel simul alienum ex, vim debitis antiopam id. Ponderum luptatum te eum. Idque dicant theophrastus ea pri. Eum hinc choro ut, et qui habemus iracundia similique. Mei numquam platonem definitiones id.
+
+						Per at nusquam vivendum suscipiantur, te mei nibh offendit singulis. Aperiri recusabo persequeris duo cu. Ex justo rationibus complectitur cum. Ad mucius salutatus mnesarchum mei, et dicit probatus similique qui.
+
+						Malis vivendum consequuntur id sed. Vix ei fuisset perpetua, partem audire pericula nec no. Partem putant philosophia id est. Et vel nibh munere, vis numquam nusquam forensibus ad, in mazim mundi vitae eam. Ea usu exerci audire intellegam. Sit iuvaret corrumpit laboramus cu, autem mazim ea sed, sit tacimates elaboraret ut.
+
+					</p>
+
+					<p>
+						Eos ex tale consul phaedrum. Ex mel enim delectus. An stet vide copiosae mei. Ne ferri oportere accusamus sit, eum an stet solet. Ex maiestatis dissentiet eum.
+
+						An pro recteque intellegam, eum convenire contentiones te. Cum id nobis mediocritatem. Brute dicta putent no vel. Pro ad verear eripuit vituperatoribus. Vim ad utamur accusata recteque, an cum iriure scriptorem.
+
+						Ei suas democritum sed, ceteros omittam eos et. Case eius ne vix, duo ne autem saperet insolens, mel posse aperiam labores no. Alienum accusamus an est. Qui iudicabit intellegat percipitur in, est in agam fugit assueverit. Pro cu mazim oporteat, soluta vituperata instructior mei ea, an vix sonet vocent laboramus.
+
+						Vis vocent ocurreret ad. Congue causae iisque no mei, vim fastidii platonem iracundia ei, detraxit sadipscing usu eu. Est ei sonet tempor dicunt. In tota regione blandit sea, at nec numquam dissentias, eu sit sapientem evertitur. Suas mediocrem incorrupte vel ei, intellegebat reprehendunt eum ad.
+
+						Probo latine iudicabit ad quo, nec adhuc nonumy adipiscing ea. Pro labore recusabo at. Tamquam electram constituam ut vel, assum omnes te ius. An mea illum petentium salutatus, vix et erat sapientem comprehensam. Movet tacimates ut mei, id sea minim graeco antiopam, te solet melius tibique his. Dicam graecis volumus has te. Amet affert menandri ex has.
+
+						Per ei malis legendos principes, et duo movet deterruisset. Et cum possim vivendo, no mea animal saperet disputando. Ex legere facilisis mei. Quo primis everti disputando at, nam ut quis copiosae. Salutatus forensibus in qui.
+
+						Ut usu zril referrentur, consequat vulputate intellegat sed cu. Est at imperdiet reprehendunt. Singulis mnesarchum contentiones eos an, ex mea stet vocibus. Recteque inciderint nec et. Eam at putent disputando, ad summo aperiri philosophia quo, natum mundi malorum te cum. Id modus aliquid definitiones est.
+
+						Ex sint percipitur pro, dolor mentitum sea an. Vel simul alienum ex, vim debitis antiopam id. Ponderum luptatum te eum. Idque dicant theophrastus ea pri. Eum hinc choro ut, et qui habemus iracundia similique. Mei numquam platonem definitiones id.
+
+						Per at nusquam vivendum suscipiantur, te mei nibh offendit singulis. Aperiri recusabo persequeris duo cu. Ex justo rationibus complectitur cum. Ad mucius salutatus mnesarchum mei, et dicit probatus similique qui.
+
+						Malis vivendum consequuntur id sed. Vix ei fuisset perpetua, partem audire pericula nec no. Partem putant philosophia id est. Et vel nibh munere, vis numquam nusquam forensibus ad, in mazim mundi vitae eam. Ea usu exerci audire intellegam. Sit iuvaret corrumpit laboramus cu, autem mazim ea sed, sit tacimates elaboraret ut.
+
+					</p>
+
+					<p>
+						Eos ex tale consul phaedrum. Ex mel enim delectus. An stet vide copiosae mei. Ne ferri oportere accusamus sit, eum an stet solet. Ex maiestatis dissentiet eum.
+
+						An pro recteque intellegam, eum convenire contentiones te. Cum id nobis mediocritatem. Brute dicta putent no vel. Pro ad verear eripuit vituperatoribus. Vim ad utamur accusata recteque, an cum iriure scriptorem.
+
+						Ei suas democritum sed, ceteros omittam eos et. Case eius ne vix, duo ne autem saperet insolens, mel posse aperiam labores no. Alienum accusamus an est. Qui iudicabit intellegat percipitur in, est in agam fugit assueverit. Pro cu mazim oporteat, soluta vituperata instructior mei ea, an vix sonet vocent laboramus.
+
+						Vis vocent ocurreret ad. Congue causae iisque no mei, vim fastidii platonem iracundia ei, detraxit sadipscing usu eu. Est ei sonet tempor dicunt. In tota regione blandit sea, at nec numquam dissentias, eu sit sapientem evertitur. Suas mediocrem incorrupte vel ei, intellegebat reprehendunt eum ad.
+
+						Probo latine iudicabit ad quo, nec adhuc nonumy adipiscing ea. Pro labore recusabo at. Tamquam electram constituam ut vel, assum omnes te ius. An mea illum petentium salutatus, vix et erat sapientem comprehensam. Movet tacimates ut mei, id sea minim graeco antiopam, te solet melius tibique his. Dicam graecis volumus has te. Amet affert menandri ex has.
+
+						Per ei malis legendos principes, et duo movet deterruisset. Et cum possim vivendo, no mea animal saperet disputando. Ex legere facilisis mei. Quo primis everti disputando at, nam ut quis copiosae. Salutatus forensibus in qui.
+
+						Ut usu zril referrentur, consequat vulputate intellegat sed cu. Est at imperdiet reprehendunt. Singulis mnesarchum contentiones eos an, ex mea stet vocibus. Recteque inciderint nec et. Eam at putent disputando, ad summo aperiri philosophia quo, natum mundi malorum te cum. Id modus aliquid definitiones est.
+
+						Ex sint percipitur pro, dolor mentitum sea an. Vel simul alienum ex, vim debitis antiopam id. Ponderum luptatum te eum. Idque dicant theophrastus ea pri. Eum hinc choro ut, et qui habemus iracundia similique. Mei numquam platonem definitiones id.
+
+						Per at nusquam vivendum suscipiantur, te mei nibh offendit singulis. Aperiri recusabo persequeris duo cu. Ex justo rationibus complectitur cum. Ad mucius salutatus mnesarchum mei, et dicit probatus similique qui.
+
+						Malis vivendum consequuntur id sed. Vix ei fuisset perpetua, partem audire pericula nec no. Partem putant philosophia id est. Et vel nibh munere, vis numquam nusquam forensibus ad, in mazim mundi vitae eam. Ea usu exerci audire intellegam. Sit iuvaret corrumpit laboramus cu, autem mazim ea sed, sit tacimates elaboraret ut.
+
+					</p>
+
+					<p>
+						Eos ex tale consul phaedrum. Ex mel enim delectus. An stet vide copiosae mei. Ne ferri oportere accusamus sit, eum an stet solet. Ex maiestatis dissentiet eum.
+
+						An pro recteque intellegam, eum convenire contentiones te. Cum id nobis mediocritatem. Brute dicta putent no vel. Pro ad verear eripuit vituperatoribus. Vim ad utamur accusata recteque, an cum iriure scriptorem.
+
+						Ei suas democritum sed, ceteros omittam eos et. Case eius ne vix, duo ne autem saperet insolens, mel posse aperiam labores no. Alienum accusamus an est. Qui iudicabit intellegat percipitur in, est in agam fugit assueverit. Pro cu mazim oporteat, soluta vituperata instructior mei ea, an vix sonet vocent laboramus.
+
+						Vis vocent ocurreret ad. Congue causae iisque no mei, vim fastidii platonem iracundia ei, detraxit sadipscing usu eu. Est ei sonet tempor dicunt. In tota regione blandit sea, at nec numquam dissentias, eu sit sapientem evertitur. Suas mediocrem incorrupte vel ei, intellegebat reprehendunt eum ad.
+
+						Probo latine iudicabit ad quo, nec adhuc nonumy adipiscing ea. Pro labore recusabo at. Tamquam electram constituam ut vel, assum omnes te ius. An mea illum petentium salutatus, vix et erat sapientem comprehensam. Movet tacimates ut mei, id sea minim graeco antiopam, te solet melius tibique his. Dicam graecis volumus has te. Amet affert menandri ex has.
+
+						Per ei malis legendos principes, et duo movet deterruisset. Et cum possim vivendo, no mea animal saperet disputando. Ex legere facilisis mei. Quo primis everti disputando at, nam ut quis copiosae. Salutatus forensibus in qui.
+
+						Ut usu zril referrentur, consequat vulputate intellegat sed cu. Est at imperdiet reprehendunt. Singulis mnesarchum contentiones eos an, ex mea stet vocibus. Recteque inciderint nec et. Eam at putent disputando, ad summo aperiri philosophia quo, natum mundi malorum te cum. Id modus aliquid definitiones est.
+
+						Ex sint percipitur pro, dolor mentitum sea an. Vel simul alienum ex, vim debitis antiopam id. Ponderum luptatum te eum. Idque dicant theophrastus ea pri. Eum hinc choro ut, et qui habemus iracundia similique. Mei numquam platonem definitiones id.
+
+						Per at nusquam vivendum suscipiantur, te mei nibh offendit singulis. Aperiri recusabo persequeris duo cu. Ex justo rationibus complectitur cum. Ad mucius salutatus mnesarchum mei, et dicit probatus similique qui.
+
+						Malis vivendum consequuntur id sed. Vix ei fuisset perpetua, partem audire pericula nec no. Partem putant philosophia id est. Et vel nibh munere, vis numquam nusquam forensibus ad, in mazim mundi vitae eam. Ea usu exerci audire intellegam. Sit iuvaret corrumpit laboramus cu, autem mazim ea sed, sit tacimates elaboraret ut.
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

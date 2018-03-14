@@ -1,0 +1,51 @@
+{% extends '../layout.html' %} {% block title %}{% parent %} - Energy 101{% endblock %} {% block head %} {% parent %}
+<link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css">
+<link rel="stylesheet" href="../styles/css/energy101-x.css">
+<script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script>
+<script type="text/javascript" src="../js/energy101-x.js"></script>
+{% endblock head %} {% block content %} {% parent %}
+
+<ul id="menu">
+  <!-- <li class="active"><a href="/">Home</a></li> -->
+  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Community Energy</a></li>
+  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Energy Security</a></li>
+  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Climate Change</a></li>
+  <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Climate Change Impacts</a></li>
+  <li data-menuanchor="page5" style="border:dotted 1px"><a href="#page5">Greenhouse Gas Reduction</a></li>
+  <li data-menuanchor="page6" style="border:dotted 1px"><a href="#page6">Growing Energy Demand</a></li>
+  <li data-menuanchor="page7" style="border:dotted 1px"><a href="#page7">Energy Efficiency</a></li>
+</ul>
+
+<div id="pagepiling">
+
+    <div class="section" id="section1">
+        {% include 'energy101-2.1.html' %}
+      </div>
+    
+      <div class="section" id="section2">
+        {% include 'energy101-2.2.html' %}
+      </div>
+    
+      <div class="section" id="section3">
+        {% include 'energy101-2.3.html' %}
+      </div>
+    
+      <div class="section" id="section4">
+        {% include 'energy101-2.4.html' %}
+      </div>
+    
+      <div class="section" id="section5">
+        {% include 'energy101-2.5.html' %}
+      </div>
+
+      <div class="section" id="section6">
+          {% include 'energy101-2.6.html' %}
+        </div>
+      
+        <div class="section" id="section7">
+          {% include 'energy101-2.7.html' %}
+        </div>
+
+</div>
+
+{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

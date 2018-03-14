@@ -1,0 +1,450 @@
+/** Variable for colors **/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("../../fonts/arial.ttf");
+}
+@font-face {
+  font-family: 'Ebrima Bold';
+  src: url("../../fonts/arialbd.ttf");
+}
+/* line 4, ../sass/demandMaps.scss */
+html, body {
+  margin: 0;
+  padding-top: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 11, ../sass/demandMaps.scss */
+section {
+  position: absolute;
+  top: 50;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 80%;
+	}
+ */
+/* line 30, ../sass/demandMaps.scss */
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font: 72px 'Bungee', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 43, ../sass/demandMaps.scss */
+section h2 {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  z-index: 10;
+  -webkit-transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  white-space: wrap;
+}
+
+/* line 59, ../sass/demandMaps.scss */
+section imgbar {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 75, ../sass/demandMaps.scss */
+#section01 {
+  background: url("../img/guess_where.jpg") center center/cover no-repeat;
+}
+
+/* line 79, ../sass/demandMaps.scss */
+#section02 {
+  background: #020d87 center center/cover no-repeat;
+}
+
+/* line 83, ../sass/demandMaps.scss */
+#section03 {
+  background: #E66B5C center center / cover no-repeat;
+}
+
+/* line 87, ../sass/demandMaps.scss */
+#section01::after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(76, 0, 161, 0.75);
+}
+
+/* line 99, ../sass/demandMaps.scss */
+a.email {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #FEC428;
+  text-decoration: none;
+}
+
+/* line 108, ../sass/demandMaps.scss */
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+/* line 121, ../sass/demandMaps.scss */
+.button {
+  /* position: relative; */
+  /*   vertical-align: top; */
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font: 14px "Raleway",sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  opacity: .6;
+}
+
+/* line 137, ../sass/demandMaps.scss */
+.selectedButton {
+  color: #fff;
+  opacity: 1.0;
+}
+
+/* 
+.demo a {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: #fff;
+	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+	}
+ */
+/* line 160, ../sass/demandMaps.scss */
+.demo a:hover {
+  opacity: .5;
+}
+
+/* line 164, ../sass/demandMaps.scss */
+.mapleft a:hover {
+  color: #020d87;
+  opacity: 1;
+}
+
+/* line 169, ../sass/demandMaps.scss */
+.mapright a:hover {
+  color: #020d87;
+  opacity: 1;
+}
+
+/* 
+#section a {
+	padding-top: 60px;
+	}
+ */
+/* 
+#section a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+	}
+ */
+/* line 196, ../sass/demandMaps.scss */
+.mapleft {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+}
+
+/* line 202, ../sass/demandMaps.scss */
+.mapright {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  right: 0%;
+}
+
+/* line 209, ../sass/demandMaps.scss */
+#Lcontrols {
+  position: relative;
+  top: 15px;
+  height: 100px;
+}
+
+/* line 215, ../sass/demandMaps.scss */
+#leftbox {
+  position: relative;
+  top: 85px;
+  height: 100px;
+}
+
+/* line 221, ../sass/demandMaps.scss */
+.mapbottom {
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  bottom: 0%;
+}
+
+/* line 228, ../sass/demandMaps.scss */
+.legend {
+  position: relative;
+  left: 50px;
+  text-align: left;
+  font: 30px "Raleway",sans-serif;
+  color: #fff;
+  height: 75px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 239, ../sass/demandMaps.scss */
+.maptitle {
+  position: relative;
+  right: 50px;
+  text-align: right;
+  font: 30px "Raleway",sans-serif;
+  color: #fff;
+  top: 15px;
+  display: inline-block;
+  float: right;
+}
+
+/* line 250, ../sass/demandMaps.scss */
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 255, ../sass/demandMaps.scss */
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  left: 50px;
+  width: -webkit-calc(100% - 100px);
+  width: -moz-calc(100% - 100px);
+  width: calc(100% - 100px);
+  height: -webkit-calc(100% - 75px);
+  height: -moz-calc(100% - 75px);
+  height: calc(100% - 75px);
+  background: white;
+}
+
+/* line 271, ../sass/demandMaps.scss */
+.leaflet-control-zoom a.leaflet-control-zoom-in {
+  display: none;
+  color: #fff;
+  background-color: transparent;
+  font: 700 24px 'Open Sans',Monaco,monospace;
+}
+
+/* line 278, ../sass/demandMaps.scss */
+.leaflet-control-zoom a.leaflet-control-zoom-out {
+  display: none;
+  color: #fff;
+  background-color: transparent;
+  font: 700 24px 'Open Sans',Monaco,monospace;
+}
+
+/* line 285, ../sass/demandMaps.scss */
+.leaflet-control-container {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+/* line 290, ../sass/demandMaps.scss */
+.leaflet-bar {
+  box-shadow: none;
+}
+
+/* line 294, ../sass/demandMaps.scss */
+.leaflet-bar a {
+  border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 0px solid #fff !important;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 302, ../sass/demandMaps.scss */
+.leaflet-bar a:hover {
+  border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 0px solid #fff !important;
+  width: 50px;
+  height: 50px;
+  color: #020d87;
+}
+
+/* line 311, ../sass/demandMaps.scss */
+div.cartodb-popup h3 {
+  color: black;
+  font: 14px "Open Sans",sans-serif;
+  font-weight: 700;
+}
+
+/* line 317, ../sass/demandMaps.scss */
+div.cartodb-popup h4 {
+  color: black;
+  font: 12px "Open Sans",sans-serif;
+  font-weight: 400;
+}
+
+/* 
+set infobox styles.cartodb-infobox{
+	opacity:0.9;
+	background-color: #FFF!important;
+	color: #fdb462!important;
+	border-radius: 25px!important;
+}
+
+set styles to the div element with id= box#box{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 200px;
+	height: 170px;
+	opacity: 0.9;
+	padding: 5px 10px 5px 10px;
+	border-radius: 25px;
+	background-color: #FFF;
+	color: #fdb462;
+}
+
+set styles to the <h4> tag of the element with id= box#box h4{
+	font-style: italic;
+}
+
+set styles to the <p> tag of the element with id= box#box p{
+	text-align: center;
+	font-size: 18px;
+	color:red;
+
+}
+
+set styles to the custom infowindow.infowindow-custom{ 
+	position: relative;
+	width: 170px;
+	background-color: #FFF;
+	margin-bottom: 2px;
+	opacity: 0.9;
+	text-align: left;
+	font-style: oblique;
+	background-color: #FFF;
+	color: #fdb462;
+	border-radius: 10px;
+	z-index: 20;
+}
+
+
+set styles to the custom infowindow -> close button.cartodb-popup-close-button {
+	position: absolute;
+	top: -12px;
+	right: -11px;
+	width: 26px;
+	height: 26px;
+	background: url('http://libs.cartodb.com/cartodb.js/v3/themes/img/light.png') no-repeat 0 -23px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	opacity: 1;
+	text-transform: uppercase;
+	z-index: 3;
+}
+
+set styles to the custom infowindow -> tip container.cartodb-popup-tip-container{
+	position: absolute;
+	bottom: -13px;
+	left: 23px;
+	width: 16px;
+	height: 14px;
+	background: url('http://libs.cartodb.com/cartodb.js/v3/themes/img/light.png') no-repeat -23px -7px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	opacity: 1;
+	z-index: 3;
+}
+ */
+/* 
+div.cartodb-popup p{
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font: #4D4D4D;
+}
+ */
+/* 
+
+.leaflet-top {
+	top: 55px !important;
+	}
+
+.leaflet-left {
+	margin-left: 96% !important;
+	}
+ */
