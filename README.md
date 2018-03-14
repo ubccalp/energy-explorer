@@ -1,5 +1,7 @@
 # Community Energy Explorer #
 
+Note: some of this information may be outdated.
+
 Community Energy Explorer (old website) - http://energyexplorer.ca/
 Community Energy Explorer (new temp. website) - https://communityenergyexplorer.herokuapp.com/
 
@@ -51,5 +53,6 @@ Community Energy Explorer (new temp. website) - https://communityenergyexplorer.
 
 ### Who do I talk to? ###
 
+* Dawood Al-Masslawi
 * Jon Salter
 * Utkarsh Saxena
