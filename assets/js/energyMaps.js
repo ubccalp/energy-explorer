@@ -17,13 +17,13 @@ $(document).ready(function () {
     var info = L.mapbox.infoControl({ position: 'bottomleft' });
     info.addTo(map);
 
-    var CEE_base_grey = L.tileLayer('http://tiles.jk-lee.com/CEE_V001_base/{z}/{x}/{y}.png', {
+    var CEE_base_grey = L.tileLayer('http://tiles.energyexplorer.ca/CEE_V001_base/{z}/{x}/{y}.png', {
         maxZoom: 15,
         minZoom: 10,
         zIndex:1,
        attribution: 'Map tiles by <a href="http://cirs.ubc.ca/">CIRs</a>, Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     }).addTo(map); 
-var CEE_Labels = L.tileLayer('http://tiles.jk-lee.com/metro_labels_overlap/{z}/{x}/{y}.png', {
+var CEE_Labels = L.tileLayer('http://tiles.energyexplorer.ca/metro_labels_overlap/{z}/{x}/{y}.png', {
     // attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
     subdomains: 'abcd',
     minZoom: 10,
@@ -31,7 +31,7 @@ var CEE_Labels = L.tileLayer('http://tiles.jk-lee.com/metro_labels_overlap/{z}/{
     zIndex:1000
 }).addTo(map);
 // Roads layer
-var CEE_roads = L.tileLayer('http://tiles.jk-lee.com/CEE_V001_grey_roads/{z}/{x}/{y}.png', {
+var CEE_roads = L.tileLayer('http://tiles.energyexplorer.ca/CEE_V001_grey_roads/{z}/{x}/{y}.png', {
         maxZoom: 15,
         minZoom: 10,
         zIndex:5,
@@ -40,12 +40,12 @@ var CEE_roads = L.tileLayer('http://tiles.jk-lee.com/CEE_V001_grey_roads/{z}/{x}
 
 // --- openshift tiles --- //
 // cloud tiles - tileserver-jklee
-var cloudTiles = L.tileLayer('http://tiles.jk-lee.com/clouds/{z}/{x}/{y}.png',{zIndex:7});
+var cloudTiles = L.tileLayer('http://tiles.energyexplorer.ca/clouds/{z}/{x}/{y}.png',{zIndex:7});
 // population
-var population  = L.tileLayer('http://tiles.jk-lee.com/population/{z}/{x}/{y}.png',{zIndex:4});
+var population  = L.tileLayer('http://tiles.energyexplorer.ca/population/{z}/{x}/{y}.png',{zIndex:4});
 // biomass
-var biomassTiles = L.tileLayer('http://tiles.jk-lee.com/biomass/{z}/{x}/{y}.png',{zIndex:3});
-var biomassGrid = new L.UtfGrid('http://tiles.jk-lee.com/biomass/{z}/{x}/{y}.grid.json', {
+var biomassTiles = L.tileLayer('http://tiles.energyexplorer.ca/biomass/{z}/{x}/{y}.png',{zIndex:3});
+var biomassGrid = new L.UtfGrid('http://tiles.energyexplorer.ca/biomass/{z}/{x}/{y}.grid.json', {
         useJsonP: false
     });
 biomassGrid.on('mouseover', function (e) {
@@ -57,8 +57,8 @@ biomassGrid.on('mouseover', function (e) {
         }
     });
 // solar
-var solarTiles = L.tileLayer('http://tiles.jk-lee.com/solar/{z}/{x}/{y}.png',{zIndex:3});
-var solarGrid = new L.UtfGrid('http://tiles.jk-lee.com/solar/{z}/{x}/{y}.grid.json', {
+var solarTiles = L.tileLayer('http://tiles.energyexplorer.ca/solar/{z}/{x}/{y}.png',{zIndex:3});
+var solarGrid = new L.UtfGrid('http://tiles.energyexplorer.ca/solar/{z}/{x}/{y}.grid.json', {
         useJsonP: false
     });
 solarGrid.on('mouseover', function (e) {
@@ -69,8 +69,8 @@ solarGrid.on('mouseover', function (e) {
         }
     });
 // agriculture
-var agTiles = L.tileLayer('http://tiles.jk-lee.com/agriculture_col2/{z}/{x}/{y}.png',{zIndex:3});
-var agGrid = new L.UtfGrid('http://tiles.jk-lee.com/agriculture_col2/{z}/{x}/{y}.grid.json', {
+var agTiles = L.tileLayer('http://tiles.energyexplorer.ca/agriculture_col2/{z}/{x}/{y}.png',{zIndex:3});
+var agGrid = new L.UtfGrid('http://tiles.energyexplorer.ca/agriculture_col2/{z}/{x}/{y}.grid.json', {
         useJsonP: false
     });
 agGrid.on('mouseover', function (e) {
@@ -81,8 +81,8 @@ agGrid.on('mouseover', function (e) {
         }
     });
 //wind
-var windTiles = L.tileLayer('http://tiles.jk-lee.com/wind/{z}/{x}/{y}.png',{zIndex:3});
-var windGrid = new L.UtfGrid('http://tiles.jk-lee.com/wind/{z}/{x}/{y}.grid.json', {
+var windTiles = L.tileLayer('http://tiles.energyexplorer.ca/wind/{z}/{x}/{y}.png',{zIndex:3});
+var windGrid = new L.UtfGrid('http://tiles.energyexplorer.ca/wind/{z}/{x}/{y}.grid.json', {
         useJsonP: false
     });
 windGrid.on('mouseover', function (e) {
