@@ -1,3 +1,4 @@
 node_modules/
 assets/styles/cee/.sass-cache/
 assets/styles/.sass-cache/
+.DS_Store
