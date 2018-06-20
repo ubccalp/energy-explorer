@@ -29,6 +29,7 @@ h2,h3,h4,h5,h6,p{
 
 p{
     font-size: 30px;
+
 }
 
 h1{
@@ -95,20 +96,50 @@ h2{
 }
 
 .sponsor-image {
-    /*@media only screen and (max-width: 600px) {...}
+  @media only screen and (max-width: 600px) {
+    img {
+      margin: 0 20px 20px 40px;
+      width: 50%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      float: left;
+    }
+  }
 
-    @media only screen and (min-width: 600px) {...}
+  @media only screen and (min-width: 600px) {
+    img {
+      margin: 0 20px 20px 40px;
+      width: 35%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      float: left;
+    }
+  }
 
-    @media only screen and (min-width: 768px) {...}
+  @media only screen and (min-width: 768px) {
+    img {
+      margin: 0 20px 20px 40px;
+      width: 25%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      float: left;
+    }
+  }
 
-    @media only screen and (min-width: 992px) {...}
-
-    @media only screen and (min-width: 1200px) {...}*/
+  @media only screen and (min-width: 992px){
+    img {
+      margin: 0 20px 20px 40px;
+      width: 18%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      float: left;
+    }
+  }
 
     @media screen and (min-width: 1200px) {
       img {
         margin: 0 20px 20px 40px;
-        width: 16%;
+        width: 17%;
         height: auto;
         background-color: rgba(255, 255, 255, 0.5);
         float: left;
