@@ -15,6 +15,10 @@ html,body {
     background-color:rgba(0,0,0,0.5);
 }
 
+.fg12{
+  background-color:rgba(0,0,0,0.5);
+}
+
 h2,h3,h4,h5,h6,p{
 	color: $creme !important;
   line-height: 1; 
@@ -43,6 +47,10 @@ h1{
       
     }
   }
+}
+
+h2{
+  margin-left: 18px;
 }
 
 // All styles specific to the homepage/index page.
@@ -87,8 +95,23 @@ h1{
 }
 
 .sponsor-image {
-    img {
-        margin: 0 20px 20px 20px;
-        background-color:rgba(255, 255, 255, 0.5);
-    }   
+    /*@media only screen and (max-width: 600px) {...}
+
+    @media only screen and (min-width: 600px) {...}
+
+    @media only screen and (min-width: 768px) {...}
+
+    @media only screen and (min-width: 992px) {...}
+
+    @media only screen and (min-width: 1200px) {...}*/
+
+    @media screen and (min-width: 1200px) {
+      img {
+        margin: 0 20px 20px 40px;
+        width: 16%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        float: left;
+      }
+    }
 }

@@ -18,6 +18,9 @@ html, body {
 .fg8 {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.fg12 {
+  background-color: rgba(0, 0, 0, 0.5); }
+
 h2, h3, h4, h5, h6, p {
   color: #e1e9d0 !important;
   line-height: 1;
@@ -41,6 +44,9 @@ h1 {
     h1 a:hover {
       color: #515151 !important;
       text-decoration: none; }
+
+h2 {
+  margin-left: 18px; }
 
 .header-image-container {
   margin: auto;
@@ -74,8 +80,22 @@ h1 {
     line-height: 30px;
     margin-left: 5px; }
 
-.sponsor-image img {
-  margin: 0 20px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.5); }
+.sponsor-image {
+    /*@media only screen and (max-width: 600px) {...}
+
+    @media only screen and (min-width: 600px) {...}
+
+    @media only screen and (min-width: 768px) {...}
+
+    @media only screen and (min-width: 992px) {...}
+
+    @media only screen and (min-width: 1200px) {...}*/ }
+  @media screen and (min-width: 1200px) {
+    .sponsor-image img {
+      margin: 0 20px 20px 40px;
+      width: 16%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      float: left; } }
 
 /*# sourceMappingURL=home.css.map */

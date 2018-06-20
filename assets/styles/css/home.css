@@ -25,6 +25,11 @@ html, body {
 }
 
 /* line 18, ../sass/home.scss */
+.fg12 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 22, ../sass/home.scss */
 h2, h3, h4, h5, h6, p {
   color: #e1e9d0 !important;
   line-height: 1;
@@ -33,12 +38,12 @@ h2, h3, h4, h5, h6, p {
   text-align: left;
 }
 
-/* line 26, ../sass/home.scss */
+/* line 30, ../sass/home.scss */
 p {
   font-size: 30px;
 }
 
-/* line 30, ../sass/home.scss */
+/* line 34, ../sass/home.scss */
 h1 {
   color: #e1e9d0;
   text-align: left;
@@ -48,17 +53,22 @@ h1 {
   line-height: 1;
   text-align: center;
 }
-/* line 38, ../sass/home.scss */
+/* line 42, ../sass/home.scss */
 h1 a {
   color: #000 !important;
 }
-/* line 40, ../sass/home.scss */
+/* line 44, ../sass/home.scss */
 h1 a:hover {
   color: #515151 !important;
   text-decoration: none;
 }
 
-/* line 49, ../sass/home.scss */
+/* line 52, ../sass/home.scss */
+h2 {
+  margin-left: 18px;
+}
+
+/* line 57, ../sass/home.scss */
 .header-image-container {
   margin: auto;
   display: block;
@@ -66,32 +76,32 @@ h1 a:hover {
   height: 100%;
 }
 
-/* line 56, ../sass/home.scss */
+/* line 64, ../sass/home.scss */
 #container-fluid {
   top: 0px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 61, ../sass/home.scss */
+/* line 69, ../sass/home.scss */
 #bg-image {
   width: 99%;
   height: 80%;
   background-repeat: no-repeat;
 }
 
-/* line 67, ../sass/home.scss */
+/* line 75, ../sass/home.scss */
 .header-text {
   background: #ffffff;
   position: absolute;
   top: 10%;
 }
 @media screen and (max-width: 520px) {
-  /* line 67, ../sass/home.scss */
+  /* line 75, ../sass/home.scss */
   .header-text {
     top: 5%;
   }
 }
-/* line 75, ../sass/home.scss */
+/* line 83, ../sass/home.scss */
 .header-text h1 {
   color: #000;
   text-transform: uppercase;
@@ -99,17 +109,31 @@ h1 a:hover {
   letter-spacing: 1px;
   margin: 20px 0 20px 5px;
 }
-/* line 83, ../sass/home.scss */
+/* line 91, ../sass/home.scss */
 .header-text p {
   line-height: 30px;
   margin-left: 5px;
 }
 
-/* line 90, ../sass/home.scss */
-.sponsor-image img {
-  margin: 0 20px 20px 20px;
-  /*border: solid 1px #000;*/
-  height: 30%;
-  width: 40%;
-  background-color: rgba(255, 255, 255, 0.5);
+/* line 97, ../sass/home.scss */
+.sponsor-image {
+    /*@media only screen and (max-width: 600px) {...}
+
+    @media only screen and (min-width: 600px) {...}
+
+    @media only screen and (min-width: 768px) {...}
+
+    @media only screen and (min-width: 992px) {...}
+
+    @media only screen and (min-width: 1200px) {...}*/
+}
+@media screen and (min-width: 1200px) {
+  /* line 109, ../sass/home.scss */
+  .sponsor-image img {
+    margin: 0 20px 20px 40px;
+    width: 16%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    float: left;
+  }
 }
