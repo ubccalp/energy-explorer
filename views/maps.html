@@ -1,8 +1,10 @@
 {% extends 'layout.html' %} {% block title %}{% parent %} - Maps{% endblock %} {% block head %} {% parent %}
-<link rel="stylesheet" href="styles/css/maps.css">
-<script type="text/javascript" src="js/maps.js" defer></script> {% endblock head %} {% block content %} {% parent %}
+{#<link rel="stylesheet" href="styles/css/maps.css">
+<script type="text/javascript" src="js/maps.js" defer></script>#}
+<link rel="stylesheet" href="styles/css/maps.css"> {% endblock head %} {% block content %} {% parent %}
 
-<div class="page-container">
+{#
+  <div class="page-container">
 
   <div class="row">
     <h2>
@@ -135,4 +137,73 @@
   </div>
 
 </div>
+#}
+
+{% include "./components/navbar-maps.html" %}
+{% include "./components/navbar-maps-overview.html" %}
+
+<div class="section-11">
+  <div class="container-fluid custom-container-4">
+    <div class="hero-section">
+      <h1 class="heading-18">With interactive maps, <br>explore how to look at energy in different ways</h1><img src="img/redesign/Rectangle-482x.png" class="image-26">
+      <p class="paragraph-10">Let’s understand the importance of how energy is currently being used, what potential local energy solutions cities have, and what policies and actions drive these cities to become more resilient and renewable.</p>
+      <a href="#" class="btn btn-default learnmore-button startexploring-button-adjustment">START EXPLORING</a>
+    </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Map Methodologies</h1>
+            <p class="paragraph-12">Learn about how the Community Energy Explorer maps are made and what they mean.</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign\mapmathods2x2x.png" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Where Is Energy Used?</h1>
+            <p class="paragraph-12">Communities across the region use different total amounts of energy for electricity, heating, and transportation. We also consume different amount of energy per person across the region, depending on which municipality we live in (due to their housing types, land uses, transport options, and energy/climate change policies). Understanding how much communities rely on energy use is refers to energy demand. There are many ways to see energy, including the energy use (intensity and cost) and GHG (emission and intensity).</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/Image-602x.png" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14 last-section-bottom-margin-adjustment">
+  <div class="container-fluid custom-container-4">
+    <div>
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Where Can We Get Energy?</h1>
+            <p class="paragraph-12">This section provides an inventory of the potential capacity of
+              select renewable energy resources across the Metro Vancouver region, and describes issues
+              arising from the associated technologies. However it does not reflect constraints of
+              economic viability, social acceptability or current regulations. Existing data from various
+              sources are analyzed and mapped using new techniques suitable to communicating energy resources at
+              a regional scale.</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a></div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-8.png" srcset="images/Mask-Group-82x-p-500.png 500w, images/Mask-Group-8.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/Image-612x.png" class="image-27"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

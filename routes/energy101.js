@@ -7,7 +7,7 @@ module.exports = function(express, app) {
     // =====================================
 	router.get('/', function(req, res){
 		res.render('energy101', {
-			pageName: "Energy101"
+			pageName: "Energy101	"
 		});
 	});
 

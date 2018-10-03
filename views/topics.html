@@ -1,9 +1,9 @@
 ﻿{% extends 'layout.html' %} {% block title %}{% parent %} - Hot Topics{% endblock %} {% block head %} {% parent %}
-<link rel="stylesheet" href="styles/css/topics.css">
-<script type="text/javascript" src="js/topics.js" defer></script>
-{% endblock head %} {% block content %} {% parent %}
+{#<link rel="stylesheet" href="styles/css/topics.css">
+<script type="text/javascript" src="js/topics.js" defer></script>#}
+<link rel="stylesheet" href="styles/css/hotTopics.css">{% endblock head %} {% block content %} {% parent %}
 
-<div class="page-container">
+{#<div class="page-container">
   <div class="row">
 
     <h2>
@@ -77,5 +77,73 @@
     </section>
   </div>
 
+</div>#}
+
+{% include "./components/navbar-hotTopics.html" %}
+{% include "./components/navbar-hotTopics-overview.html" %}
+
+<div class="section-11">
+  <div class="container-fluid custom-container-4">
+    <div class="hero-section">
+      <h1 class="heading-18">Want to bring local, renewable energy <br>to your community?</h1><img src="img/redesign/Rectangle-48_1.png" class="image-26">
+      <p class="paragraph-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a massa vitae nunc commodo porta nec ac odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed odio vitae mauris mollis lobortis a non justo. Quisque tristique imperdiet mi, id iaculis felis mollis non. Ut tristique nunc turpis, nec faucibus tortor tincidunt vel. Vestibulum tincidunt, nisl eget interdum rhoncus, tellus ligula maximus ipsum, in iaculis lectus elit et diam. Fusce sed cursus sem. Donec.</p>
+      <a href="#" class="btn btn-default learnmore-button startexploring-button-adjustment">START EXPLORING</a>
+    </div>
+  </div>
 </div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Large Scale Redevelopment</h1>
+            <p class="paragraph-12">Communities are looking at under-utilized sites - such as shopping malls - to build
+              new homes and businesses. These large urban redevelopment sites have huge potential for local and low carbon energy choices.</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/Image-56.jpg" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Community-Wide Retrofit</h1>
+            <p class="paragraph-12">Communities across Metro Vancouver are looking for strategies to “scale-up” energy
+              efficiency upgrades for homes and other building energy retrofits. When a community retrofits together, it can have a big positive impact on carbon emissions and energy bills.</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/Image-52.jpg" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14 last-section-bottom-margin-adjustment">
+  <div class="container-fluid custom-container-4">
+    <div>
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Renewable Energy Policy</h1>
+            <p class="paragraph-12">Many cities in BC and around the world are constructing specific policies and
+              programs to reach ambitious renewable energy targets, as part of the transition to the low-carbon economy. All BC communities have GHG reduction targets to meet - how do we develop
+              renewable energy supply in municipalities, while creating a healthier and livable city?</p>
+            <a href="#" class="btn btn-default learnmore-button" role="button">LEARN MORE</a></div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-8.png" srcset="images/Mask-Group-82x-p-500.png 500w, images/Mask-Group-8.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/Image-53.jpg" class="image-27"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

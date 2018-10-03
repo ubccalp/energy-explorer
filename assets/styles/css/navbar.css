@@ -1,0 +1,10 @@
+/* line 1, ../sass/navbar.scss */
+.navbar {
+  height: 70px;
+}
+
+/* line 5, ../sass/navbar.scss */
+.cee-logo {
+  width: 45px;
+  height: 45px;
+}
