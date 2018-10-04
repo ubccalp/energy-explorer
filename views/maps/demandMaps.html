@@ -51,6 +51,9 @@
 {% endblock scripts %}
 {% block content %}
 {% parent %}
+
+{% include "../components/navbar-maps.html"%}
+
 <body onload='init()'>
 
 	<section id="section03">
