@@ -25,15 +25,8 @@ html, body {
 
 /* line 18, ../sass/energyMaps.scss */
 .leaflet-panel-layers {
-  padding-top: 54px;
+  padding-top: 90px;
   font-size: 16px;
-}
-
-/* line 23, ../sass/energyMaps.scss */
-.container-fluid {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
 }
 
 /* line 29, ../sass/energyMaps.scss */
@@ -318,7 +311,12 @@ html, body {
   font-size: 14px;
 }
 
-/* line 269, ../sass/energyMaps.scss */
+/* line 267, ../sass/energyMaps.scss */
+.map-overflow-background {
+  background-color: #2cb195;
+}
+
+/* line 271, ../sass/energyMaps.scss */
 #logo_home {
   text-aling: center;
   line-height: 35px;
@@ -335,7 +333,7 @@ html, body {
   o-border-radius: 5px;
 }
 
-/* line 270, ../sass/energyMaps.scss */
+/* line 272, ../sass/energyMaps.scss */
 #logo_home:before {
   content: "";
   position: absolute;
@@ -348,7 +346,7 @@ html, body {
   border-right: 7px solid transparent;
 }
 
-/* line 273, ../sass/energyMaps.scss */
+/* line 275, ../sass/energyMaps.scss */
 section {
   position: relative;
   width: 100%;

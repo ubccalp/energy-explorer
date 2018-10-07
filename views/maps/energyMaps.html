@@ -6,52 +6,56 @@
 <!-- mapbox -->
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 <link rel="stylesheet" type="text/css" href="../../styles/css/energyMaps.css">
-<link rel="stylesheet" type="text/css" href="../../styles/css/nv.d3.css"> {% endblock head %} {% block content %} {% parent %}
+<link rel="stylesheet" type="text/css" href="../../styles/css/nv.d3.css"> {% endblock head %} {% block content %} {%
+parent %}
 
 {% include "../components/navbar-maps.html"%}
 
 <!-- Map -->
-<div id="map">
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <!-- header -->
-        <div class="col-md-6 col-xs-8" id="header">
-            <div class="row">
-                <div class="col-md-10 nopadding" id="toplogo">
+<div class="map-overflow-background">
+    <div id="map">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- header -->
+            <div class="col-md-6 col-xs-8" id="header">
+                <div class="row">
+                    <div class="col-md-10 nopadding" id="toplogo">
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- infosidebox -->
-        <div class="col-md-2 col-md-push-4 col-xs-8" id="infoside">
-            <div class="row">
-                <div class="col-md-12" id="infosideheader">
-                    <div class="labele">
-                        <!-- <span>HOVER & CLICK DATA</span> -->
+            <!-- infosidebox -->
+            <div class="col-md-2 col-md-push-4 col-xs-8" id="infoside">
+                <div class="row">
+                    <div class="col-md-12" id="infosideheader">
+                        <div class="labele">
+                            <!-- <span>HOVER & CLICK DATA</span> -->
+                        </div>
+                        <h2 id="hover">
+                            <span class="title"></span>
+                            <br />
+                            <span class="value"></span>
+                        </h2>
+                        <h1 id="piecityWrap">Energy Demand: <span id="piecity"></span></h1>
                     </div>
-                    <h2 id="hover">
-                        <span class="title"></span>
-                        <br/>
-                        <span class="value"></span>
-                    </h2>
-                    <h1 id="piecityWrap">Energy Demand: <span id="piecity"></span></h1>
-                </div>
 
-                <div class="col-md-12">
-                    <svg id="pietemp"></svg>
-                    <p>Energy use statistics reported in the <a target="_blank" href="http://www2.gov.bc.ca/gov/topic.page?id=9CD252EC63C84868AC2325F70E21683C">CEEI 2010</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12" id="infosidelegend">
-                    <div class="labele">
-                        <span>LEGEND</span>
+                    <div class="col-md-12">
+                        <svg id="pietemp"></svg>
+                        <p>Energy use statistics reported in the <a target="_blank" href="http://www2.gov.bc.ca/gov/topic.page?id=9CD252EC63C84868AC2325F70E21683C">CEEI
+                                2010</a></p>
                     </div>
-                    <div class="legend"></div>
                 </div>
-                <!-- <div class = "col-md-12">
+                <div class="row">
+                    <div class="col-md-12" id="infosidelegend">
+                        <div class="labele">
+                            <span>LEGEND</span>
+                        </div>
+                        <div class="legend"></div>
+                    </div>
+                    <!-- <div class = "col-md-12">
                             <svg id= "pielegend"></svg>
                         </div> -->
+                </div>
             </div>
         </div>
     </div>
