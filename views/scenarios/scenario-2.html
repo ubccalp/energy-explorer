@@ -1,43 +1,88 @@
-{% extends '../layout.html' %} {% block title %}{% parent %} - Case Studies and Resources{% endblock %} {% block head %} {%
-  parent %}
-  <link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css">
-  <link rel="stylesheet" href="../styles/css/scenario.css">
-  <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script>
-  <script type="text/javascript" src="../js/scenario.js"></script>
-  {% endblock head %} {% block content %} {% parent %}
-  
-  <ul id="menu">
-    <!-- <li class="active"><a href="/">Home</a></li> -->
-    <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Introduction</a></li>
-    <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Average lot Single Family</a></li>
-    <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Small lot Single Family</a></li>
-    <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Townhouse</a></li>
-    <li data-menuanchor="page5" style="border:dotted 1px"><a href="#page5">Conclusion</a></li>
-  </ul>
-  
-  
-  <div id="pagepiling">
-  
-    <div class="section" id="section1">
-      {% include 'scenario-2.1.html' %}
-    </div>
-  
-    <div class="section" id="section2">
-      {% include 'scenario-2.2.html' %}
-    </div>
-  
-    <div class="section" id="section3">
-      {% include 'scenario-2.3.html' %}
-    </div>
-  
-    <div class="section" id="section4">
-      {% include 'scenario-2.4.html' %}
-    </div>
-  
-    <div class="section" id="section5">
-        {% include 'scenario-2.5.html' %}
-      </div>
-  
+{% extends '../layout.html' %} {% block title %}{% parent %} - Case Studies and Resources{% endblock %} {% block head
+%} {%
+parent %}
+<!-- <link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css"> -->
+<link rel="stylesheet" href="../styles/css/scenario.css">
+<!-- <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script> -->
+<script type="text/javascript" src="../js/scenario.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" rel="stylesheet">
+{% endblock head %} {% block content %} {% parent %}
+
+{#<ul id="menu">
+  <!-- <li class="active"><a href="/">Home</a></li> -->
+  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Introduction</a></li>
+  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Average lot Single Family</a></li>
+  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Small lot Single Family</a></li>
+  <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Townhouse</a></li>
+  <li data-menuanchor="page5" style="border:dotted 1px"><a href="#page5">Conclusion</a></li>
+</ul>
+
+
+<div id="pagepiling">
+
+  <div class="section" id="section1">
+    {% include 'scenario-2.1.html' %}
   </div>
-  
-  {% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}
+
+  <div class="section" id="section2">
+    {% include 'scenario-2.2.html' %}
+  </div>
+
+  <div class="section" id="section3">
+    {% include 'scenario-2.3.html' %}
+  </div>
+
+  <div class="section" id="section4">
+    {% include 'scenario-2.4.html' %}
+  </div>
+
+  <div class="section" id="section5">
+    {% include 'scenario-2.5.html' %}
+  </div>
+
+</div>#}
+
+{% include "../components/navbar-scenarios.html" %}
+{% include "../components/navbar-scenarios-reimaginingSuburbia.html" %}
+
+<div id="fullpage">
+  <div class="section fp-auto-height active" data-anchor="page1">
+    {% include 'scenario-2.1.html' %}
+  </div>
+
+  <div class="section" data-anchor="page2">
+    {% include 'scenario-2.2.html' %}
+  </div>
+
+  <div class="section" data-anchor="page3">
+    {% include 'scenario-2.3.html' %}
+  </div>
+
+  <div class="section" data-anchor="page4">
+    {% include 'scenario-2.4.html' %}
+  </div>
+
+  <div class="section" data-anchor="page5">
+    {% include 'scenario-2.5.html' %}
+  </div>
+</div>
+
+{% endblock content %} {% block scripts %} {% parent %} 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+    menu: '#myMenu',
+    scrollOverflow: true,
+    normalScrollElements: '#testElement'
+  });
+
+  //disabling scrolling
+  fullpage_api.setAllowScrolling(false);
+
+  //disabling all keyboard scrolling
+  fullpage_api.setKeyboardScrolling(false);
+</script>
+{% endblock scripts %}
