@@ -7,7 +7,9 @@
   "dependencies": {
     "consolidate": "^0.14.1",
     "express": "*",
-    "swig": "*"
+    "fullpage.js": "^3.0.3",
+    "swig": "*",
+    "lity": "^2.3.1"
   },
   "scripts": {
     "debug": "node debug app.js",

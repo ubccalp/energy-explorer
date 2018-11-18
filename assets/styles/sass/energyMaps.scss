@@ -2,7 +2,7 @@
 
 html,body {
     margin:0; 
-    padding-top: $top-padding; 
+    // padding-top: $top-padding; 
     height:100%;
     width:100%;
 }
@@ -16,15 +16,16 @@ html,body {
 }
 
 .leaflet-panel-layers {
-    padding-top: 54px;
+    // padding-top: 90px;
+    margin-top: 90px !important;
     font-size: 16px;
 }
 
-.container-fluid{
-    margin-left: 10px;
-    margin-right:10px;
-    margin-top: 10px;
-} 
+// .container-fluid{
+//     margin-left: 10px;
+//     margin-right:10px;
+//     margin-top: 10px;
+// } 
 
 #homelogo{
     width:100px;
@@ -264,7 +265,9 @@ html,body {
 
 .titlelegend{font-size:14px;}
 
-
+.map-overflow-background{
+    background-color: #2cb195;
+  }
 
 #logo_home{text-aling: center; line-height: 35px; color:#FFFFFF; width:80px; height: 35px; background: #292b2c; position:relative; margin-top:-35px; left: -2px;  border-radius:5px; webkit-border-radius:5px; moz-border-radius:5px; o-border-radius:5px;  }
 #logo_home:before {content:""; position: absolute; top: 35px; right:33px; width: 0; height: 0; border-left: 7px solid transparent; border-top: 14px solid #292b2c; border-right: 7px solid transparent;}

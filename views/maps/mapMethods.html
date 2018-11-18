@@ -1,277 +1,291 @@
 {% extends '../layout.html' %} {% block title %}{% parent %} {% endblock %} {% block head %} {% parent %}
 <link rel="stylesheet" type="text/css" href="../../styles/css/mapMethods.css">
-<script src="../../js/mapMethods.js"></script> {% endblock head %} {% block content %} {% parent %}
-<div class="page-container">
+<script src="../../js/mapMethods.js"></script> {% endblock head %} {% block content %} {% parent %} 
 
-  <h1>Map Methodologies</h1>
+{% include "../components/navbar-maps.html"%} 
+{% include "../components/navbar-maps-overview.html" %}
 
-  <h3>These maps are visuals that show an inventory of the potential capacity for select renewable energy resource across the
-    Metro Vancouver region. Much of the energy currently used for our homes comes from remote suppliers in BC and Alberta,
-    at least 400-100 kilometers away. These include natural gas to heat our home and electricity to power our homes. The
-    focus of these maps is to visualize what local energy solutions would look for Metro Vancouver with the options of various
-    renewable energy sources, including solar, wind, hydro (run-of-river), sewage heat recovery, and bioenergy. The selection
-    of maps does not reflect constrains of economic viability, social acceptability or current regulations. Existing data
-    from various sources are analyzed and mapped using new techniques suitable to communicating energy resources at a regional
-    scale.
-  </h3>
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+    <h1>Map Methodologies</h1>
 
-  <h2>
-    <b>About</b>
-  </h2>
-  <h3>Our suppliers for our homes comes from remote suppliers in BC and Alberta, at least 400-100 kilometers away. Natural gas
-    to heat our home is piped from Northeastern BC and Alberta. Electricity to power our homes comes primarily (approximately
-    90%) from Hydroelectric dams in southeastern and central BC. This hydroelectricity is supplemented by natural gas electricity
-    generation in BC and, at times, by other fossil fuel-based generating plants in Alberta and the United States. Metro
-    Vancouver is also crossed by railways and pipelines which ship coal and oil from the oilsands for export. A small portion
-    of the oil that is exported is then imported back to Canada to meet our transportation needs. These maps were developed
-    by Rory Tooke, PhD. Questions should be sent to
-    <a href="mailto:deeptim@mail.ubc.ca?subject=CEE%20Maps">Deepti Matthew Iype</a>, Research Scientist at CALP.</h3>
-
-  <div class="row">
-    <h3>
-      <b>Solar</b>
+    <h3>These maps are visuals that show an inventory of the potential capacity for select renewable energy resource across
+      the Metro Vancouver region. Much of the energy currently used for our homes comes from remote suppliers in BC and Alberta,
+      at least 400-100 kilometers away. These include natural gas to heat our home and electricity to power our homes. The
+      focus of these maps is to visualize what local energy solutions would look for Metro Vancouver with the options of
+      various renewable energy sources, including solar, wind, hydro (run-of-river), sewage heat recovery, and bioenergy.
+      The selection of maps does not reflect constrains of economic viability, social acceptability or current regulations.
+      Existing data from various sources are analyzed and mapped using new techniques suitable to communicating energy resources
+      at a regional scale.
     </h3>
-    <section class="fg4">
-      <div class="image-container">
-        <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
-        <div class="middle">
-          <a href="./energy-maps">
-            <div class="caption">Solar Map</div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="fg8">
-      <h3>There are three components of sunlight: (1) Atmosphere, (2) Solar Position, and (3) Urban Form. Local governments can
-        use zoning bylaws to help dictate the building and urban design, including the roof geometry. For example, the direction
-        by which sloped roofs are orientated or the placement of trees on property are ways that can utilize solar potential.</h3>
-    </section>
-
-    <section class="fg12">
-      <h3>LiDAR (Light Detection and Ranging) datasets are used for looking at solar energy potentials. Four steps were considered
-        based on the publications in the Solar Energy and Applied Energy Journals: (1) Determine the outline of building,
-        (2) Calculate the slope and orientation of each square meter of roof, (3) for each square meter of roof, locate surrounding
-        buildings and trees that could occlude the sun, and (4) model the trajectory of the sun at regular time intervals
-        to determine how much solar energy reaches the roofs over a period of time (accounting atmospheric effects).</h3>
-      <h3>Since LiDAR datasets are not available in all municipalities across the Metro Vancouver region, the calculation was
-        extrapolated across regions of known radiation from LiDAR to non-available LiDAR sites. For a more in-depth report
-        of our map methodology, please feel free to view it
-        <a href="http://www.energyexplorer.ca/blog/form-and-photons/">here.</a>
-      </h3>
-    </section>
-  </div>
-
-  <div class="row">
 
     <h2>
-      <b>Cloud Cover</b>
+      <b>About</b>
     </h2>
-    <section class="fg8">
-      <h3>Cloud cover and aerosols were included in assessment of solar energy but did not account any variation in cloud cover
-        across Metro Vancouver (i.e. cloud cover was assumed to be the same in all of the Metro Vancouver municipalities).</h3>
-    </section>
+    <h3>Our suppliers for our homes comes from remote suppliers in BC and Alberta, at least 400-100 kilometers away. Natural
+      gas to heat our home is piped from Northeastern BC and Alberta. Electricity to power our homes comes primarily (approximately
+      90%) from Hydroelectric dams in southeastern and central BC. This hydroelectricity is supplemented by natural gas electricity
+      generation in BC and, at times, by other fossil fuel-based generating plants in Alberta and the United States. Metro
+      Vancouver is also crossed by railways and pipelines which ship coal and oil from the oilsands for export. A small portion
+      of the oil that is exported is then imported back to Canada to meet our transportation needs. These maps were developed
+      by Rory Tooke, PhD. Questions should be sent to
+      <a href="mailto:deeptim@mail.ubc.ca?subject=CEE%20Maps">Deepti Matthew Iype</a>, Research Scientist at CALP.</h3>
 
-    <section class="fg4">
-        <div class="image-container">
-            <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
-            <div class="middle">
-              <a href="./energy-maps">
-                <div class="caption">Cloud Cover Map</div>
-              </a>
-            </div>
-          </div>
-    </section>
-
-    <h3>For cloud cover, many components are involved to understand the effects and availability of solar energy: (1) Trees and
-      building shadows on building roofs, (2) angle between roof and sun, and (3) total amount of roof space available to
-      mount solar panels). MODIS is a sensor that is mounted to two satellites (Terra and Aqua) and scans the entire Earth
-      every 1-2 days.</h3>
-    <h3>
-      <a href="https://modis.gsfc.nasa.gov/about/">MODIS</a> measures light reflected from Earth’s surface and the atmosphere at various wavelengths. Data from the Aqua
-      satellite was used since the time of the image acquisition more closely coincides with highest sun angles (meaning
-      strongest solar energy hitting local earth surface).</h3>
-    <h3>In this map, the data spanned over an 11-year period from July 2002 to 2013. By using the
-      <a href="https://lpdaac.usgs.gov/tools/modis_reprojection_tool_swath">MODIS Reprojection Tool Swatch</a>, the image files were geographically referenced and gridded to an area around Metro
-      Vancouver. For a more in-depth report of our map methodology, please feel free to view it
-      <a href="http://www.energyexplorer.ca/blog/metro-vancouver-cloud-cover-2/">here.</a>
-    </h3>
-  </div>
-
-  <div class="row">
-    <h3>
-      <b>Wind</b>
-    </h3>
-    <section class="fg4">
-        <div class="image-container">
-            <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
-            <div class="middle">
-              <a href="./energy-maps">
-                <div class="caption">Wind Map</div>
-              </a>
-            </div>
-          </div>
-    </section>
-
-    <section class="fg8">
-      <h3>Wind turbines provide some of the most iconic imagery when it to comes to renewable energy. The colour, shape and movement
-        of wind turbines provide visceral symbols of a low carbon future. Wind energy technologies are also often a low-cost
-        option for energy generation and are being rapidly developed across the world. In 2012, global wind energy capacity
-        grew by an estimated 50,000 MW and wind now supplies over 2.5% of global electricity demand.</h3>
-    </section>
-
-    <section class="fg12">
-      <h3>Have you ever seen the large wind turbine on Grouse Mountain? Metro Vancouver calls it the “Eye of the Wind”. There
-        are four types of area sites represented: (1) Offshore, (2) Urban, (3) Rural, and (4) Mountain.</h3>
-      <h3>There are variation in wind speed across Metro Vancouver.
-        <a href="http://www.windatlas.ca/index-en.php">Environment Canada’s Canadian Wind Energy Atlas</a> is the primary source of data, where wind assessments are calculated
-        at 80m above surface. They also statistically analyzed atmospheric observation and models provided by
-        <a href="http://www.ncep.noaa.gov/">US National Centers for Environmental Prediction</a> and
-        <a href="https://ncar.ucar.edu/">National Center for Atmospheric Research</a> at 6 hour intervals, between 1958-2000. This provided a general systematic
-        estimate of wind speed across large areas (i.e. all of Canada). To turn wind into electricity, institutions suggest
-        the best sites for wind energy projects is crucial in having consistent high winds. But there is a place for medium
-        and low wind sites that represent 90% of locations where financing is available. It all depends on design. For a
-        more in-depth report of our map methodology, please feel free to view it
-        <a href="http://www.energyexplorer.ca/blog/wind-resources-across-metro-vancouver/">here.</a>
+    <div class="row">
+      <h3>
+        <b>Solar</b>
       </h3>
-    </section>
-  </div>
+      <section class="fg4">
+        <a href="./energy-maps">
+          <div class="image-container">
+            <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
+            <div class="middle">
+              <div class="caption">Solar Map</div>
+            </div>
+          </div>
+        </a>
+      </section>
 
-  <div class="row">
-    <h3>
-      <b>Bioenergy</b>
-    </h3>
-    <section class="fg4">
-        <div class="image-container">
+      <section class="fg8">
+        <h3>There are three components of sunlight: (1) Atmosphere, (2) Solar Position, and (3) Urban Form. Local governments
+          can use zoning bylaws to help dictate the building and urban design, including the roof geometry. For example,
+          the direction by which sloped roofs are orientated or the placement of trees on property are ways that can utilize
+          solar potential.</h3>
+      </section>
+
+      <section class="fg12">
+        <h3>LiDAR (Light Detection and Ranging) datasets are used for looking at solar energy potentials. Four steps were
+          considered based on the publications in the Solar Energy and Applied Energy Journals: (1) Determine the outline
+          of building, (2) Calculate the slope and orientation of each square meter of roof, (3) for each square meter of
+          roof, locate surrounding buildings and trees that could occlude the sun, and (4) model the trajectory of the sun
+          at regular time intervals to determine how much solar energy reaches the roofs over a period of time (accounting
+          atmospheric effects).</h3>
+        <h3>Since LiDAR datasets are not available in all municipalities across the Metro Vancouver region, the calculation
+          was extrapolated across regions of known radiation from LiDAR to non-available LiDAR sites. For a more in-depth
+          report of our map methodology, please feel free to view it
+          <a href="http://www.energyexplorer.ca/blog/form-and-photons/">here.</a>
+        </h3>
+      </section>
+    </div>
+
+    <div class="row">
+
+      <h2>
+        <b>Cloud Cover</b>
+      </h2>
+      <section class="fg8">
+        <h3>Cloud cover and aerosols were included in assessment of solar energy but did not account any variation in cloud
+          cover across Metro Vancouver (i.e. cloud cover was assumed to be the same in all of the Metro Vancouver municipalities).</h3>
+      </section>
+
+      <section class="fg4">
+        <a href="./energy-maps">
+          <div class="image-container">
+            <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
+            <div class="middle">
+              <div class="caption">Cloud Cover Map</div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <h3>For cloud cover, many components are involved to understand the effects and availability of solar energy: (1) Trees
+        and building shadows on building roofs, (2) angle between roof and sun, and (3) total amount of roof space available
+        to mount solar panels). MODIS is a sensor that is mounted to two satellites (Terra and Aqua) and scans the entire
+        Earth every 1-2 days.</h3>
+      <h3>
+        <a href="https://modis.gsfc.nasa.gov/about/">MODIS</a> measures light reflected from Earth’s surface and the atmosphere
+        at various wavelengths. Data from the Aqua satellite was used since the time of the image acquisition more closely
+        coincides with highest sun angles (meaning strongest solar energy hitting local earth surface).</h3>
+      <h3>In this map, the data spanned over an 11-year period from July 2002 to 2013. By using the
+        <a href="https://lpdaac.usgs.gov/tools/modis_reprojection_tool_swath">MODIS Reprojection Tool Swatch</a>, the image
+        files were geographically referenced and gridded to an area around Metro Vancouver. For a more in-depth report of
+        our map methodology, please feel free to view it
+        <a href="http://www.energyexplorer.ca/blog/metro-vancouver-cloud-cover-2/">here.</a>
+      </h3>
+    </div>
+
+    <div class="row">
+      <h3>
+        <b>Wind</b>
+      </h3>
+      <section class="fg4">
+        <a href="./energy-maps">
+          <div class="image-container">
+            <img src="../img/solar_map.png" alt="cee-thumbnail" class="image" style="width:100%">
+            <div class="middle">
+              <div class="caption">Wind Map</div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section class="fg8">
+        <h3>Wind turbines provide some of the most iconic imagery when it to comes to renewable energy. The colour, shape
+          and movement of wind turbines provide visceral symbols of a low carbon future. Wind energy technologies are also
+          often a low-cost option for energy generation and are being rapidly developed across the world. In 2012, global
+          wind energy capacity grew by an estimated 50,000 MW and wind now supplies over 2.5% of global electricity demand.</h3>
+      </section>
+
+      <section class="fg12">
+        <h3>Have you ever seen the large wind turbine on Grouse Mountain? Metro Vancouver calls it the “Eye of the Wind”.
+          There are four types of area sites represented: (1) Offshore, (2) Urban, (3) Rural, and (4) Mountain.</h3>
+        <h3>There are variation in wind speed across Metro Vancouver.
+          <a href="http://www.windatlas.ca/index-en.php">Environment Canada’s Canadian Wind Energy Atlas</a> is the primary
+          source of data, where wind assessments are calculated at 80m above surface. They also statistically analyzed atmospheric
+          observation and models provided by
+          <a href="http://www.ncep.noaa.gov/">US National Centers for Environmental Prediction</a> and
+          <a href="https://ncar.ucar.edu/">National Center for Atmospheric Research</a> at 6 hour intervals, between 1958-2000.
+          This provided a general systematic estimate of wind speed across large areas (i.e. all of Canada). To turn wind
+          into electricity, institutions suggest the best sites for wind energy projects is crucial in having consistent
+          high winds. But there is a place for medium and low wind sites that represent 90% of locations where financing
+          is available. It all depends on design. For a more in-depth report of our map methodology, please feel free to
+          view it
+          <a href="http://www.energyexplorer.ca/blog/wind-resources-across-metro-vancouver/">here.</a>
+        </h3>
+      </section>
+    </div>
+
+    <div class="row">
+      <h3>
+        <b>Bioenergy</b>
+      </h3>
+      <section class="fg4">
+        <a href="./energy-maps">
+          <div class="image-container">
             <img src="../img/map_2.png" alt="cee-thumbnail" class="image" style="width:100%">
             <div class="middle">
-              <a href="./energy-maps">
-                <div class="caption">Bioenergy Map</div>
-              </a>
+              <div class="caption">Bioenergy Map</div>
             </div>
           </div>
-    </section>
+        </a>
+      </section>
 
-    <section class="fg8">
-      <h3>Bioenergy describes the energy contained in biological material, such as wood, crops, manure and garbage. British Columbia
-        has large natural biomass resources that can be used to produce energy at the individual level (eg. high-efficiency
-        wood stoves), farm level (eg. biogas), or in district energy plants. </h3>
-    </section>
+      <section class="fg8">
+        <h3>Bioenergy describes the energy contained in biological material, such as wood, crops, manure and garbage. British
+          Columbia has large natural biomass resources that can be used to produce energy at the individual level (eg. high-efficiency
+          wood stoves), farm level (eg. biogas), or in district energy plants. </h3>
+      </section>
 
-    <section class="fg12">
-      <h3>The two main types of bioenergy come from biofuel sources and biomass sources. Biofuel can be bioethanol (fermentation
-        of starch crops), biodiesel (vegetable oils and animal fats), and biogas (methane from anaerobic digestion of organic
-        waste or syngas from wood). Biomass sources can come from forestry waste, construction wood waste, fuel crops (dried
-        manure and stemwood), garbage, charcoal or biochar.</h3>
+      <section class="fg12">
+        <h3>The two main types of bioenergy come from biofuel sources and biomass sources. Biofuel can be bioethanol (fermentation
+          of starch crops), biodiesel (vegetable oils and animal fats), and biogas (methane from anaerobic digestion of organic
+          waste or syngas from wood). Biomass sources can come from forestry waste, construction wood waste, fuel crops (dried
+          manure and stemwood), garbage, charcoal or biochar.</h3>
+        <h3>
+          <b>Biomass</b>
+        </h3>
+        <h3>The
+          <a href="http://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-inventory">BC
+            Vegetation Resource Inventory</a> was used to prove information where vegetation resources are located and how
+          much resource exists within inventory unit. The site index* and tree species was used from VRI to establish background
+          conditions for estimates of biomass in Metro Vancouver. These information were entered into a FORECAST model, where
+          the model simulates initial soil conditions and ecosystem dynamics (calibrated to conditions relative to Metro
+          Vancouver region). Categorizing vegetation inventory units into classes can be done to represent the distribution
+          of the site indices for each species. One of the main outputs of the model is running simulation of accumulation
+          of biomass over time. The analysis identified 4.5 million metric tons of annual sustainable forest biomass but
+          the question comes down to “what portion of biomass can be realistically harvested?”. *Site index – indicator of
+          potential for trees to grow at a particular location (estimate site productivity) For a more in-depth report of
+          our map methodology, please feel free to view it
+          <a href="http://www.energyexplorer.ca/blog/energy-from-the-forests/">here.</a>
+        </h3>
+        <h3>
+          <b>Biogas</b>
+        </h3>
+        <h3>Agriculture contributes up to 30% of all GHG emissions, where methane is released into the atmostphere from livestock
+          manure. Methane is also a primary chemical component of biogas and natural gas. When it is combusted, the fuel
+          can be used to generate electricity and/or heat. Livestock head counts was used from the
+          <a href="http://www.statcan.gc.ca/pub/95-629-x/2007000/4123856-eng.htm">2006 Agriculture Census</a>. The conversion
+          for manure and energy yield by livestock grouping were selected from American and European studies. Assuming that
+          manure is available for energy producing purposes, Metro Vancouver region could produce a total of ~675TJ of livestock
+          biogas energy per year (this is equivalent to the total thermal and electricity energy used in approximately 3000
+          single family homes) . For a more in-depth report of our map methodology, please feel free to view it
+          <a href="http://www.energyexplorer.ca/blog/the-power-of-poop/">here.</a>
+        </h3>
+      </section>
+    </div>
+
+
+    <div class="row">
       <h3>
-        <b>Biomass</b>
+        <b>Industrial Heat Recovery</b>
       </h3>
-      <h3>The
-        <a href="http://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-inventory">BC Vegetation Resource Inventory</a> was used to prove information where vegetation resources are located and how
-        much resource exists within inventory unit. The site index* and tree species was used from VRI to establish background
-        conditions for estimates of biomass in Metro Vancouver. These information were entered into a FORECAST model, where
-        the model simulates initial soil conditions and ecosystem dynamics (calibrated to conditions relative to Metro Vancouver
-        region). Categorizing vegetation inventory units into classes can be done to represent the distribution of the site
-        indices for each species. One of the main outputs of the model is running simulation of accumulation of biomass over
-        time. The analysis identified 4.5 million metric tons of annual sustainable forest biomass but the question comes
-        down to “what portion of biomass can be realistically harvested?”. *Site index – indicator of potential for trees
-        to grow at a particular location (estimate site productivity) For a more in-depth report of our map methodology,
-        please feel free to view it
-        <a href="http://www.energyexplorer.ca/blog/energy-from-the-forests/">here.</a>
-      </h3>
-      <h3>
-        <b>Biogas</b>
-      </h3>
-      <h3>Agriculture contributes up to 30% of all GHG emissions, where methane is released into the atmostphere from livestock
-        manure. Methane is also a primary chemical component of biogas and natural gas. When it is combusted, the fuel can
-        be used to generate electricity and/or heat. Livestock head counts was used from the
-        <a href="http://www.statcan.gc.ca/pub/95-629-x/2007000/4123856-eng.htm">2006 Agriculture Census</a>. The conversion for manure and energy yield by livestock grouping were selected from
-        American and European studies. Assuming that manure is available for energy producing purposes, Metro Vancouver region
-        could produce a total of ~675TJ of livestock biogas energy per year (this is equivalent to the total thermal and
-        electricity energy used in approximately 3000 single family homes) . For a more in-depth report of our map methodology,
-        please feel free to view it
-        <a href="http://www.energyexplorer.ca/blog/the-power-of-poop/">here.</a>
-      </h3>
-    </section>
-  </div>
 
+      <section class="fg8">
+        <h3>Industrial heat recovery is a promising way to take waste and turn it into a usable energy resource for our communities.
+          There are various available methods that can capture the resulting heat energy from industrial processes. Heat
+          Recovery is the practice of capturing the energy from waste byproduct of one process and using it as input for
+          another.</h3>
+      </section>
 
-  <div class="row">
-    <h3>
-      <b>Industrial Heat Recovery</b>
-    </h3>
-
-    <section class="fg8">
-      <h3>Industrial heat recovery is a promising way to take waste and turn it into a usable energy resource for our communities.
-        There are various available methods that can capture the resulting heat energy from industrial processes. Heat Recovery
-        is the practice of capturing the energy from waste byproduct of one process and using it as input for another.</h3>
-    </section>
-
-    <section class="fg4">
-        <div class="image-container">
+      <section class="fg4">
+        <a href="./energy-maps">
+          <div class="image-container">
             <img src="../img/map_3.png" alt="cee-thumbnail" class="image" style="width:100%">
             <div class="middle">
-              <a href="./energy-maps">
-                <div class="caption">Industrial Heat Recovery Map</div>
-              </a>
+              <div class="caption">Industrial Heat Recovery Map</div>
             </div>
           </div>
-    </section>
+        </a>
+      </section>
 
-    <section class="fg12">
-      <h3>There are two basic applications: (1) Recycling waste heat back into the processes at the same facility and; (2) Transferring
-        the waste heat for use by another process off-site, perhaps some distance away. </h3>
-    </section>
-  </div>
+      <section class="fg12">
+        <h3>There are two basic applications: (1) Recycling waste heat back into the processes at the same facility and;
+          (2) Transferring the waste heat for use by another process off-site, perhaps some distance away. </h3>
+      </section>
+    </div>
 
-  <div class="row">
-    <h3>
-      <b>Metro Vancouver’s Energy Demands</b>
-    </h3>
-    <section class="fg4">
-        <div class="image-container">
+    <div class="row">
+      <h3>
+        <b>Metro Vancouver’s Energy Demands</b>
+      </h3>
+      <section class="fg4">
+        <a href="./demand-maps">
+          <div class="image-container">
             <img src="../img/map_red.png" alt="cee-thumbnail" class="image" style="width:100%">
             <div class="middle">
-              <a href="./demand-maps">
-                <div class="caption">Energy Demand Maps</div>
-              </a>
+              <div class="caption">Energy Demand Maps</div>
             </div>
           </div>
-    </section>
+        </a>
+      </section>
 
-    <section class="fg8">
-      <h3>Communities across the region use different total amounts of energy for electricity, heating, and transportation. We
-        also consume different amount of energy per person across the region, depending on which municipality we live in
-        (due to their housing types, land uses, transport options, and energy/climate change policies).</h3>
-    </section>
+      <section class="fg8">
+        <h3>Communities across the region use different total amounts of energy for electricity, heating, and transportation.
+          We also consume different amount of energy per person across the region, depending on which municipality we live
+          in (due to their housing types, land uses, transport options, and energy/climate change policies).</h3>
+      </section>
 
-    <section class="fg12">
-      <h3>In Metro Vancouver, approximately 30% of our energy use comes from residential buildings. The energy is split mainly
-        between natural gas and electricity*. To consider more of our energy demands, energy retrofits on upgrading the building
-        envelope (i.e. insulation, windows, etc.) and system efficiencies (i.e. furnace, hot water tank, etc.). The Province
-        of BC requires that at a minimum of 66% of new electricity demand are to be met by demand-side measures by 2020.
-        <a href="https://www.bchydro.com/energy-in-bc/planning-for-our-future/irp/document_centre/reports/november-2013-irp.html">BC Hydro’s Integrated Resource Plan</a> works on demand-side management to offset 43% of the new demand, and 50%
-        of the new capacity by 2023 (covering only electricity and natural gas.</h3>
-      <h3>*BC’s electricity generally comes from hydropower, a clean energy resource. However, hydroelectricity is supplemented
-        by natural gas electricity generation in BC and, at times, other fossil fuel-based generating plants in Alberta and
-        the United States. This ultimately makes our “clean energy” not so clean anymore. </h3>
-      <h3>The building’s energy use was measured by utilities, but there are privacy and liability concerns with restricted data
-        access. The energy audit information was taken from over 7000 houses from the Natural Resource Canada EcoEnergy Program.
-        The data was used in relation between the building’s energy use and its’ age. The trend shows that new homes perform
-        better than old ones as a general estimate (considering deviation and confidence). The BC Assessment data was used
-        to identify the year most homes are built and their size (floor area). This information was used in relation to the
-        between the building’s energy use and age to predict energy performances of these buildings for all homes in the
-        region. The assessment data also gave the number of units in townhouses, and apartment buildings to normalize data
-        so the energy use would be represented for individual dwelling units instead of multi-unit buildings as a whole.
-      </h3>
-    </section>
+      <section class="fg12">
+        <h3>In Metro Vancouver, approximately 30% of our energy use comes from residential buildings. The energy is split
+          mainly between natural gas and electricity*. To consider more of our energy demands, energy retrofits on upgrading
+          the building envelope (i.e. insulation, windows, etc.) and system efficiencies (i.e. furnace, hot water tank, etc.).
+          The Province of BC requires that at a minimum of 66% of new electricity demand are to be met by demand-side measures
+          by 2020.
+          <a href="https://www.bchydro.com/energy-in-bc/planning-for-our-future/irp/document_centre/reports/november-2013-irp.html">BC
+            Hydro’s Integrated Resource Plan</a> works on demand-side management to offset 43% of the new demand, and 50%
+          of the new capacity by 2023 (covering only electricity and natural gas.</h3>
+        <h3>*BC’s electricity generally comes from hydropower, a clean energy resource. However, hydroelectricity is supplemented
+          by natural gas electricity generation in BC and, at times, other fossil fuel-based generating plants in Alberta
+          and the United States. This ultimately makes our “clean energy” not so clean anymore. </h3>
+        <h3>The building’s energy use was measured by utilities, but there are privacy and liability concerns with restricted
+          data access. The energy audit information was taken from over 7000 houses from the Natural Resource Canada EcoEnergy
+          Program. The data was used in relation between the building’s energy use and its’ age. The trend shows that new
+          homes perform better than old ones as a general estimate (considering deviation and confidence). The BC Assessment
+          data was used to identify the year most homes are built and their size (floor area). This information was used
+          in relation to the between the building’s energy use and age to predict energy performances of these buildings
+          for all homes in the region. The assessment data also gave the number of units in townhouses, and apartment buildings
+          to normalize data so the energy use would be represented for individual dwelling units instead of multi-unit buildings
+          as a whole.
+        </h3>
+      </section>
+    </div>
+
+
+
+
+
+
   </div>
-
-
-
-
-
-
-
 </div>
 {% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}

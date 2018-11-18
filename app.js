@@ -15,6 +15,7 @@ app.set('views', __dirname + '/views');
 // Express middleware to serve static files
 app.use(express.static(__dirname + '/assets'));
 //app.use(express.static(path.join(__dirname, '/')))
+app.use('/lity', express.static(path.join(__dirname, 'node_modules/lity/')));
 
 // Import the routes file
 require('./routes/main.js')(express, app);

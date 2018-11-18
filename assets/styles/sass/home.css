@@ -83,7 +83,7 @@ h2 {
 @media only screen and (max-width: 600px) {
   .sponsor-image img {
     margin: 0 20px 20px 40px;
-    width: 50%;
+    width: 200px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     float: left; } }
@@ -91,27 +91,27 @@ h2 {
   .sponsor-image img {
     margin: 0 20px 20px 40px;
     width: 35%;
-    height: auto;
+    height: 210px;
     background-color: rgba(255, 255, 255, 0.5);
     float: left; } }
 @media only screen and (min-width: 768px) {
   .sponsor-image img {
     margin: 0 20px 20px 40px;
-    width: 25%;
+    width: 230px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     float: left; } }
 @media only screen and (min-width: 992px) {
   .sponsor-image img {
     margin: 0 20px 20px 40px;
-    width: 18%;
+    width: 250px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     float: left; } }
 @media screen and (min-width: 1200px) {
   .sponsor-image img {
     margin: 0 20px 20px 40px;
-    width: 17%;
+    width: 270px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     float: left; } }

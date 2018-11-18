@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html html lang="en-us">
+<html html lang="en">
       <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Community Energy Explorer website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,25 +9,29 @@
         <title>{% block title %}Community Energy Explorer{% endblock %}</title>
 
         {% block head %}
-        <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/styles/css/bootstrap-theme.min.css">
+        <!-- <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="/styles/css/fitgrd.pack.css">
-        <link rel="stylesheet" href="/styles/css/core.css">
-
-        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <!-- <link rel="stylesheet" href="/styles/css/core.css"> -->
+        
+        <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
         <script src="/js/dependencies/jquery-1.12.4.min.js"></script>
-        <script src="/js/dependencies/bootstrap.min.js"></script>
-        <script src="/js/navbar.js"></script>
-        <script src="/js/layout.js" defer></script>
+        <!-- <script src="/js/dependencies/bootstrap.min.js"></script> -->
+        <!-- <script src="/js/navbar.js"></script> -->
+        <!-- <script src="/js/layout.js" defer></script> -->
+        <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
         
         <link rel="icon" type="image/x-icon" href="/img/cee_logo.ico">        
-        <link rel="stylesheet" href="/styles/css/layout.css">
+        <!-- <link rel="stylesheet" href="/styles/css/layout.css"> -->
+
+        <link rel="stylesheet" href="/styles/css/energy101.css">
         {% endblock head %}
     </head>
 
     <body>
         <div id="wrapper">
-            {% include "./components/navbar.html" %}
+            {#{% include "./components/navbar.html" %}#}
             <div id="page-content-wrapper">
                 
             {% block content %}
@@ -36,7 +40,7 @@
         </div>
 
         {% block scripts %}
-        
+            <script src="/js/tabColoring.js"></script>
         {% endblock scripts %}
     </body>
 </html>

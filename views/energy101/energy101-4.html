@@ -1,10 +1,11 @@
 {% extends '../layout.html' %} {% block title %}{% parent %} - Energy 101{% endblock %} {% block head %} {% parent %}
-<link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css">
+<!-- <link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css"> -->
 <link rel="stylesheet" href="../styles/css/energy101-x.css">
-<script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script>
+<!-- <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script> -->
 <script type="text/javascript" src="../js/energy101-x.js"></script>
-{% endblock head %} {% block content %} {% parent %}
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" rel="stylesheet"> {% endblock head %}
+{% block content %} {% parent %} {% include "../components/navbar-energy101.html" %} {% include "../components/navbar-energy101-getEnergy.html"
+%} {#
 <ul id="menu">
   <!-- <li class="active"><a href="/">Home</a></li> -->
   <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Renewable Energy</a></li>
@@ -51,21 +52,73 @@
   </div>
 
   <div class="section" id="section8">
-      {% include 'energy101-4.8.html' %}
-    </div>
+    {% include 'energy101-4.8.html' %}
+  </div>
 
-    <div class="section" id="section9">
-        {% include 'energy101-4.9.html' %}
-      </div>
+  <div class="section" id="section9">
+    {% include 'energy101-4.9.html' %}
+  </div>
 
-      <div class="section" id="section10">
-          {% include 'energy101-4.10.html' %}
-        </div>
+  <div class="section" id="section10">
+    {% include 'energy101-4.10.html' %}
+  </div>
 
-        <div class="section" id="section11">
-            {% include 'energy101-4.11.html' %}
-          </div>
+  <div class="section" id="section11">
+    {% include 'energy101-4.11.html' %}
+  </div>
 
 </div>
+#}
 
-{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}
+<div id="fullpage">
+  <div class="section fp-auto-height active" data-anchor="page1">
+    {% include 'energy101-4.1.html' %}
+  </div>
+
+  <div class="section" data-anchor="page2">
+    {% include 'energy101-4.2.html' %}
+  </div>
+
+  <div class="section" data-anchor="page3">
+    {% include 'energy101-4.4.html' %}
+  </div>
+
+  <div class="section" data-anchor="page4">
+    {% include 'energy101-4.6.html' %}
+  </div>
+
+  <div class="section" data-anchor="page5">
+    {% include 'energy101-4.8.html' %}
+  </div>
+
+  <div class="section" data-anchor="page6">
+    {% include 'energy101-4.9.html' %}
+  </div>
+
+  <div class="section" data-anchor="page7">
+    {% include 'energy101-4.10.html' %}
+  </div>
+
+  <div class="section" data-anchor="page8">
+    {% include 'energy101-4.11.html' %}
+  </div>
+</div>
+
+{% endblock content %} {% block scripts %} {% parent %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+    menu: '#myMenu',
+    scrollOverflow: true,
+    normalScrollElements: '#testElement'
+  });
+
+  //disabling scrolling
+  fullpage_api.setAllowScrolling(false);
+
+  //disabling all keyboard scrolling
+  fullpage_api.setKeyboardScrolling(false);
+</script> {% endblock scripts %}

@@ -1,8 +1,9 @@
 {% extends 'layout.html' %} {% block title %}{% parent %} - Scenarios{% endblock %} {% block head %} {% parent %}
-<link rel="stylesheet" href="styles/css/scenarios.css">
-<script type="text/javascript" src="js/scenarios.js" defer></script> {% endblock head %} {% block content %} {% parent %}
+{#<link rel="stylesheet" href="styles/css/scenarios.css">
+<script type="text/javascript" src="js/scenarios.js" defer></script>#}
+<link rel="stylesheet" href="styles/css/scenarios.css">{% endblock head %} {% block content %} {% parent %}
 
-<div class="page-container">
+{#<div class="page-container">
 
   <div class="row">
     <section class="fg6">
@@ -105,5 +106,111 @@
     </section>
   </div>
 
+</div>#}
+
+{% include "./components/navbar-scenarios.html" %}
+{% include "./components/navbar-scenarios-overview.html" %}
+
+<div class="section-11" id="hero-image-top-margin-adjustment">
+  <div class="container-fluid custom-container-4">
+    <div class="hero-section">
+      <h1 class="heading-18">Imagine a neighborhood that can <br>save, generate and share energy</h1><img src="img/redesign/Rectangle-482x_1.png" class="image-26">
+      <p class="paragraph-10">Explore the different the scenarios below to use and support what local energy planning can look in your community.</p>
+      <a href="#firstSection" class="btn btn-default learnmore-button startexploring-button-adjustment">START EXPLORING</a>
+    </div>
+  </div>
 </div>
+
+<div class="section-14" id="firstSection">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Redeveloping A Mall</h1>
+            <p class="paragraph-12">Three scenarios were examined to explore opportunities for developing a more sustainable neighborhood. Each scenario builds upon the previous and integrates energy technologies that
+              can already be found in use across Metro Vancouver.</p>
+            <a href="scenarios/scenario1" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/scenarios-overview-image-1.png" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Re-Imagining Suburbia</h1>
+            <p class="paragraph-12">The Surrey scenario study explores opportunities for integrating renewable energy into a new suburban neighborhood. Similar low density residential greenfield development patterns can be found across Metro Vancouver. Can these neighborhoods be designed to maintain their
+              low density character while also reducing energy use and emissions?</p>
+            <a href="scenarios/scenario2" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/scenarios-overview-image-2.jpg" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Retrofitting Suburbia</h1>
+            <p class="paragraph-12">This scenario examines alternative approaches to reduce energy demand and
+              increase renewable supply for existing residential homes, while accommodating some densification in terms of
+              population. In order to avoid the most serious impacts of global warming beyond 2 degrees Celsius and meet
+              city targets, we must substantially reduce greenhouse gas emissions from natural gas and other hydrocarbons that we use to heat our
+              homes. We may also need the solar electricity to power our electric vehicles.</p>
+            <a href="scenarios/scenario3" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/scenarios-overview-image-3.jpg" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14">
+  <div class="container-fluid custom-container-4">
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Climate And Community</h1>
+            <p class="paragraph-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a massa vitae nunc commodo porta nec ac odio.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed odio vitae mauris mollis lobortis a non justo.
+              Quisque tristique imperdiet mi, id iaculis felis mollis non. Ut tristique nunc turpis, nec faucibus tortor tincidunt vel.</p>
+            <a href="scenarios/scenario4" class="btn btn-default learnmore-button" role="button">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-7.png" srcset="images/Mask-Group-7-p-500.png 500w, images/Mask-Group-7.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign\scenarios-overview-image-4.jpg" class="image-27"></div>
+      </div>
+  </div>
+</div>
+
+<div class="section-14 last-section-bottom-margin-adjustment">
+  <div class="container-fluid custom-container-4">
+    <div>
+      <div class="row section-divider">
+        <div class="col-lg-5">
+          <div>
+            <h1 class="heading-19">Revelstoke Interactive Planning Workshops</h1>
+            <p class="paragraph-12">This project investigated whether public understanding and acceptance of
+              smart growth would improve if citizens were provided with timely, accessible visualizations about why
+              and how it can help achieve energy reductions. The project was conducted in Revelstoke, BC as the city was considering
+              a Form Based Code to promote “smart growth” development.</p>
+            <a href="scenarios/scenario5" class="btn btn-default learnmore-button" role="button">LEARN MORE</a></div>
+        </div>
+        <!-- <div class="col-lg-7"><img src="images/Mask-Group-8.png" srcset="images/Mask-Group-82x-p-500.png 500w, images/Mask-Group-8.png 676w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 58vw, 57vw" class="image-27"></div> -->
+        <div class="col-lg-7"><img src="img/redesign/scenarios-overview-image-5.jpg" class="image-27"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}
