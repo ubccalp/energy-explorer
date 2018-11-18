@@ -298,24 +298,29 @@ img {
     padding-top: 27.5px !important;
     padding-bottom: 27.5px !important;
   }
+
+  /* line 398, ../sass/energy101.scss */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 400, ../sass/energy101.scss */
+  /* line 404, ../sass/energy101.scss */
   .heading-19 {
     margin-top: 0px;
   }
 
-  /* line 404, ../sass/energy101.scss */
+  /* line 408, ../sass/energy101.scss */
   .image-27 {
     margin-top: 0px;
   }
 
-  /* line 408, ../sass/energy101.scss */
+  /* line 412, ../sass/energy101.scss */
   .section-11 {
     margin-bottom: 0px;
   }
 
-  /* line 412, ../sass/energy101.scss */
+  /* line 416, ../sass/energy101.scss */
   .section-divider {
     padding-top: 50px;
     padding-bottom: 50px;

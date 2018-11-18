@@ -394,6 +394,10 @@ img {
     padding-top: 27.5px !important;
     padding-bottom: 27.5px !important;
   }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -31,11 +31,16 @@ else if(test.startsWith("SCENARIOS")){
   css = css + ".energy101-active{background-color: #4298d3;}";
   css = css + ".learnmore-button{background-color: #4298d3;}";
 }
-else if(test.startsWith("TOOLS & RESOURCES"))
-  css = ".navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color: #e83c36;}";
-else if(test.startsWith("ABOUT US"))
-  css = ".navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color: #e83c36;}";
-
+else if(test.startsWith("TOOLS")){
+  css = ".navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color: #8e4292;}";
+  css = css + ".energy101-active{background-color: #8e4292;}";
+  css = css + ".learnmore-button{background-color: #8e4292;}";
+}
+else if(test.startsWith("ABOUT US")){
+  css = ".navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color: #efc246;}";
+  css = css + ".energy101-active{background-color: #efc246;}";
+  css = css + ".learnmore-button{background-color: #efc246;}";
+}
 style.type = 'text/css';
 if (style.styleSheet){
   // This is required for IE8 and below.
