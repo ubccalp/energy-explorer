@@ -3,12 +3,13 @@
   display: block;
   min-height: 715px;
   padding-top: 165px;
+  padding-bottom: 50px;
   background-image: url("/img/Mask-Group-212x.png");
   background-position: 0px 0px;
   background-size: cover;
 }
 
-/* line 10, ../sass/homePage.scss */
+/* line 11, ../sass/homePage.scss */
 .heading-9 {
   margin-top: 0px;
   margin-bottom: 35px;
@@ -18,7 +19,7 @@
   text-align: left;
 }
 
-/* line 19, ../sass/homePage.scss */
+/* line 20, ../sass/homePage.scss */
 .paragraph-7 {
   font-size: 15px;
   line-height: 24px;
@@ -29,13 +30,13 @@
   text-align: left;
 }
 
-/* line 29, ../sass/homePage.scss */
+/* line 30, ../sass/homePage.scss */
 .playVideoButtonAdjustment {
   display: block;
   background-color: #ff5917;
 }
 
-/* line 34, ../sass/homePage.scss */
+/* line 35, ../sass/homePage.scss */
 .downloadguide {
   display: block;
   min-height: 360px;
@@ -43,14 +44,14 @@
   padding-bottom: 45px;
 }
 
-/* line 41, ../sass/homePage.scss */
+/* line 42, ../sass/homePage.scss */
 .heading-14 {
   font-size: 35px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-/* line 47, ../sass/homePage.scss */
+/* line 48, ../sass/homePage.scss */
 .image-32 {
   display: block;
   margin-top: 45px;
@@ -203,7 +204,7 @@
   font-weight: 400;
   text-align: center;
 } */
-/* line 202, ../sass/homePage.scss */
+/* line 203, ../sass/homePage.scss */
 .heading-11 {
   display: block;
   margin-top: 0px;
@@ -214,7 +215,7 @@
   text-align: center;
 }
 
-/* line 212, ../sass/homePage.scss */
+/* line 213, ../sass/homePage.scss */
 .custom-container {
   display: block;
   max-width: 95%;
@@ -239,7 +240,7 @@
   flex: 1;
 }
 
-/* line 240, ../sass/homePage.scss */
+/* line 241, ../sass/homePage.scss */
 .supported {
   display: -webkit-box;
   display: -webkit-flex;
@@ -259,7 +260,7 @@
   padding-bottom: 45px;
 }
 
-/* line 263, ../sass/homePage.scss */
+/* line 264, ../sass/homePage.scss */
 .div-block-28 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -281,7 +282,7 @@
   align-content: space-around;
 }
 
-/* line 288, ../sass/homePage.scss */
+/* line 289, ../sass/homePage.scss */
 .image-15 {
   width: 180px;
   margin: 20px;
@@ -291,7 +292,7 @@
   flex: 0 auto;
 }
 
-/* line 297, ../sass/homePage.scss */
+/* line 298, ../sass/homePage.scss */
 .image-16 {
   width: 145px;
   margin: 20px;
@@ -301,7 +302,7 @@
   flex: 0 auto;
 }
 
-/* line 306, ../sass/homePage.scss */
+/* line 307, ../sass/homePage.scss */
 .image-17 {
   width: 245px;
   margin: 20px;
@@ -312,7 +313,7 @@
   flex: 0 auto;
 }
 
-/* line 316, ../sass/homePage.scss */
+/* line 317, ../sass/homePage.scss */
 .image-20 {
   margin: 20px;
   margin-left: 0px;
@@ -322,7 +323,7 @@
   flex: 0 auto;
 }
 
-/* line 325, ../sass/homePage.scss */
+/* line 326, ../sass/homePage.scss */
 .footer {
   position: relative;
   left: 0px;
@@ -335,14 +336,14 @@
   background-color: #404040;
 }
 
-/* line 337, ../sass/homePage.scss */
+/* line 338, ../sass/homePage.scss */
 .image-21 {
   width: 45px;
   height: 45px;
   margin-bottom: 40px;
 }
 
-/* line 343, ../sass/homePage.scss */
+/* line 344, ../sass/homePage.scss */
 .heading-15 {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -351,7 +352,7 @@
   font-weight: 400;
 }
 
-/* line 351, ../sass/homePage.scss */
+/* line 352, ../sass/homePage.scss */
 .paragraph-9 {
   margin-bottom: 35px;
   color: #d3d3d3;
@@ -360,18 +361,18 @@
   text-align: left;
 }
 
-/* line 359, ../sass/homePage.scss */
+/* line 360, ../sass/homePage.scss */
 .div-block-27 {
   margin-top: 40px;
 }
 
-/* line 364, ../sass/homePage.scss */
+/* line 365, ../sass/homePage.scss */
 .div-block-15 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 369, ../sass/homePage.scss */
+/* line 370, ../sass/homePage.scss */
 .image-22 {
   width: 15px;
   margin-right: 10px;
@@ -380,12 +381,12 @@
   clear: none;
 }
 
-/* line 377, ../sass/homePage.scss */
+/* line 378, ../sass/homePage.scss */
 .image-23 {
   display: block;
 }
 
-/* line 381, ../sass/homePage.scss */
+/* line 382, ../sass/homePage.scss */
 .image-24 {
   width: 18px;
   margin-right: 10px;
@@ -394,7 +395,7 @@
   clear: both;
 }
 
-/* line 389, ../sass/homePage.scss */
+/* line 390, ../sass/homePage.scss */
 .text-block-3 {
   display: inline-block;
   width: 240px;
@@ -404,46 +405,46 @@
   font-size: 15px;
 }
 
-/* line 398, ../sass/homePage.scss */
+/* line 399, ../sass/homePage.scss */
 .div-block-26 {
   margin-top: 40px;
 }
 
-/* line 403, ../sass/homePage.scss */
+/* line 404, ../sass/homePage.scss */
 .div-block-18 {
   margin-top: 20px;
 }
 
-/* line 407, ../sass/homePage.scss */
+/* line 408, ../sass/homePage.scss */
 .image-25 {
   margin-right: 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 412, ../sass/homePage.scss */
+  /* line 413, ../sass/homePage.scss */
   .heading-14 {
     margin-top: 80px;
   }
 
-  /* line 416, ../sass/homePage.scss */
+  /* line 417, ../sass/homePage.scss */
   .image-32 {
     float: right;
     margin-top: 0px;
   }
 
-  /* line 421, ../sass/homePage.scss */
+  /* line 422, ../sass/homePage.scss */
   .image-20 {
     margin-left: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 427, ../sass/homePage.scss */
+  /* line 428, ../sass/homePage.scss */
   .div-block-26 {
     float: right;
     margin-top: 0px;
   }
 
-  /* line 432, ../sass/homePage.scss */
+  /* line 433, ../sass/homePage.scss */
   .div-block-27 {
     float: right;
     margin-top: 0px;
