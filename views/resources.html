@@ -1,7 +1,10 @@
 ﻿{% extends 'layout.html' %} {% block title %}{% parent %} - Resources{% endblock %} {% block head %} {% parent %}
-{#<link rel="stylesheet" href="/styles/css/resources.css">#} {% endblock head %} {% block content %} {% parent %}
+<link rel="stylesheet" href="/styles/css/resources.css"> {% endblock head %} {% block content %} {% parent %}
 
-{#<style type="text/css">
+{% include "./components/navbar-toolsAndResources.html" %}
+{% include "./components/navbar-toolsAndResources-overview.html" %}
+
+<style type="text/css">
   .top-h2{
     line-height:1.5
   }
@@ -627,19 +630,16 @@
 
             </ul>
 
-    </div>#}
+    </div>
 
-    {% include "./components/navbar-toolsAndResources.html" %}
-    {% include "./components/navbar-toolsAndResources-overview.html" %}
-
-    <div class="section-14">
+    {#<div class="section-14">
         <div class="container-fluid custom-container-4" style="margin-bottom: 5%">
             <img src="img/redesign/Group-864.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 5%; margin-bottom: 3%; width: 700px;">
             <h1 style="text-align: center; color: #878786; font-size: 35px;">UNDER CONSTRUCTION</h1>
             <h2 style="text-align: center; color: #878786; font-size: 20px;">we're relaunching this page soon</h2>
             <h2 style="text-align: center; color: #878786; font-size: 20px;">(Monday, November 19, 2018)</h2>
         </div>
-    </div>
+    </div>#}
 
     {% endblock content %} {% block scripts %} {% parent %}
     {#<script type="text/javascript" src="js/resources.js" defer></script>#} 
