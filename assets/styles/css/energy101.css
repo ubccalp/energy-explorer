@@ -101,6 +101,7 @@ h1 {
   width: 185px;
   height: 37px;
   font-size: 15px;
+  margin-top: 20px;
   color: #ffffff;
   background-color: #ef4646;
   border: 0;
@@ -169,6 +170,22 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-top: 35px;
+}
+
+.energy101-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 59px;
+}
+
+.maps-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  height: 335px;
+  width: 650px;
 }
 
 /* line 288, ../sass/energy101.scss */
