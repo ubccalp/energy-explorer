@@ -172,20 +172,22 @@ img {
   margin-top: 35px;
 }
 
-.energy101-image {
+.energy101-image1 {
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 59px;
+  height: 400px;
+  width: 700px;
 }
 
-.maps-image {
+.energy101-image2 {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 60px;
-  height: 335px;
-  width: 650px;
+  margin-top: 59px;
+  height: 376px;
+  width: 700px;
 }
 
 /* line 288, ../sass/energy101.scss */

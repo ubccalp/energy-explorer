@@ -2,3 +2,21 @@
 .section-11 {
   background-image: url("/img/redesign/Group-8622x.png");
 }
+
+.maps-image1 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  height: 400px;
+  width: 650px;
+}
+
+.maps-image2 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 59px;
+  height: 400px;
+  width: 650px;
+}

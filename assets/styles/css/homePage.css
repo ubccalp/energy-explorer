@@ -1,8 +1,8 @@
 /* line 1, ../sass/homePage.scss */
 .hero {
   display: block;
-  min-height: 715px;
-  padding-top: 165px;
+  min-height: 650px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("/img/Mask-Group-212x.png");
   background-position: 0px 0px;
@@ -14,17 +14,16 @@
   margin-top: 0px;
   margin-bottom: 35px;
   color: #fff;
-  font-size: 45px;
+  font-size: 60px;
   font-weight: 400;
   text-align: left;
 }
 
 /* line 20, ../sass/homePage.scss */
 .paragraph-7 {
-  font-size: 15px;
+  font-size: 19px;
   line-height: 24px;
   display: inline-block;
-  max-width: 70%;
   margin-bottom: 35px;
   color: #fff;
   text-align: left;
@@ -36,17 +35,25 @@
   background-color: #ff5917;
 }
 
-/* line 35, ../sass/homePage.scss */
-.downloadguide {
+.description {
   display: block;
   min-height: 360px;
   padding-top: 45px;
   padding-bottom: 45px;
+  background-color: #f4f4f4;
+}
+
+/* line 35, ../sass/homePage.scss */
+.downloadguide {
+  display: block;
+  min-height: 100px;
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
 
 /* line 42, ../sass/homePage.scss */
 .heading-14 {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -210,7 +217,7 @@
   margin-top: 0px;
   margin-bottom: 35px;
   color: #3c3c3c;
-  font-size: 35px;
+  font-size: 60px;
   font-weight: 400;
   text-align: center;
 }
@@ -254,10 +261,10 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 335px;
+  min-height: 200px;
   background-color: #f4f4f4;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
 
 /* line 264, ../sass/homePage.scss */
@@ -330,9 +337,9 @@
   right: 0px;
   bottom: 0px;
   display: block;
-  min-height: 400px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  min-height: 175px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   background-color: #404040;
 }
 
@@ -346,19 +353,28 @@
 /* line 344, ../sass/homePage.scss */
 .heading-15 {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #fff;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 400px;
+}
+
+.heading-16 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #3c3c3c;
+  font-size: 35px;
+  font-weight: 400px;
 }
 
 /* line 352, ../sass/homePage.scss */
 .paragraph-9 {
-  margin-bottom: 35px;
-  color: #d3d3d3;
-  font-size: 15px;
-  line-height: 18px;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
   text-align: left;
+  padding-left: 30%;
 }
 
 /* line 360, ../sass/homePage.scss */
@@ -386,6 +402,10 @@
   display: block;
 }
 
+.rectangle {
+  text-align: right;
+}
+
 /* line 382, ../sass/homePage.scss */
 .image-24 {
   width: 18px;
@@ -398,11 +418,11 @@
 /* line 390, ../sass/homePage.scss */
 .text-block-3 {
   display: inline-block;
-  width: 240px;
+  width: 600px;
   float: none;
   clear: none;
   color: #d4d4d4;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* line 399, ../sass/homePage.scss */
@@ -423,13 +443,15 @@
 @media (min-width: 768px) {
   /* line 413, ../sass/homePage.scss */
   .heading-14 {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   /* line 417, ../sass/homePage.scss */
   .image-32 {
     float: right;
     margin-top: 0px;
+    height: 200px;
+    width: 300px;
   }
 
   /* line 422, ../sass/homePage.scss */
@@ -447,6 +469,17 @@
   /* line 433, ../sass/homePage.scss */
   .div-block-27 {
     float: right;
+    margin-top: 0px;
+  }
+
+  .home-block-27 {
+    text-align: left;
+    margin-top: 0px;
+    width: 700px;
+  }
+
+  .home-block-26 {
+    text-align: right;
     margin-top: 0px;
   }
 }
