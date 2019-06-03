@@ -12,7 +12,7 @@
 /* line 11, ../sass/homePage.scss */
 .heading-9 {
   margin-top: 0px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: #fff;
   font-size: 60px;
   font-weight: 400;
@@ -24,9 +24,14 @@
   font-size: 19px;
   line-height: 24px;
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   color: #fff;
   text-align: left;
+}
+
+.video-position {
+  margin: 0 auto; 
+  width: 750px;
 }
 
 /* line 30, ../sass/homePage.scss */
