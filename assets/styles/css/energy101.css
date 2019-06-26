@@ -150,11 +150,13 @@ h1 {
 .section-12 {
   min-height: 525px;
   background-image: none;
+  padding-top: 30px;
 }
 
 /* line 271, ../sass/energy101.scss */
 .section-14 {
   min-height: 400px;
+  padding-top: 30px;
 }
 
 /* line 275, ../sass/energy101.scss */
