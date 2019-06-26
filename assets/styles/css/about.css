@@ -94,7 +94,7 @@
 .heading-24 {
   display: block;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   color: #fff;
   font-size: 35px;
   font-weight: 400;
@@ -153,6 +153,7 @@
   width: 270px;
   min-height: 100px;
   float: left;
+  padding-bottom: 20px;
 }
 
 /* line 331, ../sass/about.scss */
@@ -196,7 +197,7 @@
   margin-top: 0px;
   margin-bottom: 65px;
   color: #3c3c3c;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 45px;
   font-weight: 400;
   text-align: center;
