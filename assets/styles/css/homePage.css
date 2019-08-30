@@ -3,8 +3,8 @@
   display: block;
   min-height: 650px;
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url("/img/Mask-Group-212x.png");
+  padding-bottom: 30px;
+  background-image: url("/img/grouse-outdoor-view.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -29,8 +29,18 @@
   text-align: left;
 }
 
+.downloadguide-paragraph {
+  font-size: 19px;
+  line-height: 24px;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+}
+
 .video-position {
-  width: 0px;
+  float: right; 
+  margin-top: 200px;
 }
 
 /* line 30, ../sass/homePage.scss */
@@ -322,6 +332,50 @@
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+}
+
+.cea-image {
+  width: 245px;
+  margin: 40px;
+  float: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  mix-blend-mode: multiply;
+}
+
+.esri-image {
+  width: 245px;
+  margin: 10px;
+  float: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  mix-blend-mode: multiply;
+}
+
+.mitacs-image {
+  width: 245px;
+  margin: 10px;
+  float: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  mix-blend-mode: multiply;
+}
+
+.ubc-image {
+  width: 145px;
+  margin: 10px;
+  float: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  mix-blend-mode: multiply;
 }
 
 /* line 317, ../sass/homePage.scss */

@@ -64,6 +64,7 @@ body {
   color: #3c3c3c;
   font-weight: 400;
   line-height: 45px;
+  font-size: 38px;
 }
 
 /* line 196, ../sass/energy101.scss */
@@ -104,6 +105,24 @@ h1 {
   margin-top: 20px;
   color: #ffffff;
   background-color: #ef4646;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 31px;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.startexploring-button {
+  width: 185px;
+  height: 37px;
+  font-size: 15px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: black;
   border: 0;
   line-height: inherit;
   text-decoration: none;
@@ -156,7 +175,6 @@ h1 {
 /* line 271, ../sass/energy101.scss */
 .section-14 {
   min-height: 400px;
-  padding-top: 30px;
 }
 
 /* line 275, ../sass/energy101.scss */
@@ -172,6 +190,13 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-top: 35px;
+  height: 400px;
+  width: 700px;
+}
+
+.credit {
+  padding-left: 175px;
+  font-size: 15px;
 }
 
 .energy101-image1 {
