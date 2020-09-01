@@ -2,7 +2,9 @@
 
 Note: some of this information may be outdated.
 
-Community Energy Explorer (old website) - http://energyexplorer.ca/
+# !! master is NOT up to date, the most recent website is on the redesign branch #
+
+Community Energy Explorer (old website) - http://latest.energyexplorer.ca/
 Community Energy Explorer (new temp. website) - https://communityenergyexplorer.herokuapp.com/
 
 ### Technologies Used: ###
