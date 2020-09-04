@@ -1,3 +1,6 @@
+scrollOverflowOptions: {
+    	preventDefault: false
+    }
 /* line 136, ../sass/energy101.scss */
 body {
   font-family: Lato, sans-serif;

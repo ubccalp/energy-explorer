@@ -1,3 +1,7 @@
+scrollOverflowOptions: {
+    	preventDefault: false
+    }
+
 /** Variable for colors **/
 @font-face {
   font-family: 'Ebrima';
@@ -36,6 +40,11 @@ html, body {
 
 /* line 26, ../sass/energy101-x.scss */
 h2, h3, h4, h5, h6, p {
+  z-index: 10;
+ -webkit-user-select: text; /* Safari */
+  -ms-user-select: text; /* IE 10+ and Edge */
+  user-select: text; /* Standard syntax */
+
   color: #000 !important;
   background: #ffffff !important;
   line-height: 1.5;
