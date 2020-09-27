@@ -3,97 +3,10 @@
 <link rel="stylesheet" href="../styles/css/energy101-x.css">
 <!-- <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script> -->
 <script type="text/javascript" src="../js/energy101-x.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" rel="stylesheet">
 {% endblock head %} {% block content %} {% parent %}
-
 {% include "../components/navbar-energy101.html" %}
 {% include "../components/navbar-energy101-5ReasonsToCare.html" %}
 
-{#<ul id="menu">
-  <!-- <li class="active"><a href="/">Home</a></li> -->
-  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Community Energy</a></li>
-  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Energy Security</a></li>
-  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Climate Change</a></li>
-  <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Climate Change Impacts</a></li>
-  <li data-menuanchor="page5" style="border:dotted 1px"><a href="#page5">Greenhouse Gas Reduction</a></li>
-  <li data-menuanchor="page6" style="border:dotted 1px"><a href="#page6">Growing Energy Demand</a></li>
-  <li data-menuanchor="page7" style="border:dotted 1px"><a href="#page7">Energy Efficiency</a></li>
-</ul>#}
-
-{#<div id="pagepiling">
-
-    <div class="section" id="section1">
-        {% include 'energy101-2.1.html' %}
-      </div>
-    
-      <div class="section" id="section2">
-        {% include 'energy101-2.2.html' %}
-      </div>
-    
-      <div class="section" id="section3">
-        {% include 'energy101-2.3.html' %}
-      </div>
-    
-      <div class="section" id="section4">
-        {% include 'energy101-2.4.html' %}
-      </div>
-    
-      <div class="section" id="section5">
-        {% include 'energy101-2.5.html' %}
-      </div>
-
-      <div class="section" id="section6">
-          {% include 'energy101-2.6.html' %}
-        </div>
-      
-        <div class="section" id="section7">
-          {% include 'energy101-2.7.html' %}
-        </div>
-
-</div>#}
-
-<div id="fullpage">
-  <div class="section fp-auto-height active" data-anchor="page1">
-    {% include 'energy101-2.1.html' %}
-  </div>
-
-  <div class="section" data-anchor="page2">
-    {% include 'energy101-2.2.html' %}
-  </div>
-
-  <div class="section" data-anchor="page3">
-    {% include 'energy101-2.3.html' %}
-  </div>
-
-  <div class="section" data-anchor="page4">
-    {% include 'energy101-2.6.html' %}
-  </div>
-
-  <div class="section" data-anchor="page5">
-    {% include 'energy101-2.7.html' %}
-  </div>
-</div>
 
 {% endblock content %} {% block scripts %} {% parent %} 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
-<script type="text/javascript">
-  var myFullpage = new fullpage('#fullpage', {
-    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-    menu: '#myMenu',
-    scrollOverflow: true,
-    normalScrollElements: '#testElement'
-	/*
-	scrollOverflowOptions: {
-    	preventDefault: false
-    },*/
-  });
-
-  //disabling scrolling
-  fullpage_api.setAllowScrolling(false);
-
-  //disabling all keyboard scrolling
-  fullpage_api.setKeyboardScrolling(false);
-</script>
 {% endblock scripts %}
