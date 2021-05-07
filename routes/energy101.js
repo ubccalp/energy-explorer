@@ -12,7 +12,7 @@ module.exports = function(express, app) {
 	});
 
 	router.get('/energy101-3', function(req, res){
-		res.render('./energy101/energy101-3', {
+		res.render('./energy101/energy101-2', {
 			pageName: "Energy101 3"
 		});
 	});

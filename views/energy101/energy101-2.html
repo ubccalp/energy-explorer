@@ -1,93 +1,86 @@
-{% block title %} {% parent %} {% endblock %} {% block head %} {% parent %} {% endblock head %} {% block content %} {% parent%} 
-<div class="section-14" style="margin-bottom:150px">
-  <div class="container-fluid custom-container-4">
-	  <h1>
-			<a href="energy101-2">5 Things Community Energy Can Do For Your Community</a>
-	  </h1>
-	  <section class="fg12">
-		<h2><b><a href="energy101-2">Reason 1: Economic resilience and energy price</a></b></h2>
-		<h3>
-			As BC Hydro’s electricity rates increase, and cheap natural gas from fracking get eventually phased out for home heating,
-			we will need to find more innovative solutions to energy affordability and energy capacity. What if we could save more
-			money on household energy? What if this money stayed in the community?
-		</h3>
-	  </section>
-	  <section class="fg4">
-		<div class="image">
-			<img class="image" src="../img/101_chart.jpg" alt="cee-thumbnail" style="width:70%" /><br>Projected increase in household energy costs by 2020
-		</div>
-	  </section>
-	  <section class="fg8">
-		<div class="row">
-			<section class="fg8">
-				<h4>Local example: Surrey citizens could collectively spend more than $1.3 billion on household energy by 2020.</h4>
-			</section>
-			<section class="fg1">
-				<img src="../img/arrow_right.png" alt="cee-thumbnail" style="width:30%">
-			</section>
-			<section class="fg3">
-				<div class="image">
-					<img class="image" src="../img/pig.png" alt="cee-thumbnail" style="width:50%" />
-				</div>
-	        </section>		
-		</div>
-		<div class="row">
-			<section class="fg6">
-				<h4>A community energy system based on renewables can be less vulnerable to global energy markets, because after the initial
-					investment, operation costs remain generally low.</h4>
-			</section>
-			<section class="fg1">
-				<img src="../img/arrow_right.png" alt="cee-thumbnail" style="width:30%">
-			</section>
-			<section class="fg5">
-				<div class="image">
-					<img class="image" src="../img/money_1.png" alt="cee-thumbnail" style="width:50%" />
-				</div>
-			</section>
-		</div>
-		<div class="row">
-			<section class="fg7">
-				<h4>The neighbourhood scale has the highest opportunity and lowest cost to save energy with:</h4>
-			</section>
-			<section class="fg1">
-				<img src="../img/arrow_right.png" alt="cee-thumbnail" style="width:30%">
-			</section>
-			<section class="fg4">
-				<section class="fg12">
-					<div class="image">
-						<img class="image" src="../img/money.png" alt="cee-thumbnail" style="width:10%" />
-						<caption align="right">Stable energy prices</caption>
-					</div>
-				</section>
-			
-				<section class="fg12">
-					<div class="image">
-						<img class="image" src="../img/plug_2.png" alt="cee-thumbnail" style="width:10%" />
-						<caption align="right">Control of local energy supply</caption>
-					</div>
-				</section>
-				<section class="fg12">
-					<div class="image">
-						<img class="image" src="../img/money_2.png" alt="cee-thumbnail" style="width:10%" />
-						<caption align="right">Local economic benefits</caption>
-					</div>
-				</section>
-			</section>
-		</div>
-	   </section>
-  </div>
-</div>
-{% endblock content %} {% block scripts %} {% parent %} {% endblock scripts %}
-<!--
 {% extends '../layout.html' %} {% block title %}{% parent %} - Energy 101{% endblock %} {% block head %} {% parent %}
-<!-- <link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css"> 
+<!-- <link rel="stylesheet" href="../js/dependencies/pagepiling.js/dist/jquery.pagepiling.css"> -->
 <link rel="stylesheet" href="../styles/css/energy101-x.css">
-<!-- <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script> 
+<!-- <script type="text/javascript" src="../js/dependencies/pagepiling.js/jquery.pagepiling.min.js" defer></script> -->
 <script type="text/javascript" src="../js/energy101-x.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" rel="stylesheet">
 {% endblock head %} {% block content %} {% parent %}
+
 {% include "../components/navbar-energy101.html" %}
-{% include "../components/navbar-energy101-5ReasonsToCare.html" %}
+{% include "../components/navbar-energy101-useEnergy.html" %}
 
+{#<ul id="menu">
+  <!-- <li class="active"><a href="/">Home</a></li> -->
+  <li data-menuanchor="page1" class="active" style="border:dotted 1px"><a href="#page1">Community energy</a></li>
+  <li data-menuanchor="page2" style="border:dotted 1px"><a href="#page2">Citizen Behaviour</a></li>
+  <li data-menuanchor="page3" style="border:dotted 1px"><a href="#page3">Transportation</a></li>
+  <li data-menuanchor="page4" style="border:dotted 1px"><a href="#page4">Building Retrofits</a></li>
+  <li data-menuanchor="page5" style="border:dotted 1px"><a href="#page5">Community Design</a></li>
+</ul>
 
+<div id="pagepiling">
+
+  <div class="section" id="section1">
+    {% include 'energy101-3.1.html' %}
+  </div>
+
+  <div class="section" id="section2">
+    {% include 'energy101-3.2.html' %}
+  </div>
+
+  <div class="section" id="section3">
+    {% include 'energy101-3.3.html' %}
+  </div>
+
+  <div class="section" id="section4">
+    {% include 'energy101-3.4.html' %}
+  </div>
+
+  <div class="section" id="section5">
+    {% include 'energy101-3.5.html' %}
+  </div>
+
+</div>#}
+
+<div id="fullpage">
+    <div class="section fp-auto-height active" data-anchor="page1">
+      {% include 'energy101-3.1.html' %}
+    </div>
+  
+    <div class="section" data-anchor="page2">
+      {% include 'energy101-3.2.html' %}
+    </div>
+  
+    <div class="section" data-anchor="page3">
+      {% include 'energy101-3.3.html' %}
+    </div>
+  
+    <div class="section" data-anchor="page4">
+      {% include 'energy101-3.4.html' %}
+    </div>
+  
+    <div class="section" data-anchor="page5">
+      {% include 'energy101-3.5.html' %}
+    </div>
+  </div>
+  
 {% endblock content %} {% block scripts %} {% parent %} 
-{% endblock scripts %}-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+    menu: '#myMenu',
+    scrollOverflow: true,
+    normalScrollElements: '#testElement'
+  });
+
+  //disabling scrolling
+  fullpage_api.setAllowScrolling(false);
+
+  //disabling all keyboard scrolling
+  fullpage_api.setKeyboardScrolling(false);
+</script>
+{% endblock scripts %}
+
