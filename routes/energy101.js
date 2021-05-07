@@ -11,9 +11,9 @@ module.exports = function(express, app) {
 		});
 	});
 
-	router.get('/energy101-3', function(req, res){
+	router.get('/energy101-2', function(req, res){
 		res.render('./energy101/energy101-2', {
-			pageName: "Energy101 3"
+			pageName: "Energy101 2"
 		});
 	});
 
